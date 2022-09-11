@@ -24,7 +24,7 @@ jobs:
         mkdir -p forecastGridData
         mkdir -p observations
         for i in $items
-        do            
+          do            
             north=$(echo $i | jq '.g.c[1]' )
 	    east=$(echo $i | jq '.g.c[0]' )
 	    coor=$(echo "${east} ${north}" | proj -I $settings -f "%.4f" -s)
