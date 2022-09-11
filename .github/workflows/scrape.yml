@@ -37,8 +37,8 @@ jobs:
           filename=$(echo $i | jq '.p | join("_")' | tr -d '"')
           echo $url
           info=$(curl --retry 5 --retry-max-time 120 $url -L)
-          status= echo $info| jq '.type'
-          if [ "$status" = "Feature" ]
+          status=$(echo $info| jq '.type')
+          if [ "$status" = "\"Feature\"" ]
           then
             urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
             outfile="forecastGridData/${filename}.json"
