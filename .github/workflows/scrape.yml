@@ -16,7 +16,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-      
         mappingurl="https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getvectorsource&nodeTypes=GEN,INT,LZN"
         mapping=$(curl $mappingurl -L --compressed)
         echo $mapping > "mapping.json"
@@ -25,23 +24,23 @@ jobs:
         mkdir -p forecastGridData
         mkdir -p observations
         for i in $items
-          do            
-            north=$(echo $i | jq '.g.c[1]' )
-	    east=$(echo $i | jq '.g.c[0]' )
-	    coor=$(echo "${east} ${north}" | proj -I $settings -f "%.4f" -s)
-	    coorclean=$(echo $coor| sed 's/ /,/g')
-            url="https://api.weather.gov/points/${coorclean}"
-            filename=$(echo $i | jq '.p | join("_")' | tr -d '"')
-            info=$(curl $url -L)
-            urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
-            outfile="forecastGridData/${filename}.json"
-            curl $urldata  -L > "${outfile}"
-            urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
-            obs=$(curl $urlobs -L)
-            station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
-            outfile="observations/${filename}.json"
-            curl ${station}"/observations/latest" -L > "${outfile}"
-        done
+	do            
+	  north=$(echo $i | jq '.g.c[1]' )
+	  east=$(echo $i | jq '.g.c[0]' )
+	  coor=$(echo "${east} ${north}" | proj -I $settings -f "%.4f" -s)
+	  coorclean=$(echo $coor| sed 's/ /,/g')
+	  url="https://api.weather.gov/points/${coorclean}"
+	  filename=$(echo $i | jq '.p | join("_")' | tr -d '"')
+	  info=$(curl $url -L)
+	  urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
+	  outfile="forecastGridData/${filename}.json"
+	  curl $urldata  -L > "${outfile}"
+	  urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
+	  obs=$(curl $urlobs -L)
+	  station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
+	  outfile="observations/${filename}.json"
+	  curl ${station}"/observations/latest" -L > "${outfile}"
+	done
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
