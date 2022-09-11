@@ -14,6 +14,9 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+    - name: install proj
+      run: |-
+        sudo apt-get install proj
     - name: Fetch latest data
       run: |-
         mappingurl="https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getvectorsource&nodeTypes=GEN,INT,LZN"
