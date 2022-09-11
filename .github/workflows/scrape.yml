@@ -21,7 +21,7 @@ jobs:
     - name: Fetch latest data
       run: |-
         mappingurl="https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getvectorsource&nodeTypes=GEN,INT,LZN"
-        mapping=$(curl $mappingurl -L --compressed)
+        mapping=$(curl --retry 5 --retry-max-time 120 $mappingurl -L --compressed)
         echo $mapping > "mapping.json"
         items=$(echo "$mapping" | jq -c -r '.f|.[]')
         settings=$(echo $mapping | jq '.proj' | tr -d '"' ) 
@@ -35,15 +35,15 @@ jobs:
           coorclean=$(echo $coor| sed 's/ /,/g')
           url="https://api.weather.gov/points/${coorclean}"
           filename=$(echo $i | jq '.p | join("_")' | tr -d '"')
-          info=$(curl $url -L)
+          info=$(curl --retry 5 --retry-max-time 120 $url -L)
           urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
           outfile="forecastGridData/${filename}.json"
-          curl $urldata  -L > "${outfile}"
+          curl --retry 5 --retry-max-time 120 $urldata  -L > "${outfile}"
           urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
-          obs=$(curl $urlobs -L)
+          obs=$(curl --retry 5 --retry-max-time 120 $urlobs -L)
           station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
           outfile="observations/${filename}.json"
-          curl ${station}"/observations/latest" -L > "${outfile}"
+          curl --retry 5 --retry-max-time 120 ${station}"/observations/latest" -L > "${outfile}"
         done
     - name: Commit and push if it changed
       run: |-
