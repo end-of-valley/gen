@@ -48,7 +48,7 @@ jobs:
             echo $urlobs
             obs=$(curl --retry 5 --retry-max-time 120 $urlobs -L)
             status=$(echo $obs| jq '.type')
-            if [ "$status" = "\"Feature\"" ]
+            if [ "$status" = "\"FeatureCollection\"" ]
             then
               station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
               outfile="observations/${filename}.json"
