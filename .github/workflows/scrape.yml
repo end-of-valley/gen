@@ -16,8 +16,8 @@ jobs:
       uses: actions/checkout@v2
     - name: install proj
       run: |-
-        sudo apt-get update
-        sudo apt-get install proj
+        #sudo apt-get update
+        sudo apt-get install proj-bin
     - name: Fetch latest data
       run: |-
         mappingurl="https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getvectorsource&nodeTypes=GEN,INT,LZN"
