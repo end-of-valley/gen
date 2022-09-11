@@ -47,10 +47,14 @@ jobs:
             urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
             echo $urlobs
             obs=$(curl --retry 5 --retry-max-time 120 $urlobs -L)
-            station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
-            outfile="observations/${filename}.json"
-            echo $station
-            curl --retry 5 --retry-max-time 120 ${station}"/observations/latest" -L > "${outfile}"
+            status=$(echo $obs| jq '.type')
+            if [ "$status" = "\"Feature\"" ]
+            then
+              station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
+              outfile="observations/${filename}.json"
+              echo $station
+              curl --retry 5 --retry-max-time 120 ${station}"/observations/latest" -L > "${outfile}"
+            fi
           fi
         done
     - name: Commit and push if it changed
