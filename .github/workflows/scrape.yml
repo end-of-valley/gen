@@ -35,14 +35,18 @@ jobs:
           coorclean=$(echo $coor| sed 's/ /,/g')
           url="https://api.weather.gov/points/${coorclean}"
           filename=$(echo $i | jq '.p | join("_")' | tr -d '"')
+          echo $url
           info=$(curl --retry 5 --retry-max-time 120 $url -L)
           urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
           outfile="forecastGridData/${filename}.json"
+          echo $urldata
           curl --retry 5 --retry-max-time 120 $urldata  -L > "${outfile}"
           urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
+          echo $urlobs
           obs=$(curl --retry 5 --retry-max-time 120 $urlobs -L)
           station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
           outfile="observations/${filename}.json"
+          echo $station
           curl --retry 5 --retry-max-time 120 ${station}"/observations/latest" -L > "${outfile}"
         done
     - name: Commit and push if it changed
