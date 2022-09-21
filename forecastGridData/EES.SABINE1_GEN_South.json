@@ -1,4 +1,11 @@
 {
+    "correlationId": "14ca5b01",
+    "title": "Unexpected Problem",
+    "type": "https://api.weather.gov/problems/UnexpectedProblem",
+    "status": 500,
+    "detail": "An unexpected problem has occurred.",
+    "instance": "https://api.weather.gov/requests/14ca5b01"
+}{
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
         {
@@ -39,8 +46,8 @@
     "properties": {
         "@id": "https://api.weather.gov/gridpoints/LCH/34,84",
         "@type": "wx:Gridpoint",
-        "updateTime": "2022-09-21T18:45:52+00:00",
-        "validTimes": "2022-09-21T12:00:00+00:00/P8DT1H",
+        "updateTime": "2022-09-21T19:45:42+00:00",
+        "validTimes": "2022-09-21T13:00:00+00:00/P8D",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 0.91439999999999999
@@ -52,10 +59,6 @@
         "temperature": {
             "uom": "wmoUnit:degC",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 22.777777777777779
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 23.333333333333332
@@ -738,10 +741,6 @@
             "uom": "wmoUnit:degC",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 22.222222222222221
-                },
-                {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 23.333333333333332
                 },
@@ -1092,7 +1091,7 @@
             "uom": "wmoUnit:degC",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT3H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT2H",
                     "value": 22.777777777777779
                 },
                 {
@@ -1132,10 +1131,6 @@
         "relativeHumidity": {
             "uom": "wmoUnit:percent",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 97
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 100
@@ -1809,10 +1804,6 @@
         "apparentTemperature": {
             "uom": "wmoUnit:degC",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 22.777777777777779
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 23.333333333333332
@@ -2499,10 +2490,6 @@
             "uom": "wmoUnit:degC",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 22.777777777777779
-                },
-                {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 23.333333333333332
                 },
@@ -3156,7 +3143,7 @@
             "uom": "wmoUnit:degC",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P8DT1H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P8D",
                     "value": null
                 }
             ]
@@ -3164,10 +3151,6 @@
         "skyCover": {
             "uom": "wmoUnit:percent",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 34
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 31
@@ -3690,7 +3673,7 @@
             "uom": "wmoUnit:degree_(angle)",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT2H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 0
                 },
                 {
@@ -4139,7 +4122,7 @@
             "uom": "wmoUnit:km_h-1",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT2H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 3.7040000000000002
                 },
                 {
@@ -4367,10 +4350,6 @@
         "windGust": {
             "uom": "wmoUnit:km_h-1",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 5.556
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 9.2599999999999998
@@ -4688,7 +4667,7 @@
         "weather": {
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT2H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": [
                         {
                             "coverage": "patchy",
@@ -4760,13 +4739,24 @@
             ]
         },
         "hazards": {
-            "values": []
+            "values": [
+                {
+                    "validTime": "2022-09-22T12:00:00+00:00/PT12H",
+                    "value": [
+                        {
+                            "phenomenon": "AQ",
+                            "significance": "Y",
+                            "event_number": null
+                        }
+                    ]
+                }
+            ]
         },
         "probabilityOfPrecipitation": {
             "uom": "wmoUnit:percent",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P1DT6H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P1DT5H",
                     "value": 0
                 },
                 {
@@ -4859,7 +4849,7 @@
             "uom": "wmoUnit:mm",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT6H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT5H",
                     "value": 0
                 },
                 {
@@ -4976,7 +4966,7 @@
             "uom": "wmoUnit:mm",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT6H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT5H",
                     "value": 0
                 },
                 {
@@ -5109,7 +5099,7 @@
             "uom": "wmoUnit:mm",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT6H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT5H",
                     "value": 0
                 },
                 {
@@ -5245,7 +5235,7 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P1DT16H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P1DT15H",
                     "value": -30.48
                 }
             ]
@@ -5253,10 +5243,6 @@
         "visibility": {
             "uom": "wmoUnit:m",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 3009.4732800000002
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 16093.440000000001
@@ -5335,7 +5321,7 @@
             "uom": "wmoUnit:km_h-1",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT3H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT2H",
                     "value": 5.556
                 },
                 {
@@ -5624,7 +5610,7 @@
             "uom": "wmoUnit:degree_(angle)",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT3H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT2H",
                     "value": 350
                 },
                 {
@@ -6072,10 +6058,6 @@
         "mixingHeight": {
             "uom": "wmoUnit:m",
             "values": [
-                {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT1H",
-                    "value": 117.6528
-                },
                 {
                     "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 145.9992
@@ -6748,7 +6730,7 @@
         "lightningActivityLevel": {
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P4DT6H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P4DT5H",
                     "value": 1
                 },
                 {
@@ -6765,7 +6747,7 @@
             "uom": "wmoUnit:km_h-1",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT2H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 3.7040000000000002
                 },
                 {
@@ -6938,7 +6920,7 @@
             "uom": "wmoUnit:degree_(angle)",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/PT2H",
+                    "validTime": "2022-09-21T13:00:00+00:00/PT1H",
                     "value": 0
                 },
                 {
@@ -7387,7 +7369,7 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P8DT1H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P8D",
                     "value": 0
                 }
             ]
@@ -7396,7 +7378,7 @@
             "uom": "nwsUnit:s",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P6DT13H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P6DT12H",
                     "value": 0
                 }
             ]
@@ -7408,7 +7390,7 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P6DT13H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P6DT12H",
                     "value": 0
                 }
             ]
@@ -7417,7 +7399,7 @@
             "uom": "wmoUnit:degree_(angle)",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P6DT13H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P6DT12H",
                     "value": 0
                 }
             ]
@@ -7426,7 +7408,7 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P6DT13H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P6DT12H",
                     "value": 0
                 }
             ]
@@ -7435,7 +7417,7 @@
             "uom": "wmoUnit:degree_(angle)",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P6DT13H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P6DT12H",
                     "value": 0
                 }
             ]
@@ -7444,7 +7426,7 @@
             "uom": "nwsUnit:s",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P5D",
+                    "validTime": "2022-09-21T13:00:00+00:00/P4DT23H",
                     "value": 0
                 }
             ]
@@ -7453,7 +7435,7 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2022-09-21T12:00:00+00:00/P6DT13H",
+                    "validTime": "2022-09-21T13:00:00+00:00/P6DT12H",
                     "value": 0
                 }
             ]
