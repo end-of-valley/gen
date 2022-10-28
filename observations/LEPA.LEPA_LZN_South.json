@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIER/observations/2022-10-28T14:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KIER/observations/2022-10-28T15:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIER/observations/2022-10-28T14:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIER/observations/2022-10-28T15:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 37
         },
         "station": "https://api.weather.gov/stations/KIER",
-        "timestamp": "2022-10-28T14:15:00+00:00",
-        "rawMessage": "KIER 281415Z AUTO 00000KT 10SM SCT120 14/10 A3011 RMK AO2 T01410098",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-28T15:15:00+00:00",
+        "rawMessage": "KIER 281515Z AUTO 00000KT 10SM -RA SCT070 BKN110 15/11 A3013 RMK AO2 T01480109",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3660
+                    "value": 2130
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "BKN"
             }
         ]
     }
