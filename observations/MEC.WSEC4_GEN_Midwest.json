@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOFF/observations/2022-11-10T09:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KOFF/observations/2022-11-10T11:08:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOFF/observations/2022-11-10T09:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOFF/observations/2022-11-10T11:08:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 319
         },
         "station": "https://api.weather.gov/stations/KOFF",
-        "timestamp": "2022-11-10T09:55:00+00:00",
-        "rawMessage": "KOFF 100955Z 17015G28KT 10SM BKN025 20/16 A2972 RMK AO2A PK WND 16031/36 SLP062 T02000156 PWINO PNO FZRANO TSNO CHINO RWY31 $",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-10T11:08:00+00:00",
+        "rawMessage": "KOFF 101108Z 18012G22KT 10SM -SHRA OVC026 20/16 A2973 RMK AO2A SLP066 PWINO PNO FZRANO TSNO CHINO RWY31 $",
+        "textDescription": "Light  Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain_showers?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": "showers",
+                "weather": "rain",
+                "rawString": "-SHRA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,8 +93,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 51.840000000000003,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -146,9 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 760
+                    "value": 790
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
