@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRSV/observations/2022-11-29T18:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KRSV/observations/2022-11-29T19:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRSV/observations/2022-11-29T18:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRSV/observations/2022-11-29T19:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 141
         },
         "station": "https://api.weather.gov/stations/KRSV",
-        "timestamp": "2022-11-29T18:15:00+00:00",
-        "rawMessage": "KRSV 291815Z AUTO 16015G23KT 10SM CLR 15/10 A2971 RMK AO2 LTG DSNT NE T01470096",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-29T19:15:00+00:00",
+        "rawMessage": "KRSV 291915Z AUTO 17021KT 10SM -TSRA SCT065 SCT100 BKN120 14/10 A2970 RMK AO2 LTG DSNT N THRU SE T01410097",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,8 +99,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 42.479999999999997,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -146,9 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1980
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3660
+                },
+                "amount": "BKN"
             }
         ]
     }
