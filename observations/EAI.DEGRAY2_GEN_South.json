@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KADF/observations/2022-12-02T02:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KADF/observations/2022-12-02T03:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KADF/observations/2022-12-02T02:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KADF/observations/2022-12-02T03:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 55
         },
         "station": "https://api.weather.gov/stations/KADF",
-        "timestamp": "2022-12-02T02:56:00+00:00",
-        "rawMessage": "KADF 020256Z AUTO 00000KT 10SM SCT095 BKN120 07/01 A3033 RMK AO2 RAE0157B13E27 SLP272 P0000 60000 T00670006 55001",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-02T03:56:00+00:00",
+        "rawMessage": "KADF 020356Z AUTO 00000KT 10SM -RA OVC100 07/02 A3033 RMK AO2 RAB55 SLP269 P0000 T00670017",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 6.7000000000000002,
@@ -71,7 +78,7 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.59999999999999998,
+            "value": 1.7,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -119,8 +126,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 65.087507484788006,
+            "value": 70.439505977908993,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,16 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2900
+                    "value": 3050
                 },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 3660
-                },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
