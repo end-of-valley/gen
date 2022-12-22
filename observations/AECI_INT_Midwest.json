@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Error</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>An error occurred.</h1>
-<p>Sorry, the page you are looking for is currently unavailable.<br/>
-Please try again later.</p>
-<p>If you are the system administrator of this resource then you should check
-the error log for details.</p>
-<p><em>Faithfully yours, nginx.</em></p>
-</body>
-</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -63,7 +42,7 @@ the error log for details.</p>
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KVER/observations/2022-12-22T12:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KVER/observations/2022-12-22T14:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -73,17 +52,17 @@ the error log for details.</p>
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KVER/observations/2022-12-22T12:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KVER/observations/2022-12-22T14:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 218
         },
         "station": "https://api.weather.gov/stations/KVER",
-        "timestamp": "2022-12-22T12:15:00+00:00",
-        "rawMessage": "KVER 221215Z AUTO 32018G26KT 3SM -SN OVC013 M08/M11 A3007 RMK AO2 T10841107",
+        "timestamp": "2022-12-22T14:15:00+00:00",
+        "rawMessage": "KVER 221415Z AUTO 31015G25KT 3SM -SN SCT012 SCT020 OVC028 M13/M15 A3013 RMK AO2 T11271146",
         "textDescription": "Light Snow",
-        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
         "presentWeather": [
             {
                 "intensity": "light",
@@ -94,13 +73,13 @@ the error log for details.</p>
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -8.4000000000000004,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -10.699999999999999,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
@@ -114,13 +93,13 @@ the error log for details.</p>
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 48.240000000000002,
+            "value": 46.439999999999998,
             "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101830,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -157,24 +136,38 @@ the error log for details.</p>
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 83.466817704866003,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": 370
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 850
                 },
                 "amount": "OVC"
             }
