@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -42,7 +63,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIKK/observations/2022-12-22T07:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KIKK/observations/2022-12-22T08:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,15 +73,15 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIKK/observations/2022-12-22T07:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIKK/observations/2022-12-22T08:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 192
         },
         "station": "https://api.weather.gov/stations/KIKK",
-        "timestamp": "2022-12-22T07:55:00+00:00",
-        "rawMessage": "KIKK 220755Z AUTO 14004KT 10SM OVC080 M01/M03 A3002 RMK AO2 T10111029",
+        "timestamp": "2022-12-22T08:55:00+00:00",
+        "rawMessage": "KIKK 220855Z AUTO 12006KT 10SM SCT065 BKN080 OVC100 M01/M03 A2999 RMK AO2 T10071029",
         "textDescription": "Cloudy",
         "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
         "presentWeather": [],
@@ -146,7 +167,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 1980
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 2440
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
                 },
                 "amount": "OVC"
             }
