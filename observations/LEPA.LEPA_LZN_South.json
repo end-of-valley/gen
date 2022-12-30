@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIER/observations/2022-12-30T05:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KIER/observations/2022-12-30T06:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIER/observations/2022-12-30T05:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIER/observations/2022-12-30T06:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 37
         },
         "station": "https://api.weather.gov/stations/KIER",
-        "timestamp": "2022-12-30T05:15:00+00:00",
-        "rawMessage": "KIER 300515Z AUTO 15010KT 10SM BKN070 BKN080 19/15 A2998 RMK AO2 LTG DSNT N T01880146",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-30T06:15:00+00:00",
+        "rawMessage": "KIER 300615Z AUTO 25007KT 5SM TSRA BKN022 BKN060 OVC100 18/17 A3003 RMK AO2 LTG DSNT ALQS T01820165",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,16 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2130
+                    "value": 670
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 1830
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
+                },
+                "amount": "OVC"
             }
         ]
     }
