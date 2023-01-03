@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFTK/observations/2023-01-03T02:10:00+00:00",
+    "id": "https://api.weather.gov/stations/KFTK/observations/2023-01-03T03:02:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFTK/observations/2023-01-03T02:10:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFTK/observations/2023-01-03T03:02:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 230
         },
         "station": "https://api.weather.gov/stations/KFTK",
-        "timestamp": "2023-01-03T02:10:00+00:00",
-        "rawMessage": "KFTK 030210Z AUTO 15005KT 10SM SCT110 BKN130 16/16 A2993 RMK AO2 PRESRR SLP136 $",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-03T03:02:00+00:00",
+        "rawMessage": "KFTK 030302Z AUTO 17015KT 10SM -RA FEW050 FEW080 BKN100 17/17 A2993 RMK AO2 PRESRR SLP135 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,14 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 1520
                 },
-                "amount": "SCT"
+                "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3960
+                    "value": 2440
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
                 },
                 "amount": "BKN"
             }
