@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -42,7 +63,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KESC/observations/2023-01-25T15:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KESC/observations/2023-01-25T16:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +73,21 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KESC/observations/2023-01-25T15:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KESC/observations/2023-01-25T16:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 187
         },
         "station": "https://api.weather.gov/stations/KESC",
-        "timestamp": "2023-01-25T15:56:00+00:00",
-        "rawMessage": "KESC 251556Z AUTO 02004KT 10SM BKN020 BKN028 M01/M03 A2989 RMK AO2 SLP134 T10111033 FZRANO",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+        "timestamp": "2023-01-25T16:56:00+00:00",
+        "rawMessage": "KESC 251656Z AUTO 10SM SCT024 OVC035 M01/M03 RMK AO2 SLPNO T10061033 FZRANO $",
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.1000000000000001,
+            "value": -0.59999999999999998,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -76,13 +97,13 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 20,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.5599999999999996,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -96,8 +117,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101340,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -129,12 +150,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 85.003898179532001,
+            "value": 81.956010988439004,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -3.8639995185283333,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,16 +167,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 730
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 1070
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
