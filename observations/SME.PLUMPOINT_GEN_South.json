@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHKA/observations/2023-01-31T06:12:00+00:00",
+    "id": "https://api.weather.gov/stations/KHKA/observations/2023-01-31T07:12:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHKA/observations/2023-01-31T06:12:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHKA/observations/2023-01-31T07:12:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 78
         },
         "station": "https://api.weather.gov/stations/KHKA",
-        "timestamp": "2023-01-31T06:12:00+00:00",
-        "rawMessage": "KHKA 310612Z AUTO 01022KT 8SM -FZRA BKN010 OVC014 M02/M04 A3032 RMK AO2 PK WND 36027/0608 UPB0559E00FZRAE0559B00 I1001 T10221044 PNO $",
-        "textDescription": "Light Freezing Rain",
+        "timestamp": "2023-01-31T07:12:00+00:00",
+        "rawMessage": "KHKA 310712Z AUTO 02021G26KT 6SM FZRA BR SCT009 BKN014 OVC034 M03/M05 A3032 RMK AO2 PK WND 01026/0710 UPB04E08FZRAB08 I1000 T10331050 PNO $",
+        "textDescription": "Freezing Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/night/fzra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
                 "modifier": "freezing",
                 "weather": "rain",
-                "rawString": "-FZRA"
+                "rawString": "FZRA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 12870,
+            "value": 9660,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,14 +159,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 300
+                    "value": 270
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 430
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 430
+                    "value": 1040
                 },
                 "amount": "OVC"
             }
