@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFTK/observations/2023-01-31T01:59:00+00:00",
+    "id": "https://api.weather.gov/stations/KFTK/observations/2023-01-31T02:58:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFTK/observations/2023-01-31T01:59:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFTK/observations/2023-01-31T02:58:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 230
         },
         "station": "https://api.weather.gov/stations/KFTK",
-        "timestamp": "2023-01-31T01:59:00+00:00",
-        "rawMessage": "KFTK 310159Z 02005KT 2SM -DZ OVC007 M00/M00 A3026 RMK SLP256 P0000 T10031004",
-        "textDescription": "Light Drizzle",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2023-01-31T02:58:00+00:00",
+        "rawMessage": "KFTK 310258Z 02005KT 2SM -FZRA BKN007 OVC013 M00/M00 A3027 RMK SLP260 P0000 60000 T10041005 53006",
+        "textDescription": "Light Freezing Rain",
+        "icon": "https://api.weather.gov/icons/land/night/fzra?size=medium",
         "presentWeather": [
             {
                 "intensity": "light",
-                "modifier": null,
-                "weather": "drizzle",
-                "rawString": "-DZ"
+                "modifier": "freezing",
+                "weather": "rain",
+                "rawString": "-FZRA"
             }
         ],
         "temperature": {
@@ -126,8 +126,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -154,6 +154,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 210
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
                 },
                 "amount": "OVC"
             }
