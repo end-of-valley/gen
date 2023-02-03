@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPHN/observations/2023-02-03T12:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KPHN/observations/2023-02-03T13:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPHN/observations/2023-02-03T12:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPHN/observations/2023-02-03T13:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 198
         },
         "station": "https://api.weather.gov/stations/KPHN",
-        "timestamp": "2023-02-03T12:15:00+00:00",
-        "rawMessage": "KPHN 031215Z AUTO 00000KT 10SM CLR M16/M20 A3032 RMK AO",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-02-03T13:15:00+00:00",
+        "rawMessage": "KPHN 031315Z AUTO 00000KT 2SM -SN SCT020 OVC029 M17/M20 A3035 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 610
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 880
+                },
+                "amount": "OVC"
             }
         ]
     }
