@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KUOX/observations/2023-02-11T21:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KUOX/observations/2023-02-11T22:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KUOX/observations/2023-02-11T21:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KUOX/observations/2023-02-11T22:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 137
         },
         "station": "https://api.weather.gov/stations/KUOX",
-        "timestamp": "2023-02-11T21:15:00+00:00",
-        "rawMessage": "KUOX 112115Z AUTO 36009G14KT 10SM SCT050 SCT055 10/07 A3008 RMK AO2",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-02-11T22:15:00+00:00",
+        "rawMessage": "KUOX 112215Z AUTO 32006KT 10SM -DZ FEW048 08/05 A3009 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,8 +93,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 25.920000000000002,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -146,16 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 1460
                 },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1680
-                },
-                "amount": "SCT"
+                "amount": "FEW"
             }
         ]
     }
