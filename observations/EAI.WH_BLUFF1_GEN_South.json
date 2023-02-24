@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLIT/observations/2023-02-24T14:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KLIT/observations/2023-02-24T15:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLIT/observations/2023-02-24T14:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLIT/observations/2023-02-24T15:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 79
         },
         "station": "https://api.weather.gov/stations/KLIT",
-        "timestamp": "2023-02-24T14:53:00+00:00",
-        "rawMessage": "KLIT 241453Z 06012KT 7SM -RA BKN010 OVC015 04/03 A3044 RMK AO2 RAE22B43 CIG 008V012 SLP312 P0004 60070 T00440028 51023",
-        "textDescription": "Light Rain",
+        "timestamp": "2023-02-24T15:53:00+00:00",
+        "rawMessage": "KLIT 241553Z 06008KT 1 1/4SM +RA BR BKN010 BKN017 OVC028 04/03 A3044 RMK AO2 SLP312 P0013 T00440028",
+        "textDescription": "Heavy Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -88,7 +94,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 22.32,
+            "value": 14.76,
             "qualityControl": "V"
         },
         "windGust": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 2010,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -126,8 +132,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 20,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -141,7 +147,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.051362000689444444,
+            "value": 1.0636423271394444,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -160,7 +166,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 460
+                    "value": 520
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 850
                 },
                 "amount": "OVC"
             }
