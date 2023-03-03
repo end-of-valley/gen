@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHOT/observations/2023-03-03T05:16:00+00:00",
+    "id": "https://api.weather.gov/stations/KHOT/observations/2023-03-03T06:01:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHOT/observations/2023-03-03T05:16:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHOT/observations/2023-03-03T06:01:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 165
         },
         "station": "https://api.weather.gov/stations/KHOT",
-        "timestamp": "2023-03-03T05:16:00+00:00",
-        "rawMessage": "KHOT 030516Z AUTO 10006KT 7SM VCTS BKN011 OVC017 19/18 A2931 RMK AO2 LTG DSNT ALQDS RAE0457 TSE00 P0000 T01940183",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-03-03T06:01:00+00:00",
+        "rawMessage": "KHOT 030601Z AUTO 00000KT 7SM VCTS -RA FEW007 SCT018 OVC100 18/17 A2932 RMK AO2 LTG DSNT ALQDS TSE01 P0000 T01830172",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,14 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 340
+                    "value": 210
                 },
-                "amount": "BKN"
+                "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 520
+                    "value": 550
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
                 },
                 "amount": "OVC"
             }
