@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHNB/observations/2023-03-03T18:11:00+00:00",
+    "id": "https://api.weather.gov/stations/KHNB/observations/2023-03-03T19:13:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,43 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHNB/observations/2023-03-03T18:11:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHNB/observations/2023-03-03T19:13:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 161
         },
         "station": "https://api.weather.gov/stations/KHNB",
-        "timestamp": "2023-03-03T18:11:00+00:00",
-        "rawMessage": "KHNB 031811Z AUTO 10014G23KT 10SM SCT005 BKN039 13/13 A2893 RMK AO2 LTG DSNT NE RAE1759 P0000",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-03-03T19:13:00+00:00",
+        "rawMessage": "KHNB 031913Z AUTO 19029G42KT 2SM +TSRA BR SQ FEW005 BKN012 OVC019 16/15 A2892 RMK AO2 PK WND 18042/1912 VIS 1/2V5 LTG DSNT S-NW TSB02RAB09 PRESRR P0023",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist and Squalls",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "squalls",
+                "rawString": "SQ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,7 +111,7 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 42.479999999999997,
+            "value": 77.760000000000005,
             "qualityControl": "S"
         },
         "barometricPressure": {
@@ -101,7 +126,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,7 +139,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 10,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -148,14 +173,21 @@
                     "unitCode": "wmoUnit:m",
                     "value": 150
                 },
-                "amount": "SCT"
+                "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1190
+                    "value": 370
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
+                },
+                "amount": "OVC"
             }
         ]
     }
