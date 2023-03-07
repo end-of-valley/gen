@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMGC/observations/2023-03-06T22:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KMGC/observations/2023-03-07T01:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMGC/observations/2023-03-06T22:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMGC/observations/2023-03-07T01:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 200
         },
         "station": "https://api.weather.gov/stations/KMGC",
-        "timestamp": "2023-03-06T22:55:00+00:00",
-        "rawMessage": "KMGC 062255Z AUTO 05004KT 10SM OVC028 05/03 A2992 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-03-07T01:55:00+00:00",
+        "rawMessage": "KMGC 070155Z AUTO 30009G17KT 4SM BR SCT006 BKN028 BKN044 03/03 A3000 RMK AO2",
+        "textDescription": "Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 180
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 850
                 },
-                "amount": "OVC"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1340
+                },
+                "amount": "BKN"
             }
         ]
     }
