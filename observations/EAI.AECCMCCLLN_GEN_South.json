@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCDH/observations/2023-03-10T06:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KCDH/observations/2023-03-10T06:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCDH/observations/2023-03-10T06:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCDH/observations/2023-03-10T06:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 40
         },
         "station": "https://api.weather.gov/stations/KCDH",
-        "timestamp": "2023-03-10T06:15:00+00:00",
-        "rawMessage": "KCDH 100615Z AUTO VRB06KT 3SM +RA BKN015 14/14 A3009 RMK AO2",
-        "textDescription": "Heavy Rain",
+        "timestamp": "2023-03-10T06:55:00+00:00",
+        "rawMessage": "KCDH 100655Z AUTO 01006KT 3SM -DZ BKN016 BKN022 14/14 A3010 RMK AO2 P0002",
+        "textDescription": "Light Drizzle",
         "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "heavy",
+                "intensity": "light",
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "+RA"
+                "weather": "drizzle",
+                "rawString": "-DZ"
             }
         ],
         "temperature": {
@@ -83,8 +83,8 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 10,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
@@ -98,7 +98,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101900,
+            "value": 101930,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -121,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 460
+                    "value": 490
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 670
                 },
                 "amount": "BKN"
             }
