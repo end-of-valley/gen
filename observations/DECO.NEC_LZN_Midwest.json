@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KD95/observations/2023-03-13T03:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KD95/observations/2023-03-13T04:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KD95/observations/2023-03-13T03:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KD95/observations/2023-03-13T04:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 255
         },
         "station": "https://api.weather.gov/stations/KD95",
-        "timestamp": "2023-03-13T03:15:00+00:00",
-        "rawMessage": "KD95 130315Z AUTO 00000KT 10SM OVC110 M02/M04 A2993 RMK AO2 T10251045",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-03-13T04:15:00+00:00",
+        "rawMessage": "KD95 130415Z AUTO 00000KT 10SM -SN SCT060 OVC120 M03/M04 A2992 RMK AO2 T10271045",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 1830
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3660
                 },
                 "amount": "OVC"
             }
