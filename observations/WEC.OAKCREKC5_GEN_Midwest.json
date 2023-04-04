@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRAC/observations/2023-04-04T19:20:00+00:00",
+    "id": "https://api.weather.gov/stations/KRAC/observations/2023-04-04T20:21:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRAC/observations/2023-04-04T19:20:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRAC/observations/2023-04-04T20:21:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 205
         },
         "station": "https://api.weather.gov/stations/KRAC",
-        "timestamp": "2023-04-04T19:20:00+00:00",
-        "rawMessage": "KRAC 041920Z AUTO 10018G27KT 5SM -RA BR FEW005 SCT011 BKN028 08/07 A2971 RMK AO2 PK WND 10027/1917 LTG DSNT SE-W TSE1856 P0005 T00780067",
-        "textDescription": "Light Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2023-04-04T20:21:00+00:00",
+        "rawMessage": "KRAC 042021Z AUTO 11020G40KT 3/4SM +TSRA BR FEW010 BKN020 OVC110 08/07 A2970 RMK AO2 PK WND 12040/2016 LTG DSNT ALQDS RAB04 TSB03 P0026 T00830067",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
@@ -79,7 +85,7 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 7.7999999999999998,
+            "value": 8.3000000000000007,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -104,7 +110,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100610,
+            "value": 100580,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -114,7 +120,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 8050,
+            "value": 1210,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -127,7 +133,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 10,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -142,7 +148,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 92.754240308299998,
+            "value": 89.656134409309004,
             "qualityControl": "V"
         },
         "windChill": {
@@ -159,23 +165,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 150
+                    "value": 300
                 },
                 "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 340
+                    "value": 610
                 },
-                "amount": "SCT"
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 3350
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
