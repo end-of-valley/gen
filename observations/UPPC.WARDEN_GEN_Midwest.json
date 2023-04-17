@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCMX/observations/2023-04-17T13:05:00+00:00",
+    "id": "https://api.weather.gov/stations/KCMX/observations/2023-04-17T14:05:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCMX/observations/2023-04-17T13:05:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCMX/observations/2023-04-17T14:05:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 329
         },
         "station": "https://api.weather.gov/stations/KCMX",
-        "timestamp": "2023-04-17T13:05:00+00:00",
-        "rawMessage": "KCMX 171305Z AUTO 34022G31KT 1/4SM HZ VV009 M02/M05 A2944 RMK AO2 PK WND 34031/1259 T10221050 PWINO FZRANO $",
-        "textDescription": "Sky Obscured",
-        "icon": "https://api.weather.gov/icons/land/day/vv?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-04-17T14:05:00+00:00",
+        "rawMessage": "KCMX 171405Z AUTO 34026G37KT 3/4SM -SN FEW010 OVC015 M02/M05 A2945 RMK AO2 PK WND 34037/1404 P0000 T10221050 $",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -2.2000000000000002,
@@ -91,7 +98,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 99700,
+            "value": 99730,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 400,
+            "value": 1210,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 270
+                    "value": 300
                 },
-                "amount": "VV"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 460
+                },
+                "amount": "OVC"
             }
         ]
     }
