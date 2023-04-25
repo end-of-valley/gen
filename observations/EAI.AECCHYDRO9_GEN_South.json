@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRUE/observations/2023-04-25T09:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KRUE/observations/2023-04-25T10:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,26 +52,33 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRUE/observations/2023-04-25T09:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRUE/observations/2023-04-25T10:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 123
         },
         "station": "https://api.weather.gov/stations/KRUE",
-        "timestamp": "2023-04-25T09:53:00+00:00",
-        "rawMessage": "KRUE 250953Z AUTO 00000KT 10SM OVC060 10/06 A3010 RMK AO2 RAB07E17 SLP189 P0000 T01000061",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-04-25T10:53:00+00:00",
+        "rawMessage": "KRUE 251053Z AUTO 00000KT 10SM -RA BKN055 OVC075 11/05 A3010 RMK AO2 RAB49 SLP189 P0000 T01060050",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 10,
+            "value": 10.6,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 6.0999999999999996,
+            "value": 5,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 76.720923803697005,
+            "value": 68.297978074013002,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1830
+                    "value": 1680
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
                 },
                 "amount": "OVC"
             }
