@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHUF/observations/2023-05-07T09:02:00+00:00",
+    "id": "https://api.weather.gov/stations/KHUF/observations/2023-05-07T10:02:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHUF/observations/2023-05-07T09:02:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHUF/observations/2023-05-07T10:02:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 178
         },
         "station": "https://api.weather.gov/stations/KHUF",
-        "timestamp": "2023-05-07T09:02:00+00:00",
-        "rawMessage": "KHUF 070902Z 05005KT 3SM +RA BR SCT042 OVC060 16/15 A2997 RMK AO2 LTG DSNT NE AND SE AND NW P0009 T01560150",
-        "textDescription": "Heavy Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2023-05-07T10:02:00+00:00",
+        "rawMessage": "KHUF 071002Z 16003KT 1SM R05/5500VP6000FT +TSRA BR SCT027 BKN045 OVC050 16/16 A2995 RMK AO2 LTG DSNT ALQDS P0021 T01610156",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
             {
                 "intensity": "heavy",
                 "modifier": null,
@@ -79,22 +85,22 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 15.6,
+            "value": 16.100000000000001,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 15,
+            "value": 15.6,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 50,
+            "value": 160,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.3599999999999994,
+            "value": 5.4000000000000004,
             "qualityControl": "V"
         },
         "windGust": {
@@ -104,7 +110,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101490,
+            "value": 101420,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -114,7 +120,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 1610,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -127,7 +133,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 10,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -142,7 +148,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 96.222192128596006,
+            "value": 96.854960153164001,
             "qualityControl": "V"
         },
         "windChill": {
@@ -159,14 +165,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1280
+                    "value": 820
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1830
+                    "value": 1370
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
