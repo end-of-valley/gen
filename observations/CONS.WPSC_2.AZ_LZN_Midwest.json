@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMBS/observations/2023-06-11T05:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KMBS/observations/2023-06-11T06:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMBS/observations/2023-06-11T05:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMBS/observations/2023-06-11T06:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 204
         },
         "station": "https://api.weather.gov/stations/KMBS",
-        "timestamp": "2023-06-11T05:53:00+00:00",
-        "rawMessage": "KMBS 110553Z AUTO 07008KT 10SM FU BKN085 17/11 A2980 RMK AO2 SLP085 T01720106 10233 20172 55001",
-        "textDescription": "Smoke",
-        "icon": "https://api.weather.gov/icons/land/night/smoke?size=medium",
+        "timestamp": "2023-06-11T06:53:00+00:00",
+        "rawMessage": "KMBS 110653Z AUTO 07008KT 10SM -RA FU BKN075 OVC090 17/11 A2981 RMK AO2 RAB51 SLP089 P0000 T01720106",
+        "textDescription": "Light Rain and Smoke",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -98,12 +104,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100920,
+            "value": 100950,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100850,
+            "value": 100890,
             "qualityControl": "V"
         },
         "visibility": {
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,9 +159,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2590
+                    "value": 2290
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "OVC"
             }
         ]
     }
