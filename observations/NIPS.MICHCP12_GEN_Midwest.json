@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMGC/observations/2023-07-28T09:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMGC/observations/2023-07-28T10:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,37 +52,44 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMGC/observations/2023-07-28T09:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMGC/observations/2023-07-28T10:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 200
         },
         "station": "https://api.weather.gov/stations/KMGC",
-        "timestamp": "2023-07-28T09:15:00+00:00",
-        "rawMessage": "KMGC 280915Z AUTO 00000KT 10SM SCT025 SCT032 SCT043 25/23 A2995 RMK AO2",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-07-28T10:15:00+00:00",
+        "rawMessage": "KMGC 281015Z AUTO 34014G21KT 5SM +RA SCT008 BKN033 OVC050 21/20 A3003 RMK AO2",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 25,
+            "value": 21,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 23,
+            "value": 20,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -91,8 +98,8 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101420,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 88.679561374670001,
+            "value": 94.018757001037997,
             "qualityControl": "V"
         },
         "windChill": {
@@ -139,30 +146,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.871077435894446,
+            "value": null,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 760
+                    "value": 240
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 980
+                    "value": 1010
                 },
-                "amount": "SCT"
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1310
+                    "value": 1520
                 },
-                "amount": "SCT"
+                "amount": "OVC"
             }
         ]
     }
