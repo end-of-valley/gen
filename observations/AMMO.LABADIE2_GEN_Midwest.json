@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFYG/observations/2023-08-04T05:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KFYG/observations/2023-08-04T06:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFYG/observations/2023-08-04T05:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFYG/observations/2023-08-04T06:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 149
         },
         "station": "https://api.weather.gov/stations/KFYG",
-        "timestamp": "2023-08-04T05:55:00+00:00",
-        "rawMessage": "KFYG 040555Z AUTO 00000KT 7SM SCT110 24/24 A2992 RMK AO2 LTG DSNT W",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-08-04T06:55:00+00:00",
+        "rawMessage": "KFYG 040655Z AUTO 00000KT 2 1/2SM TS BR FEW014 SCT026 BKN040 24/24 A2991 RMK AO2 LTG DSNT ALQDS",
+        "textDescription": "Thunderstorms and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 24,
@@ -91,7 +104,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101320,
+            "value": 101290,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 430
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 790
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1220
+                },
+                "amount": "BKN"
             }
         ]
     }
