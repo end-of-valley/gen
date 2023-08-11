@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMUT/observations/2023-08-11T09:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KMUT/observations/2023-08-11T10:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,36 +52,43 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMUT/observations/2023-08-11T09:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMUT/observations/2023-08-11T10:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 167
         },
         "station": "https://api.weather.gov/stations/KMUT",
-        "timestamp": "2023-08-11T09:55:00+00:00",
-        "rawMessage": "KMUT 110955Z AUTO 13003KT 8SM FEW035 OVC060 21/21 A2974 RMK AO2 P0002",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-08-11T10:55:00+00:00",
+        "rawMessage": "KMUT 111055Z AUTO 35011G19KT 1/2SM +RA 20/20 A2983 RMK AO2 P0061",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 21,
+            "value": 20,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21,
+            "value": 20,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 130,
+            "value": 350,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 5.4000000000000004,
+            "value": 20.52,
             "qualityControl": "V"
         },
         "windGust": {
@@ -91,8 +98,8 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100710,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 12870,
+            "value": 800,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,7 +121,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 20,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -142,21 +149,6 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": [
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1070
-                },
-                "amount": "FEW"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1830
-                },
-                "amount": "OVC"
-            }
-        ]
+        "cloudLayers": []
     }
 }
