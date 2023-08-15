@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KELD/observations/2023-08-15T09:03:00+00:00",
+    "id": "https://api.weather.gov/stations/KELD/observations/2023-08-15T09:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KELD/observations/2023-08-15T09:03:00+00:00",
+        "@id": "https://api.weather.gov/stations/KELD/observations/2023-08-15T09:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 77
         },
         "station": "https://api.weather.gov/stations/KELD",
-        "timestamp": "2023-08-15T09:03:00+00:00",
-        "rawMessage": "KELD 150903Z AUTO 00000KT 10SM VCTS FEW060 BKN090 BKN110 21/21 A3005 RMK AO2 LTG DSNT NE-S TSE0857 P0002 T02110211",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-08-15T09:53:00+00:00",
+        "rawMessage": "KELD 150953Z AUTO 32003KT 10SM TS FEW085 SCT110 21/21 A3005 RMK AO2 LTG DSNT E-SW TSE0857B31 SLP171 P0012 T02110211",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 21.100000000000001,
@@ -76,12 +83,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
+            "value": 320,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
+            "value": 5.4000000000000004,
             "qualityControl": "V"
         },
         "windGust": {
@@ -96,8 +103,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101710,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -146,23 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1830
+                    "value": 2590
                 },
                 "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2740
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
                     "value": 3350
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             }
         ]
     }
