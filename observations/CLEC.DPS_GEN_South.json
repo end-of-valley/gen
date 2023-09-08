@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSHV/observations/2023-09-08T14:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KSHV/observations/2023-09-08T15:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,26 +52,39 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSHV/observations/2023-09-08T14:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSHV/observations/2023-09-08T15:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 79
         },
         "station": "https://api.weather.gov/stations/KSHV",
-        "timestamp": "2023-09-08T14:56:00+00:00",
-        "rawMessage": "KSHV 081456Z VRB04KT 10SM FEW020 SCT080 BKN140 BKN250 32/22 A2994 RMK CB DSNT NW-NE MOV SE SLPNO",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-09-08T15:56:00+00:00",
+        "rawMessage": "KSHV 081556Z 06025G37KT 9SM -TSRA FEW020 SCT055CB OVC090 26/21 A3005 RMK FRQ LTGICCG N-NE RAB37 TSB40 TS N-NE MOV SE SLPNO",
+        "textDescription": "Light Thunderstorms and Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "-TS"
+            },
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 32,
+            "value": 26,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 22,
+            "value": 21,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -81,8 +94,8 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.5599999999999996,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -91,7 +104,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101390,
+            "value": 101760,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 14480,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -129,7 +142,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 55.564587603211002,
+            "value": 73.970629005511,
             "qualityControl": "V"
         },
         "windChill": {
@@ -139,7 +152,7 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 35.794966183338886,
+            "value": 26.587010868477222,
             "qualityControl": "V"
         },
         "cloudLayers": [
@@ -153,23 +166,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 1680
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 4270
+                    "value": 2740
                 },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 7620
-                },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
