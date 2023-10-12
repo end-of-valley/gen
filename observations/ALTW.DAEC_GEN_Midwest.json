@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KVTI/observations/2023-10-12T05:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KVTI/observations/2023-10-12T06:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KVTI/observations/2023-10-12T05:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KVTI/observations/2023-10-12T06:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 258
         },
         "station": "https://api.weather.gov/stations/KVTI",
-        "timestamp": "2023-10-12T05:55:00+00:00",
-        "rawMessage": "KVTI 120555Z AUTO 08011G16KT 10SM BKN035 BKN046 OVC060 10/10 A2973 RMK AO2 60002 T00960096 10125 20096 401801015",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-10-12T06:55:00+00:00",
+        "rawMessage": "KVTI 120655Z AUTO 07011G15KT 10SM -RA BKN046 OVC060 10/10 A2973 RMK AO2 T00960096",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 9.5999999999999996,
@@ -76,7 +83,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 80,
+            "value": 70,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -124,8 +131,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -143,13 +150,6 @@
             "qualityControl": "V"
         },
         "cloudLayers": [
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1070
-                },
-                "amount": "BKN"
-            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
