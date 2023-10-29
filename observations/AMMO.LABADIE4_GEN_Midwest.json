@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSUS/observations/2023-10-29T12:01:00+00:00",
+    "id": "https://api.weather.gov/stations/KSUS/observations/2023-10-29T12:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSUS/observations/2023-10-29T12:01:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSUS/observations/2023-10-29T12:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 141
         },
         "station": "https://api.weather.gov/stations/KSUS",
-        "timestamp": "2023-10-29T12:01:00+00:00",
-        "rawMessage": "KSUS 291201Z 35006KT 3SM BR BKN008 OVC012 07/06 A3012 RMK AO2 RAE1156 CIG 006V010 P0000 T00720061",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2023-10-29T12:54:00+00:00",
+        "rawMessage": "KSUS 291254Z 02006KT 3SM -RA BR OVC008 07/06 A3012 RMK AO2 RAE1156B11E32B48 SLP203 P0000 T00720061",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -83,7 +89,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 350,
+            "value": 20,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -103,8 +109,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 102030,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -154,13 +160,6 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 240
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 370
                 },
                 "amount": "OVC"
             }
