@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSDY/observations/2023-10-30T17:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KSDY/observations/2023-10-30T18:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSDY/observations/2023-10-30T17:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSDY/observations/2023-10-30T18:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 605
         },
         "station": "https://api.weather.gov/stations/KSDY",
-        "timestamp": "2023-10-30T17:56:00+00:00",
-        "rawMessage": "KSDY 301756Z AUTO 33022G27KT 10SM FEW033 M02/M07 A3021 RMK AO2 PK WND 33028/1726 SNB23E43 SLP263 P0000 60000 T10221072 11022 21106 53032 FZRANO",
-        "textDescription": "Mostly Clear and Windy",
-        "icon": "https://api.weather.gov/icons/land/day/wind_few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-10-30T18:56:00+00:00",
+        "rawMessage": "KSDY 301856Z AUTO 33021G27KT 8SM -SN FEW013 SCT038 M03/M07 A3024 RMK AO2 PK WND 33031/1808 SNB13E23B42 SLP276 P0000 T10281072 FZRANO",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -2.2000000000000002,
+            "value": -2.7999999999999998,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -81,7 +88,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 40.68,
+            "value": 38.880000000000003,
             "qualityControl": "V"
         },
         "windGust": {
@@ -96,12 +103,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102630,
+            "value": 102760,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -124,17 +131,17 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 68.586280864385003,
+            "value": 71.701602990316999,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -10.374845306241667,
+            "value": -11.015001834444444,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1010
+                    "value": 400
                 },
                 "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1160
+                },
+                "amount": "SCT"
             }
         ]
     }
