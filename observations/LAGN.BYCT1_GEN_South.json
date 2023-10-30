@@ -1,19 +1,3 @@
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687980&#46;34e8d810
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;e83b2f17&#46;1698687981&#46;22cc5971
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687983&#46;34e8f353
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
-</BODY></HTML>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -58,7 +42,7 @@ Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KACP/observations/2023-10-30T17:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KACP/observations/2023-10-30T18:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -68,18 +52,25 @@ Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KACP/observations/2023-10-30T17:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KACP/observations/2023-10-30T18:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 33
         },
         "station": "https://api.weather.gov/stations/KACP",
-        "timestamp": "2023-10-30T17:15:00+00:00",
-        "rawMessage": "KACP 301715Z AUTO 01006G19KT 10SM OVC013 11/08 A3018 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-10-30T18:15:00+00:00",
+        "rawMessage": "KACP 301815Z AUTO 36006KT 4SM BR BKN010 OVC017 11/08 A3015 RMK AO2",
+        "textDescription": "Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 11,
@@ -92,7 +83,7 @@ Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 10,
+            "value": 360,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -107,7 +98,7 @@ Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102200,
+            "value": 102100,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -117,7 +108,7 @@ Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -162,7 +153,14 @@ Reference&#32;&#35;102&#46;ef3b2f17&#46;1698687987&#46;34e91751
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": 300
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 520
                 },
                 "amount": "OVC"
             }
