@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHKA/observations/2023-11-20T06:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KHKA/observations/2023-11-20T07:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHKA/observations/2023-11-20T06:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHKA/observations/2023-11-20T07:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 78
         },
         "station": "https://api.weather.gov/stations/KHKA",
-        "timestamp": "2023-11-20T06:53:00+00:00",
-        "rawMessage": "KHKA 200653Z AUTO 04004KT 10SM SCT085 BKN110 10/04 A2989 RMK AO2 RAE07 SLP119 P0000 T01000039 $",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-11-20T07:53:00+00:00",
+        "rawMessage": "KHKA 200753Z AUTO 00000KT 10SM -RA OVC095 10/04 A2989 RMK AO2 RAB03 SLP119 P0000 T01000039 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 10,
@@ -76,12 +83,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 40,
+            "value": 0,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.5599999999999996,
+            "value": 0,
             "qualityControl": "V"
         },
         "windGust": {
@@ -146,16 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2590
+                    "value": 2900
                 },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 3350
-                },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
