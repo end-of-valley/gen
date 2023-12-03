@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPTW/observations/2023-12-03T20:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KPTW/observations/2023-12-03T21:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPTW/observations/2023-12-03T20:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPTW/observations/2023-12-03T21:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 94
         },
         "station": "https://api.weather.gov/stations/KPTW",
-        "timestamp": "2023-12-03T20:54:00+00:00",
-        "rawMessage": "KPTW 032054Z AUTO 06003KT 2SM BR BKN005 OVC009 10/10 A2967 RMK AO2 SLP046 60001 T01000100 56009 $",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "timestamp": "2023-12-03T21:54:00+00:00",
+        "rawMessage": "KPTW 032154Z AUTO 06003KT 2SM -RA BR OVC004 10/10 A2967 RMK AO2 RAB51 SLP045 P0000 T01000100 $",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -103,7 +109,7 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100460,
+            "value": 100450,
             "qualityControl": "V"
         },
         "visibility": {
@@ -121,13 +127,13 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,14 +159,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 150
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 270
+                    "value": 120
                 },
                 "amount": "OVC"
             }
