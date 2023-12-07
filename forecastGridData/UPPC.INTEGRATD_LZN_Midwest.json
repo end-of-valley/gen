@@ -1,4 +1,11 @@
 {
+    "correlationId": "c5d659cf",
+    "title": "Unexpected Problem",
+    "type": "https://api.weather.gov/problems/UnexpectedProblem",
+    "status": 500,
+    "detail": "An unexpected problem has occurred. If this error continues, please contact support at nco.ops@noaa.gov.",
+    "instance": "https://api.weather.gov/requests/c5d659cf"
+}{
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
         {
@@ -39,7 +46,7 @@
     "properties": {
         "@id": "https://api.weather.gov/gridpoints/MQT/154,61",
         "@type": "wx:Gridpoint",
-        "updateTime": "2023-12-07T18:11:21+00:00",
+        "updateTime": "2023-12-07T18:41:10+00:00",
         "validTimes": "2023-12-07T12:00:00+00:00/P7DT13H",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -2063,7 +2070,11 @@
                     "value": 2.2222222222222223
                 },
                 {
-                    "validTime": "2023-12-07T18:00:00+00:00/PT2H",
+                    "validTime": "2023-12-07T18:00:00+00:00/PT1H",
+                    "value": 3.3333333333333335
+                },
+                {
+                    "validTime": "2023-12-07T19:00:00+00:00/PT1H",
                     "value": 3.8888888888888888
                 },
                 {
@@ -4449,11 +4460,41 @@
         "weather": {
             "values": [
                 {
-                    "validTime": "2023-12-07T12:00:00+00:00/PT23H",
+                    "validTime": "2023-12-07T12:00:00+00:00/PT18H",
                     "value": [
                         {
                             "coverage": null,
                             "weather": null,
+                            "intensity": null,
+                            "visibility": {
+                                "unitCode": "wmoUnit:km",
+                                "value": null
+                            },
+                            "attributes": []
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2023-12-08T06:00:00+00:00/PT2H",
+                    "value": [
+                        {
+                            "coverage": "patchy",
+                            "weather": "fog",
+                            "intensity": null,
+                            "visibility": {
+                                "unitCode": "wmoUnit:km",
+                                "value": null
+                            },
+                            "attributes": []
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2023-12-08T08:00:00+00:00/PT3H",
+                    "value": [
+                        {
+                            "coverage": "areas",
+                            "weather": "fog",
                             "intensity": null,
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
@@ -4470,6 +4511,16 @@
                             "coverage": "slight_chance",
                             "weather": "drizzle",
                             "intensity": "light",
+                            "visibility": {
+                                "unitCode": "wmoUnit:km",
+                                "value": null
+                            },
+                            "attributes": []
+                        },
+                        {
+                            "coverage": "areas",
+                            "weather": "fog",
+                            "intensity": null,
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
