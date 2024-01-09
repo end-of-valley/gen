@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLWV/observations/2024-01-09T21:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KLWV/observations/2024-01-09T22:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLWV/observations/2024-01-09T21:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLWV/observations/2024-01-09T22:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 131
         },
         "station": "https://api.weather.gov/stations/KLWV",
-        "timestamp": "2024-01-09T21:53:00+00:00",
-        "rawMessage": "KLWV 092153Z AUTO 22017G25KT 10SM BKN034 07/ A2907 RMK AO2 RAB2056E35 SLP845 P0002 T0067",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2024-01-09T22:53:00+00:00",
+        "rawMessage": "KLWV 092253Z AUTO 23019G25KT 4SM +RA SCT016 OVC024 04/ A2910 RMK AO2 PK WND 20027/2240 RAB13 SLP854 P0006 T0044",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 7,
+            "value": 4,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -91,17 +98,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 98440,
+            "value": 98540,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 98450,
+            "value": 98540,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1040
+                    "value": 490
                 },
-                "amount": "BKN"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
+                },
+                "amount": "OVC"
             }
         ]
     }
