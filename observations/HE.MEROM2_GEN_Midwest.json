@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLWV/observations/2024-01-10T03:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KLWV/observations/2024-01-10T04:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLWV/observations/2024-01-10T03:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLWV/observations/2024-01-10T04:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 131
         },
         "station": "https://api.weather.gov/stations/KLWV",
-        "timestamp": "2024-01-10T03:53:00+00:00",
-        "rawMessage": "KLWV 100353Z AUTO 26019G28KT OVC013 02/ A2925 RMK AO2 PK WND 24029/0339 UPE19 SLP905 P0000 T0017 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2024-01-10T04:53:00+00:00",
+        "rawMessage": "KLWV 100453Z AUTO 26020G29KT 6SM -SN BKN014 OVC019 02/ A2930 RMK AO2 PK WND 26029/0449 UPB0354E20SNB0358E08B20 SLP923 P0001 T0017 $",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 2,
@@ -91,18 +98,18 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 99050,
+            "value": 99220,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 99050,
+            "value": 99230,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 9660,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": 430
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
                 },
                 "amount": "OVC"
             }
