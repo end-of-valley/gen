@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSUX/observations/2024-01-12T17:52:00+00:00",
+    "id": "https://api.weather.gov/stations/KSUX/observations/2024-01-12T20:03:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSUX/observations/2024-01-12T17:52:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSUX/observations/2024-01-12T20:03:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 336
         },
         "station": "https://api.weather.gov/stations/KSUX",
-        "timestamp": "2024-01-12T17:52:00+00:00",
-        "rawMessage": "KSUX 121752Z 33023G29KT 1/2SM R31/2600V5000FT SN FZFG M16/M18 A2977 RMK AO2 PK WND 34033/1656 SLP108 P0001 60004 T11611183 11156 21161 58015",
-        "textDescription": "Snow and Fog",
+        "timestamp": "2024-01-12T20:03:00+00:00",
+        "rawMessage": "KSUX 122003Z 32029G36KT 1/2SM R31/2000V3500FT -SN FZFG OVC009 M16/M18 A2974 RMK AO2 PK WND 33036/2001 P0000 T11611183",
+        "textDescription": "Light Snow and Fog",
         "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
                 "weather": "snow",
-                "rawString": "SN"
+                "rawString": "-SN"
             },
             {
                 "intensity": null,
@@ -104,13 +104,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100810,
+            "value": 100710,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101080,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -137,8 +137,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -155,6 +155,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 270
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
