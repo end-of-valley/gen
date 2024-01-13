@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCMX/observations/2024-01-13T17:01:00+00:00",
+    "id": "https://api.weather.gov/stations/KCMX/observations/2024-01-13T17:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCMX/observations/2024-01-13T17:01:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCMX/observations/2024-01-13T17:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 329
         },
         "station": "https://api.weather.gov/stations/KCMX",
-        "timestamp": "2024-01-13T17:01:00+00:00",
-        "rawMessage": "KCMX 131701Z AUTO 35017G30KT 1/2SM HZ VV008 M09/M14 A2955 RMK AO2 PK WND 35029/1655 T10941139 PWINO FZRANO $",
-        "textDescription": "Sky Obscured",
-        "icon": "https://api.weather.gov/icons/land/day/vv?size=medium",
-        "presentWeather": [],
+        "timestamp": "2024-01-13T17:53:00+00:00",
+        "rawMessage": "KCMX 131753Z AUTO 35018G28KT 3/4SM -SN BKN010 OVC020 M10/M14 A2956 RMK AO2 PK WND 36030/1717 SNB17SNEMMB31SNEMMB47 SLP028 P0000 60000 T11001139 11089 21100 55000 $",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -9.4000000000000004,
+            "value": -10,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -91,17 +98,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100070,
+            "value": 100100,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 100280,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 800,
+            "value": 1210,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -124,12 +131,12 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 69.763654171476006,
+            "value": 73.135752749234996,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 240
+                    "value": 300
                 },
-                "amount": "VV"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
+                },
+                "amount": "OVC"
             }
         ]
     }
