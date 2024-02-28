@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSAW/observations/2024-02-28T16:00:00+00:00",
+    "id": "https://api.weather.gov/stations/KSAW/observations/2024-02-28T16:47:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSAW/observations/2024-02-28T16:00:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSAW/observations/2024-02-28T16:47:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 372
         },
         "station": "https://api.weather.gov/stations/KSAW",
-        "timestamp": "2024-02-28T16:00:00+00:00",
-        "rawMessage": "KSAW 281600Z 34023G29KT 2SM HZ BKN028 M12/M17 A2971",
-        "textDescription": "Haze",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+        "timestamp": "2024-02-28T16:47:00+00:00",
+        "rawMessage": "KSAW 281647Z 32023G34KT 2SM -SN HZ SCT016 OVC022 M12/M17 A2975",
+        "textDescription": "Light Snow and Haze",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -98,7 +104,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100610,
+            "value": 100750,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -153,9 +159,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 490
                 },
-                "amount": "BKN"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 670
+                },
+                "amount": "OVC"
             }
         ]
     }
