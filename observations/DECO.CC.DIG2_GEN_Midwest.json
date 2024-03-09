@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDTW/observations/2024-03-09T04:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KDTW/observations/2024-03-09T06:07:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDTW/observations/2024-03-09T04:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDTW/observations/2024-03-09T06:07:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 202
         },
         "station": "https://api.weather.gov/stations/KDTW",
-        "timestamp": "2024-03-09T04:53:00+00:00",
-        "rawMessage": "KDTW 090453Z 15007KT 1 1/2SM -RA OVC004 11/11 A2973 RMK AO2 SFC VIS 7 RAE02B24 SLP070 P0001 T01110106 401110056",
-        "textDescription": "Light Rain",
+        "timestamp": "2024-03-09T06:07:00+00:00",
+        "rawMessage": "KDTW 090607Z 15007KT 1 1/2SM RA BR SCT005 BKN013 OVC050 11/11 A2969 RMK AO2 SFC VIS 3 P0004 T01110106 $",
+        "textDescription": "Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -98,13 +104,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100680,
+            "value": 100540,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100700,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -153,7 +159,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 120
+                    "value": 150
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
