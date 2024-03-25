@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KETB/observations/2024-03-25T13:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KETB/observations/2024-03-25T14:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KETB/observations/2024-03-25T13:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KETB/observations/2024-03-25T14:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 270
         },
         "station": "https://api.weather.gov/stations/KETB",
-        "timestamp": "2024-03-25T13:15:00+00:00",
-        "rawMessage": "KETB 251315Z AUTO 12010KT 10SM OVC100 03/00 A2977 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2024-03-25T14:15:00+00:00",
+        "rawMessage": "KETB 251415Z AUTO 12007KT 10SM -DZ SCT050 SCT070 OVC090 04/00 A2977 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 3,
+            "value": 4,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -81,7 +88,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 18.359999999999999,
+            "value": 12.960000000000001,
             "qualityControl": "V"
         },
         "windGust": {
@@ -129,12 +136,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 80.661880682868002,
+            "value": 75.172938060956994,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.2158548337922221,
+            "value": 0.88102402938388891,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,7 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 1520
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
                 },
                 "amount": "OVC"
             }
