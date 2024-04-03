@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSAW/observations/2024-04-03T05:48:00+00:00",
+    "id": "https://api.weather.gov/stations/KSAW/observations/2024-04-03T07:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSAW/observations/2024-04-03T05:48:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSAW/observations/2024-04-03T07:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 372
         },
         "station": "https://api.weather.gov/stations/KSAW",
-        "timestamp": "2024-04-03T05:48:00+00:00",
-        "rawMessage": "KSAW 030548Z AUTO 02027G00KT 2SM -SN BR OVC003 00/00 A2945 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2024-04-03T07:56:00+00:00",
+        "rawMessage": "KSAW 030756Z AUTO 03029G00KT 1/2SM -SN FG OVC003 00/00 A2940 RMK AO2",
+        "textDescription": "Light Snow and Fog",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 0,
@@ -91,7 +104,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 99730,
+            "value": 99560,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 3220,
+            "value": 800,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -142,6 +155,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 90
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }

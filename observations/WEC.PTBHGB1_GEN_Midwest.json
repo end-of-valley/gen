@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMTW/observations/2024-04-03T05:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KMTW/observations/2024-04-03T07:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMTW/observations/2024-04-03T05:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMTW/observations/2024-04-03T07:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 198
         },
         "station": "https://api.weather.gov/stations/KMTW",
-        "timestamp": "2024-04-03T05:56:00+00:00",
-        "rawMessage": "KMTW 030556Z AUTO 01016G25KT 6SM UP BR OVC006 01/01 A2915 RMK AO2 PK WND 01029/0546 SLP878 P0002 60025 T00060006 10006 20000 56020 FZRANO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2024-04-03T07:56:00+00:00",
+        "rawMessage": "KMTW 030756Z AUTO 01016G26KT 7SM -RA OVC008 01/01 A2913 RMK AO2 PK WND 02032/0711 SLP868 P0000 T00060006 FZRANO",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 0.59999999999999998,
@@ -91,17 +98,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 98710,
+            "value": 98650,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 98780,
+            "value": 98680,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9660,
+            "value": 11270,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 240
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
