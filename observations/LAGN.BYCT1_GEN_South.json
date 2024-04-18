@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -42,7 +63,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KACP/observations/2024-04-17T21:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KACP/observations/2024-04-17T23:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +73,21 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KACP/observations/2024-04-17T21:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KACP/observations/2024-04-17T23:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 31
         },
         "station": "https://api.weather.gov/stations/KACP",
-        "timestamp": "2024-04-17T21:55:00+00:00",
+        "timestamp": "2024-04-17T23:35:00+00:00",
         "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
+        "textDescription": "Partly Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 27,
+            "value": 26,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -91,7 +112,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101523.92999999999,
+            "value": 101490.06,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -129,7 +150,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 65.564318547282994,
+            "value": 69.546265936829997,
             "qualityControl": "V"
         },
         "windChill": {
@@ -139,9 +160,24 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 28.498451688785554,
+            "value": 26.471485832795,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 792.48000000000002
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1097.28
+                },
+                "amount": "SCT"
+            }
+        ]
     }
 }
