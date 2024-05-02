@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOTM/observations/2024-05-02T15:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KOTM/observations/2024-05-02T17:38:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOTM/observations/2024-05-02T15:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOTM/observations/2024-05-02T17:38:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 258
         },
         "station": "https://api.weather.gov/stations/KOTM",
-        "timestamp": "2024-05-02T15:53:00+00:00",
-        "rawMessage": "KOTM 021553Z AUTO 13010KT 3SM RA BR BKN065 OVC085 14/14 A2979 RMK AO2 PRESFR SLP085 P0027 T01440144",
-        "textDescription": "Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2024-05-02T17:38:00+00:00",
+        "rawMessage": "KOTM 021738Z AUTO 21009KT 2 1/2SM +TSRA BR FEW022 BKN075 OVC095 16/16 A2983 RMK AO2 LTG DSNT SW AND W TSB34 PRESRR P0009 T01610156",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "RA"
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
@@ -79,22 +85,22 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 14.4,
+            "value": 16.100000000000001,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 14.4,
+            "value": 15.6,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 130,
+            "value": 210,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 18.359999999999999,
+            "value": 16.559999999999999,
             "qualityControl": "V"
         },
         "windGust": {
@@ -104,17 +110,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100880,
+            "value": 101020,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100850,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -127,7 +133,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 10,
+            "value": 0,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -142,7 +148,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 100,
+            "value": 96.854960153164001,
             "qualityControl": "V"
         },
         "windChill": {
@@ -159,14 +165,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1980
+                    "value": 670
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2590
+                    "value": 2900
                 },
                 "amount": "OVC"
             }
