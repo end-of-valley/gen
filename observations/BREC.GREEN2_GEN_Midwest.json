@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEHR/observations/2024-05-09T03:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KEHR/observations/2024-05-09T04:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEHR/observations/2024-05-09T03:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEHR/observations/2024-05-09T04:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 117
         },
         "station": "https://api.weather.gov/stations/KEHR",
-        "timestamp": "2024-05-09T03:56:00+00:00",
-        "rawMessage": "KEHR 090356Z AUTO 10008KT 10SM CLR 18/17 A2969 RMK AO2 LTG DSNT S TSE15RAE06 SLP051 P0000 T01830167",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2024-05-09T04:56:00+00:00",
+        "rawMessage": "KEHR 090456Z AUTO 12008KT 10SM -TSRA BKN060 OVC110 18/17 A2970 RMK AO2 LTG DSNT ALQDS TSB49RAB38 SLP054 P0001 T01830167 402670172",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 18.300000000000001,
@@ -76,7 +89,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 100,
+            "value": 120,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,12 +104,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100540,
+            "value": 100580,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100510,
+            "value": 100540,
             "qualityControl": "V"
         },
         "visibility": {
@@ -146,9 +159,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1830
                 },
-                "amount": "CLR"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "OVC"
             }
         ]
     }
