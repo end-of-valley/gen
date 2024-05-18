@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KAPN/observations/2024-05-18T11:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KAPN/observations/2024-05-18T12:34:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,31 +52,38 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KAPN/observations/2024-05-18T11:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KAPN/observations/2024-05-18T12:34:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 211
         },
         "station": "https://api.weather.gov/stations/KAPN",
-        "timestamp": "2024-05-18T11:54:00+00:00",
-        "rawMessage": "KAPN 181154Z AUTO 17005KT M1/4SM FG VV002 13/13 A2990 RMK AO2 SLP126 T01330133 10133 20111 53014",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2024-05-18T12:34:00+00:00",
+        "rawMessage": "KAPN 181234Z AUTO 16005KT 1/4SM FG VV002 14/14 A2991 RMK AO2 T01390139",
+        "textDescription": "Fog",
+        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 13.300000000000001,
+            "value": 13.9,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 13.300000000000001,
+            "value": 13.9,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 170,
+            "value": 160,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,13 +98,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101250,
+            "value": 101290,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101260,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 60
+                },
+                "amount": "VV"
+            }
+        ]
     }
 }
