@@ -39,7 +39,7 @@
     "properties": {
         "@id": "https://api.weather.gov/gridpoints/LSX/108,56",
         "@type": "wx:Gridpoint",
-        "updateTime": "2024-05-26T07:22:18+00:00",
+        "updateTime": "2024-05-26T07:37:21+00:00",
         "validTimes": "2024-05-26T01:00:00+00:00/P8D",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -4784,13 +4784,16 @@
                         {
                             "coverage": "slight_chance",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
                             "attributes": [
-                                "heavy_rain"
+                                "heavy_rain",
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
                             ]
                         },
                         {
@@ -4811,13 +4814,16 @@
                         {
                             "coverage": "chance",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
                             "attributes": [
-                                "heavy_rain"
+                                "heavy_rain",
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
                             ]
                         },
                         {
@@ -4848,13 +4854,16 @@
                         {
                             "coverage": "chance",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
                             "attributes": [
-                                "heavy_rain"
+                                "heavy_rain",
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
                             ]
                         }
                     ]
@@ -4875,12 +4884,16 @@
                         {
                             "coverage": "chance",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
-                            "attributes": []
+                            "attributes": [
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
+                            ]
                         }
                     ]
                 },
@@ -5380,7 +5393,32 @@
         "hazards": {
             "values": [
                 {
-                    "validTime": "2024-05-26T06:00:00+00:00/P1D",
+                    "validTime": "2024-05-26T06:00:00+00:00/PT1H",
+                    "value": [
+                        {
+                            "phenomenon": "FA",
+                            "significance": "A",
+                            "event_number": null
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2024-05-26T07:00:00+00:00/PT8H",
+                    "value": [
+                        {
+                            "phenomenon": "FA",
+                            "significance": "A",
+                            "event_number": null
+                        },
+                        {
+                            "phenomenon": "TO",
+                            "significance": "A",
+                            "event_number": 314
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2024-05-26T15:00:00+00:00/PT15H",
                     "value": [
                         {
                             "phenomenon": "FA",
