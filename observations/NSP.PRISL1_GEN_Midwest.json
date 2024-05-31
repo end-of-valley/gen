@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="noindex,nofollow,noarchive" />
-    <title>An Error Occurred: Internal Server Error</title>
-    <style>body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
-.container { margin: 30px; max-width: 600px; }
-h1 { color: #dc3545; font-size: 24px; }
-h2 { font-size: 18px; }</style>
-</head>
-<body>
-<div class="container">
-    <h1>Oops! An Error Occurred</h1>
-    <h2>The server returned a "500 Internal Server Error".</h2>
-
-    <p>
-        Something is broken. Please let us know what you were doing when this error occurred.
-        We will fix it as soon as possible. Sorry for any inconvenience caused.
-    </p>
-</div>
-</body>
-</html>{
+{
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
         {
@@ -64,7 +42,7 @@ h2 { font-size: 18px; }</style>
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRGK/observations/2024-05-31T18:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KRGK/observations/2024-05-31T19:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -74,43 +52,43 @@ h2 { font-size: 18px; }</style>
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRGK/observations/2024-05-31T18:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRGK/observations/2024-05-31T19:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 239
         },
         "station": "https://api.weather.gov/stations/KRGK",
-        "timestamp": "2024-05-31T18:55:00+00:00",
-        "rawMessage": "KRGK 311855Z AUTO 00000KT 10SM RA OVC037 20/14 A3009 RMK AO2",
-        "textDescription": "Rain",
+        "timestamp": "2024-05-31T19:35:00+00:00",
+        "rawMessage": "KRGK 311935Z AUTO 08003KT 5SM +RA SCT021 SCT039 BKN100 19/16 A3007 RMK AO2",
+        "textDescription": "Heavy Rain",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "RA"
+                "rawString": "+RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 20,
+            "value": 19,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 14,
+            "value": 16,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
+            "value": 80,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
+            "value": 5.4000000000000004,
             "qualityControl": "V"
         },
         "windGust": {
@@ -120,7 +98,7 @@ h2 { font-size: 18px; }</style>
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101900,
+            "value": 101830,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -130,7 +108,7 @@ h2 { font-size: 18px; }</style>
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -158,7 +136,7 @@ h2 { font-size: 18px; }</style>
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 68.377043112712002,
+            "value": 82.752266062258002,
             "qualityControl": "V"
         },
         "windChill": {
@@ -175,9 +153,23 @@ h2 { font-size: 18px; }</style>
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1130
+                    "value": 640
                 },
-                "amount": "OVC"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1190
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
+                },
+                "amount": "BKN"
             }
         ]
     }
