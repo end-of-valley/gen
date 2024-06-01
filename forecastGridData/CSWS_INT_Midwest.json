@@ -39,8 +39,8 @@
     "properties": {
         "@id": "https://api.weather.gov/gridpoints/TSA/42,104",
         "@type": "wx:Gridpoint",
-        "updateTime": "2024-06-01T09:50:35+00:00",
-        "validTimes": "2024-06-01T05:00:00+00:00/P8DT4H",
+        "updateTime": "2024-06-01T11:50:37+00:00",
+        "validTimes": "2024-06-01T05:00:00+00:00/P8DT6H",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 213.05520000000001
@@ -703,6 +703,10 @@
                 {
                     "validTime": "2024-06-09T08:00:00+00:00/PT1H",
                     "value": 21.666666666666668
+                },
+                {
+                    "validTime": "2024-06-09T09:00:00+00:00/PT2H",
+                    "value": 21.111111111111111
                 }
             ]
         },
@@ -1004,7 +1008,7 @@
             "uom": "wmoUnit:degC",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT12H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT10H",
                     "value": 18.333333333333332
                 },
                 {
@@ -1036,7 +1040,7 @@
                     "value": 19.444444444444443
                 },
                 {
-                    "validTime": "2024-06-09T01:00:00+00:00/PT8H",
+                    "validTime": "2024-06-09T01:00:00+00:00/PT10H",
                     "value": 20
                 }
             ]
@@ -3538,14 +3542,6 @@
             "uom": "wmoUnit:percent",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT1H",
-                    "value": 23
-                },
-                {
-                    "validTime": "2024-06-01T04:00:00+00:00/PT1H",
-                    "value": 18
-                },
-                {
                     "validTime": "2024-06-01T05:00:00+00:00/PT1H",
                     "value": 27
                 },
@@ -5217,7 +5213,7 @@
         "weather": {
             "values": [
                 {
-                    "validTime": "2024-06-01T06:00:00+00:00/PT5H",
+                    "validTime": "2024-06-01T06:00:00+00:00/PT4H",
                     "value": [
                         {
                             "coverage": null,
@@ -5232,12 +5228,12 @@
                     ]
                 },
                 {
-                    "validTime": "2024-06-01T11:00:00+00:00/PT1H",
+                    "validTime": "2024-06-01T10:00:00+00:00/PT2H",
                     "value": [
                         {
-                            "coverage": "patchy",
+                            "coverage": "areas",
                             "weather": "fog",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
@@ -5250,9 +5246,9 @@
                     "validTime": "2024-06-01T12:00:00+00:00/PT1H",
                     "value": [
                         {
-                            "coverage": "areas",
+                            "coverage": "patchy",
                             "weather": "fog",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
@@ -5265,9 +5261,9 @@
                     "validTime": "2024-06-01T13:00:00+00:00/PT1H",
                     "value": [
                         {
-                            "coverage": "patchy",
+                            "coverage": "areas",
                             "weather": "fog",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
@@ -5277,7 +5273,22 @@
                     ]
                 },
                 {
-                    "validTime": "2024-06-01T14:00:00+00:00/PT22H",
+                    "validTime": "2024-06-01T14:00:00+00:00/PT1H",
+                    "value": [
+                        {
+                            "coverage": "patchy",
+                            "weather": "fog",
+                            "intensity": "heavy",
+                            "visibility": {
+                                "unitCode": "wmoUnit:km",
+                                "value": null
+                            },
+                            "attributes": []
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2024-06-01T15:00:00+00:00/PT21H",
                     "value": [
                         {
                             "coverage": null,
@@ -5589,7 +5600,18 @@
             ]
         },
         "hazards": {
-            "values": []
+            "values": [
+                {
+                    "validTime": "2024-06-01T10:00:00+00:00/PT5H",
+                    "value": [
+                        {
+                            "phenomenon": "FG",
+                            "significance": "Y",
+                            "event_number": null
+                        }
+                    ]
+                }
+            ]
         },
         "probabilityOfPrecipitation": {
             "uom": "wmoUnit:percent",
@@ -5607,11 +5629,7 @@
                     "value": 1
                 },
                 {
-                    "validTime": "2024-06-01T12:00:00+00:00/PT3H",
-                    "value": 0
-                },
-                {
-                    "validTime": "2024-06-01T15:00:00+00:00/PT3H",
+                    "validTime": "2024-06-01T12:00:00+00:00/PT6H",
                     "value": 9
                 },
                 {
@@ -5708,7 +5726,7 @@
             "uom": "wmoUnit:mm",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT3H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT1H",
                     "value": 0
                 },
                 {
@@ -6078,51 +6096,63 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT6H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT4H",
                     "value": null
                 },
                 {
-                    "validTime": "2024-06-01T09:00:00+00:00/PT4H",
+                    "validTime": "2024-06-01T09:00:00+00:00/PT1H",
                     "value": 60.960000000000001
                 },
                 {
-                    "validTime": "2024-06-01T13:00:00+00:00/PT1H",
-                    "value": 213.36000000000001
-                },
-                {
-                    "validTime": "2024-06-01T14:00:00+00:00/PT1H",
-                    "value": 3352.8000000000002
-                },
-                {
-                    "validTime": "2024-06-01T15:00:00+00:00/PT4H",
+                    "validTime": "2024-06-01T10:00:00+00:00/PT1H",
                     "value": null
                 },
                 {
-                    "validTime": "2024-06-01T19:00:00+00:00/PT2H",
-                    "value": 1767.8399999999999
+                    "validTime": "2024-06-01T11:00:00+00:00/PT1H",
+                    "value": 7620
                 },
                 {
-                    "validTime": "2024-06-01T21:00:00+00:00/PT15H",
+                    "validTime": "2024-06-01T12:00:00+00:00/PT1H",
+                    "value": 91.439999999999998
+                },
+                {
+                    "validTime": "2024-06-01T13:00:00+00:00/PT4H",
+                    "value": 7620
+                },
+                {
+                    "validTime": "2024-06-01T17:00:00+00:00/PT1H",
                     "value": null
+                },
+                {
+                    "validTime": "2024-06-01T18:00:00+00:00/PT2H",
+                    "value": 7620
+                },
+                {
+                    "validTime": "2024-06-01T20:00:00+00:00/PT15H",
+                    "value": null
+                },
+                {
+                    "validTime": "2024-06-02T11:00:00+00:00/PT1H",
+                    "value": 7620
                 },
                 {
                     "validTime": "2024-06-02T12:00:00+00:00/PT1H",
-                    "value": 2590.8000000000002
+                    "value": 1584.96
                 },
                 {
-                    "validTime": "2024-06-02T13:00:00+00:00/PT1H",
+                    "validTime": "2024-06-02T13:00:00+00:00/PT2H",
                     "value": 7620
-                },
-                {
-                    "validTime": "2024-06-02T14:00:00+00:00/PT1H",
-                    "value": 2225.04
                 },
                 {
                     "validTime": "2024-06-02T15:00:00+00:00/PT1H",
-                    "value": 7620
+                    "value": 1371.5999999999999
                 },
                 {
-                    "validTime": "2024-06-02T16:00:00+00:00/PT6H",
+                    "validTime": "2024-06-02T16:00:00+00:00/PT3H",
+                    "value": 1066.8
+                },
+                {
+                    "validTime": "2024-06-02T19:00:00+00:00/PT9H",
                     "value": null
                 }
             ]
@@ -6131,43 +6161,43 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT7H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT5H",
                     "value": 16093.440000000001
                 },
                 {
                     "validTime": "2024-06-01T10:00:00+00:00/PT1H",
-                    "value": 12746.00448
+                    "value": 1528.8768
                 },
                 {
                     "validTime": "2024-06-01T11:00:00+00:00/PT1H",
-                    "value": 6163.7875199999999
+                    "value": 1577.1571200000001
                 },
                 {
                     "validTime": "2024-06-01T12:00:00+00:00/PT1H",
-                    "value": 2639.3241600000001
+                    "value": 3234.7814400000002
                 },
                 {
                     "validTime": "2024-06-01T13:00:00+00:00/PT1H",
-                    "value": 8255.9347199999993
+                    "value": 2076.0537599999998
                 },
                 {
-                    "validTime": "2024-06-01T14:00:00+00:00/PT21H",
+                    "validTime": "2024-06-01T14:00:00+00:00/PT1H",
+                    "value": 6598.3104000000003
+                },
+                {
+                    "validTime": "2024-06-01T15:00:00+00:00/PT1H",
+                    "value": 13164.433919999999
+                },
+                {
+                    "validTime": "2024-06-01T16:00:00+00:00/PT16H",
                     "value": 16093.440000000001
                 },
                 {
-                    "validTime": "2024-06-02T11:00:00+00:00/PT1H",
-                    "value": 14468.002560000001
-                },
-                {
-                    "validTime": "2024-06-02T12:00:00+00:00/PT2H",
+                    "validTime": "2024-06-02T08:00:00+00:00/PT7H",
                     "value": 11265.407999999999
                 },
                 {
-                    "validTime": "2024-06-02T14:00:00+00:00/PT1H",
-                    "value": 14468.002560000001
-                },
-                {
-                    "validTime": "2024-06-02T15:00:00+00:00/PT7H",
+                    "validTime": "2024-06-02T15:00:00+00:00/PT13H",
                     "value": 16093.440000000001
                 }
             ]
@@ -6175,10 +6205,6 @@
         "transportWindSpeed": {
             "uom": "wmoUnit:km_h-1",
             "values": [
-                {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT2H",
-                    "value": 9.2599999999999998
-                },
                 {
                     "validTime": "2024-06-01T05:00:00+00:00/PT2H",
                     "value": 7.4080000000000004
@@ -6352,7 +6378,7 @@
                     "value": 27.780000000000001
                 },
                 {
-                    "validTime": "2024-06-09T00:00:00+00:00/PT9H",
+                    "validTime": "2024-06-09T00:00:00+00:00/PT11H",
                     "value": 16.667999999999999
                 }
             ]
@@ -6360,14 +6386,6 @@
         "transportWindDirection": {
             "uom": "wmoUnit:degree_(angle)",
             "values": [
-                {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT1H",
-                    "value": 120
-                },
-                {
-                    "validTime": "2024-06-01T04:00:00+00:00/PT1H",
-                    "value": 130
-                },
                 {
                     "validTime": "2024-06-01T05:00:00+00:00/PT1H",
                     "value": 150
@@ -6521,7 +6539,7 @@
                     "value": 190
                 },
                 {
-                    "validTime": "2024-06-09T00:00:00+00:00/PT9H",
+                    "validTime": "2024-06-09T00:00:00+00:00/PT11H",
                     "value": 140
                 }
             ]
@@ -6530,11 +6548,7 @@
             "uom": "wmoUnit:m",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT1H",
-                    "value": 136.2456
-                },
-                {
-                    "validTime": "2024-06-01T04:00:00+00:00/PT7H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT6H",
                     "value": 120.0912
                 },
                 {
@@ -6802,7 +6816,7 @@
                     "value": 784.55520000000001
                 },
                 {
-                    "validTime": "2024-06-09T00:00:00+00:00/PT9H",
+                    "validTime": "2024-06-09T00:00:00+00:00/PT11H",
                     "value": 328.57440000000003
                 }
             ]
@@ -6810,7 +6824,7 @@
         "hainesIndex": {
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT15H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT13H",
                     "value": 3
                 },
                 {
@@ -6834,7 +6848,7 @@
         "lightningActivityLevel": {
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT6H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT4H",
                     "value": 1
                 }
             ]
@@ -6843,11 +6857,7 @@
             "uom": "wmoUnit:km_h-1",
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT1H",
-                    "value": 5.556
-                },
-                {
-                    "validTime": "2024-06-01T04:00:00+00:00/PT2H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT1H",
                     "value": 3.7040000000000002
                 },
                 {
@@ -6915,14 +6925,6 @@
         "twentyFootWindDirection": {
             "uom": "wmoUnit:degree_(angle)",
             "values": [
-                {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT1H",
-                    "value": 50
-                },
-                {
-                    "validTime": "2024-06-01T04:00:00+00:00/PT1H",
-                    "value": 40
-                },
                 {
                     "validTime": "2024-06-01T05:00:00+00:00/PT1H",
                     "value": 0
@@ -7125,7 +7127,7 @@
         "probabilityOfThunder": {
             "values": [
                 {
-                    "validTime": "2024-06-01T03:00:00+00:00/PT3H",
+                    "validTime": "2024-06-01T05:00:00+00:00/PT1H",
                     "value": 20
                 },
                 {
@@ -7141,12 +7143,8 @@
                     "value": 1
                 },
                 {
-                    "validTime": "2024-06-01T12:00:00+00:00/PT3H",
-                    "value": 0
-                },
-                {
-                    "validTime": "2024-06-01T15:00:00+00:00/PT3H",
-                    "value": 8
+                    "validTime": "2024-06-01T12:00:00+00:00/PT6H",
+                    "value": 9
                 },
                 {
                     "validTime": "2024-06-01T18:00:00+00:00/PT12H",
