@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KONA/observations/2024-06-13T17:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KONA/observations/2024-06-13T18:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KONA/observations/2024-06-13T17:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KONA/observations/2024-06-13T18:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 200
         },
         "station": "https://api.weather.gov/stations/KONA",
-        "timestamp": "2024-06-13T17:55:00+00:00",
-        "rawMessage": "KONA 131755Z AUTO 00000KT 10SM SCT100 SCT120 22/16 A2989 RMK AO2",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2024-06-13T18:15:00+00:00",
+        "rawMessage": "KONA 131815Z AUTO 00000KT 10SM -RA SCT039 BKN055 BKN075 21/16 A2989 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 22,
+            "value": 21,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 68.773495222446996,
+            "value": 73.114660436646005,
             "qualityControl": "V"
         },
         "windChill": {
@@ -139,23 +146,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.051307930808335,
+            "value": null,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 1190
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3660
+                    "value": 1680
                 },
-                "amount": "SCT"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
+                },
+                "amount": "BKN"
             }
         ]
     }
