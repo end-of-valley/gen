@@ -1,30 +1,155 @@
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1718407718&#46;1eeac5a0
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;ef3b2f17&#46;1718407718&#46;1eeac5a0</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1718407719&#46;1eead699
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;ef3b2f17&#46;1718407719&#46;1eead699</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1718407721&#46;1eeaf59f
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;ef3b2f17&#46;1718407721&#46;1eeaf59f</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1718407725&#46;1eeb2dcd
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;ef3b2f17&#46;1718407725&#46;1eeb2dcd</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1718407734&#46;1eeb9d7a
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;ef3b2f17&#46;1718407734&#46;1eeb9d7a</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;ef3b2f17&#46;1718407750&#46;1eec9076
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;ef3b2f17&#46;1718407750&#46;1eec9076</P>
-</BODY></HTML>
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/stations/KIKK/observations/2024-06-15T00:35:00+00:00",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -87.829999999999998,
+            41.07
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/stations/KIKK/observations/2024-06-15T00:35:00+00:00",
+        "@type": "wx:ObservationStation",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 192
+        },
+        "station": "https://api.weather.gov/stations/KIKK",
+        "timestamp": "2024-06-15T00:35:00+00:00",
+        "rawMessage": "KIKK 150035Z AUTO 04017G21KT 10SM CLR 23/13 A3002 RMK AO2 T02290134",
+        "textDescription": "Clear",
+        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
+        "presentWeather": [],
+        "temperature": {
+            "unitCode": "wmoUnit:degC",
+            "value": 22.899999999999999,
+            "qualityControl": "V"
+        },
+        "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 13.4,
+            "qualityControl": "V"
+        },
+        "windDirection": {
+            "unitCode": "wmoUnit:degree_(angle)",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "windSpeed": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "barometricPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": 101660,
+            "qualityControl": "V"
+        },
+        "seaLevelPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "visibility": {
+            "unitCode": "wmoUnit:m",
+            "value": 16090,
+            "qualityControl": "C"
+        },
+        "maxTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "minTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 55.062191052800003,
+            "qualityControl": "V"
+        },
+        "windChill": {
+            "unitCode": "wmoUnit:degC",
+            "value": null,
+            "qualityControl": "V"
+        },
+        "heatIndex": {
+            "unitCode": "wmoUnit:degC",
+            "value": 22.683290544156666,
+            "qualityControl": "V"
+        },
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": null
+                },
+                "amount": "CLR"
+            }
+        ]
+    }
+}
