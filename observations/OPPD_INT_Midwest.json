@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOMA/observations/2024-07-02T04:06:00+00:00",
+    "id": "https://api.weather.gov/stations/KOMA/observations/2024-07-02T04:52:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,16 +52,16 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOMA/observations/2024-07-02T04:06:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOMA/observations/2024-07-02T04:52:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 299
         },
         "station": "https://api.weather.gov/stations/KOMA",
-        "timestamp": "2024-07-02T04:06:00+00:00",
-        "rawMessage": "KOMA 020406Z 27019G31KT 10SM TS BKN020CB 22/17 A2992 RMK AO2 PK WND 28031/0404 WSHFT 0352 PRESRR FRQ LTGICCC OHD TSB0353 TS OHD MOV E T02170172 $",
-        "textDescription": "Thunderstorms",
+        "timestamp": "2024-07-02T04:52:00+00:00",
+        "rawMessage": "KOMA 020452Z 13008KT 4SM TSRA BKN018CB OVC050 21/19 A2988 RMK AO2 PK WND 28031/0404 WSHFT 0353 SLP113 CONS LTGICCC OHD TSB0353 RAB08 TS OHD MOV E P0016 T02060194 $",
+        "textDescription": "Thunderstorms and Rain",
         "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
@@ -69,27 +69,33 @@
                 "modifier": null,
                 "weather": "thunderstorms",
                 "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.699999999999999,
+            "value": 20.600000000000001,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 17.199999999999999,
+            "value": 19.399999999999999,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 130,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 14.76,
+            "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -98,17 +104,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101190,
+            "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101130,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -136,7 +142,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 75.594559301060002,
+            "value": 92.839980753296004,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,16 +152,23 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.899413492861111,
+            "value": null,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 550
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
+                },
+                "amount": "OVC"
             }
         ]
     }
