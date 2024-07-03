@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLFT/observations/2024-07-03T19:59:00+00:00",
+    "id": "https://api.weather.gov/stations/KLFT/observations/2024-07-03T20:36:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,44 +52,50 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLFT/observations/2024-07-03T19:59:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLFT/observations/2024-07-03T20:36:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 13
         },
         "station": "https://api.weather.gov/stations/KLFT",
-        "timestamp": "2024-07-03T19:59:00+00:00",
-        "rawMessage": "KLFT 031959Z 30005KT 10SM TS SCT027 BKN033 BKN090 28/26 A3000 RMK AO2 RAE56 TSB56 T02830256 PNO $",
-        "textDescription": "Thunderstorms",
+        "timestamp": "2024-07-03T20:36:00+00:00",
+        "rawMessage": "KLFT 032036Z 28011KT 3/4SM +TSRA FEW028 SCT041 BKN060 29/26 A3000 RMK AO2 RAE1956B29 TSB1956E17B29 T02890261 PNO $",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
         "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "thunderstorms",
-                "rawString": "TS"
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 28.300000000000001,
+            "value": 28.899999999999999,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.600000000000001,
+            "value": 26.100000000000001,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 300,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.3599999999999994,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 1210,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -136,7 +142,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 85.328059854800998,
+            "value": 84.884784338985,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,28 +152,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 33.817388799572775,
+            "value": 35.531704957506108,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 820
+                    "value": 850
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1250
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1010
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2740
+                    "value": 1830
                 },
                 "amount": "BKN"
             }
