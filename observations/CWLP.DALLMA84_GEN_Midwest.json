@@ -61,9 +61,16 @@
         "station": "https://api.weather.gov/stations/KSPI",
         "timestamp": "2024-08-22T13:52:00+00:00",
         "rawMessage": "KSPI 221352Z 12004KT 10SM -RA CLR 17/12 A3028 RMK AO2 RAB04 SLP254 T01720122 PNO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 17.199999999999999,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": null
+                },
+                "amount": "CLR"
+            }
+        ]
     }
 }
