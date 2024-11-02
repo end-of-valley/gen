@@ -61,9 +61,16 @@
         "station": "https://api.weather.gov/stations/KUTS",
         "timestamp": "2024-11-02T02:53:00+00:00",
         "rawMessage": "KUTS 020253Z AUTO 07006KT 10SM -RA OVC030 22/20 A3010 RMK AO2 SLP187 P0000 60000 T02220200 51009",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 22.199999999999999,
@@ -142,6 +149,14 @@
             "value": 22.756758203204999,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
