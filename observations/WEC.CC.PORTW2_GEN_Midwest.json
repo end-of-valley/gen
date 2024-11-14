@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KETB/observations/2024-11-14T12:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KETB/observations/2024-11-14T13:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KETB/observations/2024-11-14T12:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KETB/observations/2024-11-14T13:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 270
         },
         "station": "https://api.weather.gov/stations/KETB",
-        "timestamp": "2024-11-14T12:35:00+00:00",
-        "rawMessage": "KETB 141235Z AUTO 05005KT 3SM -RA OVC003 08/08 A2977 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2024-11-14T13:15:00+00:00",
+        "rawMessage": "KETB 141315Z AUTO 05005KT 3SM -DZ OVC003 08/08 A2977 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 8,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 90
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
