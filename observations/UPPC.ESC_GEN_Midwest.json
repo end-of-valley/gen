@@ -61,9 +61,16 @@
         "station": "https://api.weather.gov/stations/KESC",
         "timestamp": "2024-11-30T13:56:00+00:00",
         "rawMessage": "KESC 301356Z AUTO 28012KT 9SM -SN OVC060 M08/M11 A2995 RMK AO2 SLP156 P0000 T10781111 FZRANO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -7.7999999999999998,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }

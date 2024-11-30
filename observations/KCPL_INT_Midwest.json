@@ -61,8 +61,8 @@
         "station": "https://api.weather.gov/stations/KIXD",
         "timestamp": "2024-11-30T13:53:00+00:00",
         "rawMessage": "KIXD 301353Z 06007KT 10SM BKN070 OVC080 00/M06 A3018 RMK AO2 SNE03 SLP228 P0000 T00001056",
-        "textDescription": "",
-        "icon": null,
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
@@ -114,8 +114,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -142,6 +142,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
