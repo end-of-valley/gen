@@ -61,9 +61,16 @@
         "station": "https://api.weather.gov/stations/KDLL",
         "timestamp": "2024-11-30T09:40:00+00:00",
         "rawMessage": "KDLL 300940Z AUTO 28011KT 10SM -SN OVC019 M10/M13 A3013 RMK AO2 T11001135",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -10,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
