@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRGK/observations/2024-12-18T03:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KRGK/observations/2024-12-18T03:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRGK/observations/2024-12-18T03:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRGK/observations/2024-12-18T03:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 239
         },
         "station": "https://api.weather.gov/stations/KRGK",
-        "timestamp": "2024-12-18T03:15:00+00:00",
-        "rawMessage": "KRGK 180315Z AUTO 29003KT 10SM OVC046 M02/M05 A3029 RMK AO2",
-        "textDescription": "Cloudy",
+        "timestamp": "2024-12-18T03:55:00+00:00",
+        "rawMessage": "KRGK 180355Z AUTO 28003KT 10SM UP SCT048 OVC060 M02/M05 A3030 RMK AO2",
+        "textDescription": "Unknown Precipitation",
         "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "unknown",
+                "rawString": "UP"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -2,
@@ -76,7 +83,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 290,
+            "value": 280,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,7 +98,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102570,
+            "value": 102610,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1400
+                    "value": 1460
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
                 },
                 "amount": "OVC"
             }
