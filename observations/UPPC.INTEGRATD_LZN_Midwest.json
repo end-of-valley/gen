@@ -61,9 +61,16 @@
         "station": "https://api.weather.gov/stations/KSAW",
         "timestamp": "2025-01-04T04:58:00+00:00",
         "rawMessage": "KSAW 040458Z AUTO 32014KT 7SM -SN OVC024 M12/M15 A3012 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -12,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
