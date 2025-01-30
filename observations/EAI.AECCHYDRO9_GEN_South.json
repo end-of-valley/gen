@@ -1,4 +1,9 @@
-{
+{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
+            "title":"Application Unavailable",
+            "status":502,
+            "detail":"The application is temporarily unavailable. Please try again later.",
+            "instance":"urn:noaa:nws:api:request:11559a6",
+            "correlationId":"11559a6"}{
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
         {
@@ -42,31 +47,44 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRUE/observations/2025-01-30T14:32:00+00:00",
+    "id": "https://api.weather.gov/stations/KRUE/observations/2025-01-30T15:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
         "coordinates": [
-            -93.090000000000003,
-            35.259999999999998
+            -93.09,
+            35.26
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRUE/observations/2025-01-30T14:32:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRUE/observations/2025-01-30T15:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 123
         },
         "station": "https://api.weather.gov/stations/KRUE",
-        "timestamp": "2025-01-30T14:32:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-01-30T15:53:00+00:00",
+        "rawMessage": "KRUE 301553Z AUTO 08010G15KT 2SM +RA BR FEW017 BKN037 OVC060 12/10 A2986 RMK AO2 SLP106 T01220100 PNO $",
+        "textDescription": "Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 11.699999999999999,
+            "value": 12.2,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -76,12 +94,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 40,
+            "value": 80,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.3599999999999994,
+            "value": 18.36,
             "qualityControl": "V"
         },
         "windGust": {
@@ -96,12 +114,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101060,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -129,7 +147,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 89.317597936371001,
+            "value": 86.423356721086,
             "qualityControl": "V"
         },
         "windChill": {
@@ -142,6 +160,28 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 520
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1130
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
