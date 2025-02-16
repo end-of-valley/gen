@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/K2D5/observations/2025-02-16T01:15:00+00:00",
+    "id": "https://api.weather.gov/stations/K2D5/observations/2025-02-16T02:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/K2D5/observations/2025-02-16T01:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/K2D5/observations/2025-02-16T02:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 407
         },
         "station": "https://api.weather.gov/stations/K2D5",
-        "timestamp": "2025-02-16T01:15:00+00:00",
-        "rawMessage": "K2D5 160115Z AUTO 34015KT M18/ A3037 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-02-16T02:15:00+00:00",
+        "rawMessage": "K2D5 160215Z AUTO 34015KT -SN OVC009 M18/ A3037 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -18,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 270
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
