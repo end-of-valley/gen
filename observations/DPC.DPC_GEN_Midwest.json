@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLSE/observations/2025-03-05T09:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KLSE/observations/2025-03-05T11:32:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,44 +52,50 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLSE/observations/2025-03-05T09:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLSE/observations/2025-03-05T11:32:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 199
         },
         "station": "https://api.weather.gov/stations/KLSE",
-        "timestamp": "2025-03-05T09:53:00+00:00",
-        "rawMessage": "KLSE 050953Z AUTO 01015G21KT 10SM -RA OVC010 03/01 A2916 RMK AO2 CIG 009V015 SLP879 P0007 T00280006",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2025-03-05T11:32:00+00:00",
+        "rawMessage": "KLSE 051132Z AUTO 35019G27KT 1 3/4SM -SN BR BKN010 OVC016 01/M01 A2915 RMK AO2 PK WND 35027/1129 P0003 T00061011",
+        "textDescription": "Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
         "presentWeather": [
             {
                 "intensity": "light",
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "-RA"
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 2.8,
+            "value": 0.6,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.6,
+            "value": -1.1,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 10,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 27.72,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -98,17 +104,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 98750,
+            "value": 98710,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 98790,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 2820,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -136,12 +142,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 85.441682739594,
+            "value": 88.378831552409,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -2.579284171495,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -154,6 +160,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 300
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 490
                 },
                 "amount": "OVC"
             }
