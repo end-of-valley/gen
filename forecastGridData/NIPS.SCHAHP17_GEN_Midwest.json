@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -39,7 +60,7 @@
     "properties": {
         "@id": "https://api.weather.gov/gridpoints/LOT/99,44",
         "@type": "wx:Gridpoint",
-        "updateTime": "2025-03-15T13:42:14+00:00",
+        "updateTime": "2025-03-15T13:56:44+00:00",
         "validTimes": "2025-03-15T07:00:00+00:00/P7DT18H",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -4931,11 +4952,26 @@
                     ]
                 },
                 {
-                    "validTime": "2025-03-15T11:00:00+00:00/PT10H",
+                    "validTime": "2025-03-15T11:00:00+00:00/PT2H",
                     "value": [
                         {
                             "coverage": null,
                             "weather": null,
+                            "intensity": null,
+                            "visibility": {
+                                "unitCode": "wmoUnit:km",
+                                "value": null
+                            },
+                            "attributes": []
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2025-03-15T13:00:00+00:00/PT8H",
+                    "value": [
+                        {
+                            "coverage": "definite",
+                            "weather": "haze",
                             "intensity": null,
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
@@ -5260,7 +5296,7 @@
         "hazards": {
             "values": [
                 {
-                    "validTime": "2025-03-15T07:00:00+00:00/PT5H",
+                    "validTime": "2025-03-15T13:00:00+00:00/PT9H",
                     "value": [
                         {
                             "phenomenon": "WI",
@@ -5270,24 +5306,8 @@
                     ]
                 },
                 {
-                    "validTime": "2025-03-15T12:00:00+00:00/PT5H",
-                    "value": [
-                        {
-                            "phenomenon": "HW",
-                            "significance": "W",
-                            "event_number": null
-                        }
-                    ]
-                },
-                {
-                    "validTime": "2025-03-15T17:00:00+00:00/PT5H",
-                    "value": [
-                        {
-                            "phenomenon": "WI",
-                            "significance": "Y",
-                            "event_number": null
-                        }
-                    ]
+                    "validTime": "2025-03-15T22:00:00+00:00/PT2H",
+                    "value": []
                 }
             ]
         },
