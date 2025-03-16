@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -42,7 +63,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KESC/observations/2025-03-16T12:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KESC/observations/2025-03-16T15:20:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,36 +73,36 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KESC/observations/2025-03-16T12:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KESC/observations/2025-03-16T15:20:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 187
         },
         "station": "https://api.weather.gov/stations/KESC",
-        "timestamp": "2025-03-16T12:56:00+00:00",
-        "rawMessage": "KESC 161256Z AUTO 34014G20KT 10SM OVC024 M03/M07 A2952 RMK AO2 SNE10 SLP006 P0000 T10281067 FZRANO",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
+        "timestamp": "2025-03-16T15:20:00+00:00",
+        "rawMessage": "KESC 161520Z AUTO 33017G25KT 10SM FEW026 OVC044 M03/M09 A2957 RMK AO2 FZRANO",
+        "textDescription": "Cloudy and Windy",
+        "icon": "https://api.weather.gov/icons/land/day/wind_ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -2.8,
+            "value": -3,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -6.7,
+            "value": -9,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 340,
+            "value": 330,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 25.92,
+            "value": 31.68,
             "qualityControl": "V"
         },
         "windGust": {
@@ -96,8 +117,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100060,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -114,8 +135,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -129,12 +150,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 74.51040944929,
+            "value": 63.286827800672,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -9.60785695595611,
+            "value": -10.554896098993334,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,7 +167,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 730
+                    "value": 790
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1340
                 },
                 "amount": "OVC"
             }
