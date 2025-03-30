@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KETB/observations/2025-03-30T12:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KETB/observations/2025-03-30T13:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KETB/observations/2025-03-30T12:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KETB/observations/2025-03-30T13:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 270
         },
         "station": "https://api.weather.gov/stations/KETB",
-        "timestamp": "2025-03-30T12:55:00+00:00",
-        "rawMessage": "KETB 301255Z AUTO 05008KT 10SM SCT006 OVC010 03/03 A2967 RMK AO2 P0020",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-03-30T13:35:00+00:00",
+        "rawMessage": "KETB 301335Z AUTO 02007KT 2SM +DZ OVC005 03/03 A2967 RMK AO2",
+        "textDescription": "Heavy Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "+DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 3,
@@ -76,12 +83,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 50,
+            "value": 20,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.76,
+            "value": 12.96,
             "qualityControl": "V"
         },
         "windGust": {
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 10,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -134,7 +141,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -0.6596641628877777,
+            "value": -0.3373588165188889,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,14 +153,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 180
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 300
+                    "value": 150
                 },
                 "amount": "OVC"
             }
