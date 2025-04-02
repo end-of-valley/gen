@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFOD/observations/2025-04-02T02:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KFOD/observations/2025-04-02T04:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,31 +52,38 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFOD/observations/2025-04-02T02:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFOD/observations/2025-04-02T04:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 353
         },
         "station": "https://api.weather.gov/stations/KFOD",
-        "timestamp": "2025-04-02T02:56:00+00:00",
-        "rawMessage": "KFOD 020256Z AUTO 11020KT 10SM OVC050 04/01 A2960 RMK AO2 PK WND 10028/0202 SLP046 60000 T00440006 58018",
-        "textDescription": "Cloudy and Windy",
-        "icon": "https://api.weather.gov/icons/land/night/wind_ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-04-02T04:56:00+00:00",
+        "rawMessage": "KFOD 020456Z AUTO 10020G26KT 9SM VCTS -RA BKN048 OVC070 04/01 A2953 RMK AO2 PK WND 10027/0432 LTG DSNT SW AND W TSB37RAB13 SLP021 P0001 T00390011",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 4.4,
+            "value": 3.9,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.6,
+            "value": 1.1,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 110,
+            "value": 100,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,17 +98,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100240,
+            "value": 100000,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100460,
+            "value": 100210,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 14480,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,13 +121,13 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -129,12 +136,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 76.337559467926,
+            "value": 81.959440634687,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.286222484781111,
+            "value": -1.9500781275711112,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 1460
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
                 },
                 "amount": "OVC"
             }
