@@ -1,4 +1,9 @@
-{
+{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
+            "title":"Application Unavailable",
+            "status":502,
+            "detail":"The application is temporarily unavailable. Please try again later.",
+            "instance":"urn:noaa:nws:api:request:558f94dd",
+            "correlationId":"558f94dd"}{
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
         {
@@ -42,7 +47,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIND/observations/2025-04-07T11:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KIND/observations/2025-04-07T13:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,33 +57,26 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIND/observations/2025-04-07T11:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIND/observations/2025-04-07T13:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 246
         },
         "station": "https://api.weather.gov/stations/KIND",
-        "timestamp": "2025-04-07T11:54:00+00:00",
-        "rawMessage": "KIND 071154Z 22005KT 3SM R05L/1800VP6000FT BR BKN130 01/M01 A2989 RMK AO2 SLP129 VIS SW-NW 3/4 70016 T00061006 10022 20000 55002 $",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
-        "presentWeather": [
-            {
-                "intensity": null,
-                "modifier": null,
-                "weather": "fog_mist",
-                "rawString": "BR"
-            }
-        ],
+        "timestamp": "2025-04-07T13:54:00+00:00",
+        "rawMessage": "KIND 071354Z 22009KT 10SM FEW140 SCT160 05/02 A2989 RMK AO2 SLP125 T00500022 $",
+        "textDescription": "Partly Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+        "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.6,
+            "value": 5,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -0.6,
+            "value": 2.2,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -88,7 +86,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.36,
+            "value": 16.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -103,12 +101,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101290,
+            "value": 101250,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -136,12 +134,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 91.665578984399,
+            "value": 82.104692489025,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -2.411101194411111,
+            "value": 1.5340329458505555,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -153,9 +151,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3960
+                    "value": 4270
                 },
-                "amount": "BKN"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 4880
+                },
+                "amount": "SCT"
             }
         ]
     }
