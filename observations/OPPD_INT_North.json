@@ -1,0 +1,155 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/stations/KOMA/observations/2025-04-08T14:52:00+00:00",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -95.9,
+            41.3
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/stations/KOMA/observations/2025-04-08T14:52:00+00:00",
+        "@type": "wx:ObservationStation",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 299
+        },
+        "station": "https://api.weather.gov/stations/KOMA",
+        "timestamp": "2025-04-08T14:52:00+00:00",
+        "rawMessage": "KOMA 081452Z 16013KT 10SM CLR 05/M11 A3015 RMK AO2 SLP217 T00501106 58003",
+        "textDescription": "Clear",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
+        "presentWeather": [],
+        "temperature": {
+            "unitCode": "wmoUnit:degC",
+            "value": 5,
+            "qualityControl": "V"
+        },
+        "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": -10.6,
+            "qualityControl": "V"
+        },
+        "windDirection": {
+            "unitCode": "wmoUnit:degree_(angle)",
+            "value": 160,
+            "qualityControl": "V"
+        },
+        "windSpeed": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 24.12,
+            "qualityControl": "V"
+        },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "barometricPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": 102100,
+            "qualityControl": "V"
+        },
+        "seaLevelPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": 102170,
+            "qualityControl": "V"
+        },
+        "visibility": {
+            "unitCode": "wmoUnit:m",
+            "value": 16090,
+            "qualityControl": "C"
+        },
+        "maxTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "minTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 31.37868812063,
+            "qualityControl": "V"
+        },
+        "windChill": {
+            "unitCode": "wmoUnit:degC",
+            "value": 0.6224018324572222,
+            "qualityControl": "V"
+        },
+        "heatIndex": {
+            "unitCode": "wmoUnit:degC",
+            "value": null,
+            "qualityControl": "V"
+        },
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": null
+                },
+                "amount": "CLR"
+            }
+        ]
+    }
+}
