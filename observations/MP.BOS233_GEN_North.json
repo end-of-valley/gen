@@ -1,30 +1,155 @@
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;c91c2117&#46;1744551895&#46;5d2e4658
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;c91c2117&#46;1744551895&#46;5d2e4658</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;c91c2117&#46;1744551896&#46;5d2e5c4b
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;c91c2117&#46;1744551896&#46;5d2e5c4b</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;d21c2117&#46;1744551899&#46;2bdbc031
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;d21c2117&#46;1744551899&#46;2bdbc031</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;c91c2117&#46;1744551903&#46;5d2eec6c
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;c91c2117&#46;1744551903&#46;5d2eec6c</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;d21c2117&#46;1744551911&#46;2bdda7a5
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;d21c2117&#46;1744551911&#46;2bdda7a5</P>
-</BODY></HTML>
-<HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>
-An error occurred while processing your request.<p>
-Reference&#32;&#35;102&#46;c91c2117&#46;1744551927&#46;5d30ed94
-<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;102&#46;c91c2117&#46;1744551927&#46;5d30ed94</P>
-</BODY></HTML>
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/stations/KGPZ/observations/2025-04-13T09:56:00+00:00",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -93.52,
+            47.22
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/stations/KGPZ/observations/2025-04-13T09:56:00+00:00",
+        "@type": "wx:ObservationStation",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 413
+        },
+        "station": "https://api.weather.gov/stations/KGPZ",
+        "timestamp": "2025-04-13T09:56:00+00:00",
+        "rawMessage": "KGPZ 130956Z AUTO 12004KT 10SM FEW090 08/02 A2973 RMK AO2 SLP074 T00780017",
+        "textDescription": "Mostly Clear",
+        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+        "presentWeather": [],
+        "temperature": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.8,
+            "qualityControl": "V"
+        },
+        "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 1.7,
+            "qualityControl": "V"
+        },
+        "windDirection": {
+            "unitCode": "wmoUnit:degree_(angle)",
+            "value": 120,
+            "qualityControl": "V"
+        },
+        "windSpeed": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 7.56,
+            "qualityControl": "V"
+        },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "barometricPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": 100680,
+            "qualityControl": "V"
+        },
+        "seaLevelPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": 100740,
+            "qualityControl": "V"
+        },
+        "visibility": {
+            "unitCode": "wmoUnit:m",
+            "value": 16090,
+            "qualityControl": "C"
+        },
+        "maxTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "minTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 65.335628646729,
+            "qualityControl": "V"
+        },
+        "windChill": {
+            "unitCode": "wmoUnit:degC",
+            "value": 6.540680150557222,
+            "qualityControl": "V"
+        },
+        "heatIndex": {
+            "unitCode": "wmoUnit:degC",
+            "value": null,
+            "qualityControl": "V"
+        },
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "FEW"
+            }
+        ]
+    }
+}
