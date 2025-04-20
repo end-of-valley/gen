@@ -39,7 +39,7 @@
     "properties": {
         "@id": "https://api.weather.gov/gridpoints/LSX/73,71",
         "@type": "wx:Gridpoint",
-        "updateTime": "2025-04-20T20:21:58+00:00",
+        "updateTime": "2025-04-20T20:52:09+00:00",
         "validTimes": "2025-04-20T14:00:00+00:00/P7DT11H",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -4691,13 +4691,16 @@
                         {
                             "coverage": "scattered",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
                             "attributes": [
-                                "heavy_rain"
+                                "heavy_rain",
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
                             ]
                         },
                         {
@@ -4718,12 +4721,16 @@
                         {
                             "coverage": "definite",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
-                            "attributes": []
+                            "attributes": [
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
+                            ]
                         },
                         {
                             "coverage": "definite",
@@ -4743,13 +4750,16 @@
                         {
                             "coverage": "scattered",
                             "weather": "thunderstorms",
-                            "intensity": null,
+                            "intensity": "heavy",
                             "visibility": {
                                 "unitCode": "wmoUnit:km",
                                 "value": null
                             },
                             "attributes": [
-                                "heavy_rain"
+                                "heavy_rain",
+                                "damaging_wind",
+                                "large_hail",
+                                "TOR"
                             ]
                         },
                         {
@@ -5074,7 +5084,32 @@
         "hazards": {
             "values": [
                 {
-                    "validTime": "2025-04-20T14:00:00+00:00/PT16H",
+                    "validTime": "2025-04-20T14:00:00+00:00/PT6H",
+                    "value": [
+                        {
+                            "phenomenon": "FA",
+                            "significance": "A",
+                            "event_number": null
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2025-04-20T20:00:00+00:00/PT8H",
+                    "value": [
+                        {
+                            "phenomenon": "FA",
+                            "significance": "A",
+                            "event_number": null
+                        },
+                        {
+                            "phenomenon": "TO",
+                            "significance": "A",
+                            "event_number": 155
+                        }
+                    ]
+                },
+                {
+                    "validTime": "2025-04-21T04:00:00+00:00/PT2H",
                     "value": [
                         {
                             "phenomenon": "FA",
@@ -5110,19 +5145,19 @@
                 },
                 {
                     "validTime": "2025-04-20T21:00:00+00:00/PT1H",
-                    "value": 10
+                    "value": 9
                 },
                 {
                     "validTime": "2025-04-20T22:00:00+00:00/PT1H",
-                    "value": 12
+                    "value": 10
                 },
                 {
                     "validTime": "2025-04-20T23:00:00+00:00/PT1H",
-                    "value": 48
+                    "value": 37
                 },
                 {
                     "validTime": "2025-04-21T00:00:00+00:00/PT1H",
-                    "value": 83
+                    "value": 97
                 },
                 {
                     "validTime": "2025-04-21T01:00:00+00:00/PT1H",
@@ -5130,19 +5165,19 @@
                 },
                 {
                     "validTime": "2025-04-21T02:00:00+00:00/PT1H",
-                    "value": 95
+                    "value": 76
                 },
                 {
                     "validTime": "2025-04-21T03:00:00+00:00/PT1H",
-                    "value": 51
+                    "value": 43
                 },
                 {
                     "validTime": "2025-04-21T04:00:00+00:00/PT1H",
-                    "value": 11
+                    "value": 8
                 },
                 {
                     "validTime": "2025-04-21T05:00:00+00:00/PT1H",
-                    "value": 8
+                    "value": 7
                 },
                 {
                     "validTime": "2025-04-21T06:00:00+00:00/PT2H",
@@ -6438,7 +6473,7 @@
                 },
                 {
                     "validTime": "2025-04-20T22:00:00+00:00/PT1H",
-                    "value": 12
+                    "value": 10
                 },
                 {
                     "validTime": "2025-04-20T23:00:00+00:00/PT1H",
@@ -6454,19 +6489,19 @@
                 },
                 {
                     "validTime": "2025-04-21T02:00:00+00:00/PT1H",
-                    "value": 95
+                    "value": 76
                 },
                 {
                     "validTime": "2025-04-21T03:00:00+00:00/PT1H",
-                    "value": 51
+                    "value": 43
                 },
                 {
                     "validTime": "2025-04-21T04:00:00+00:00/PT1H",
-                    "value": 11
+                    "value": 8
                 },
                 {
                     "validTime": "2025-04-21T05:00:00+00:00/PT1H",
-                    "value": 8
+                    "value": 7
                 },
                 {
                     "validTime": "2025-04-21T06:00:00+00:00/PT1H",
