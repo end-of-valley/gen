@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJLN/observations/2025-04-20T04:44:00+00:00",
+    "id": "https://api.weather.gov/stations/KJLN/observations/2025-04-20T05:40:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJLN/observations/2025-04-20T04:44:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJLN/observations/2025-04-20T05:40:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 299
         },
         "station": "https://api.weather.gov/stations/KJLN",
-        "timestamp": "2025-04-20T04:44:00+00:00",
-        "rawMessage": "KJLN 200444Z AUTO 36009G21KT 2 1/2SM -RA BR OVC002 10/09 A3005 RMK AO2 LTG DSNT SW P0005 T01000094 $",
-        "textDescription": "Light Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2025-04-20T05:40:00+00:00",
+        "rawMessage": "KJLN 200540Z AUTO 03011G20KT 2 1/2SM +TSRA BR OVC003 10/09 A3003 RMK AO2 LTG DSNT ALQDS TSE37B40 PRESFR P0017 T01000094 $",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
@@ -89,12 +95,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 360,
+            "value": 30,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 16.56,
+            "value": 20.52,
             "qualityControl": "V"
         },
         "windGust": {
@@ -104,7 +110,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101760,
+            "value": 101690,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -159,7 +165,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 60
+                    "value": 90
                 },
                 "amount": "OVC"
             }
