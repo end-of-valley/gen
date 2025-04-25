@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSUS/observations/2025-04-25T05:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KSUS/observations/2025-04-25T07:02:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,43 +52,49 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSUS/observations/2025-04-25T05:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSUS/observations/2025-04-25T07:02:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 141
         },
         "station": "https://api.weather.gov/stations/KSUS",
-        "timestamp": "2025-04-25T05:54:00+00:00",
-        "rawMessage": "KSUS 250554Z AUTO 16006KT 8SM -RA FEW070 OVC100 19/17 A2998 RMK AO2 LTG DSNT W SLP145 P0002 60003 T01940172 10233 20189 402780111 58004",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2025-04-25T07:02:00+00:00",
+        "rawMessage": "KSUS 250702Z AUTO 27003KT 8SM -TSRA FEW024 SCT034 OVC055 18/17 A2997 RMK AO2 LTG DSNT NE P0000 T01780167",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 19.4,
+            "value": 17.8,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 17.2,
+            "value": 16.7,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 160,
+            "value": 270,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 11.16,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
@@ -98,13 +104,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101520,
+            "value": 101490,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101450,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -131,12 +137,12 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 87.111352806447,
+            "value": 93.281507422058,
             "qualityControl": "V"
         },
         "windChill": {
@@ -153,14 +159,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2130
+                    "value": 730
                 },
                 "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 1040
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
                 },
                 "amount": "OVC"
             }
