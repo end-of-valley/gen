@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJAS/observations/2025-05-15T03:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KJAS/observations/2025-05-15T04:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJAS/observations/2025-05-15T03:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJAS/observations/2025-05-15T04:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 65
         },
         "station": "https://api.weather.gov/stations/KJAS",
-        "timestamp": "2025-05-15T03:35:00+00:00",
-        "rawMessage": "KJAS 150335Z AUTO VRB05G11KT 1 1/2SM BR 23/23 A2974 RMK AO2 VIS 1/4V5",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2025-05-15T04:55:00+00:00",
+        "rawMessage": "KJAS 150455Z AUTO 17004KT 1 1/4SM -RA BR FEW011 OVC065 23/23 A2974 RMK AO2 VIS 3/4V2",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -83,12 +89,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 170,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.36,
+            "value": 7.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 2410,
+            "value": 2010,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -149,6 +155,21 @@
             "value": 23.966666666666665,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 340
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1980
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
