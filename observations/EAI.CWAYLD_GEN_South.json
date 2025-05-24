@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLIT/observations/2025-05-24T15:39:00+00:00",
+    "id": "https://api.weather.gov/stations/KLIT/observations/2025-05-24T16:25:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLIT/observations/2025-05-24T15:39:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLIT/observations/2025-05-24T16:25:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,37 +61,43 @@
         "station": "https://api.weather.gov/stations/KLIT",
         "stationId": "KLIT",
         "stationName": "Little Rock, Adams Field",
-        "timestamp": "2025-05-24T15:39:00+00:00",
-        "rawMessage": "KLIT 241539Z 11011KT 10SM -RA FEW007 OVC039 19/ A3009 RMK AO2 TSE02 P0002 T0189 $",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2025-05-24T16:25:00+00:00",
+        "rawMessage": "KLIT 241625Z 04009KT 7SM +TSRA BKN007 BKN028CB OVC038 18/17 A3014 RMK AO2 PK WND 34036/1609 TSB11 TSB11 OHD MOV E ONCL LTGICCCCG OHD MOVE PK WND 34036/1609 PRESRR P0038 T01830172 $",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 19,
+            "value": 18.3,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 17.2,
+            "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 40,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 16.56,
+            "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -100,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101900,
+            "value": 102070,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 11270,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -123,7 +129,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 10,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -138,7 +144,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": null,
+            "value": 93.306363604193,
             "qualityControl": "V"
         },
         "windChill": {
@@ -157,12 +163,19 @@
                     "unitCode": "wmoUnit:m",
                     "value": 210
                 },
-                "amount": "FEW"
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1190
+                    "value": 850
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1160
                 },
                 "amount": "OVC"
             }
