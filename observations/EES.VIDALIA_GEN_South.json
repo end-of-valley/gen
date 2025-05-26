@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHEZ/observations/2025-05-26T17:32:00+00:00",
+    "id": "https://api.weather.gov/stations/KHEZ/observations/2025-05-26T17:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHEZ/observations/2025-05-26T17:32:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHEZ/observations/2025-05-26T17:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,30 +61,43 @@
         "station": "https://api.weather.gov/stations/KHEZ",
         "stationId": "KHEZ",
         "stationName": "Natchez, Hardy-Anders Field Natchez-Adams County Airport",
-        "timestamp": "2025-05-26T17:32:00+00:00",
-        "rawMessage": "KHEZ 261732Z AUTO 16006KT 10SM BKN015 27/23 A2997 RMK AO2 LTG DSNT SW-NW",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-05-26T17:54:00+00:00",
+        "rawMessage": "KHEZ 261754Z AUTO 27022G31KT 1 3/4SM +TSRA FEW007 BKN015 BKN055 25/22 A3005 RMK AO2 PK WND 29031/1751 VIS 3/4V5 LTG DSNT ALQDS TSB43RAB48 PRESRR P0029",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 27,
+            "value": 25,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 23,
+            "value": 22,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 160,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 11.16,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -93,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101490,
+            "value": 101760,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 2820,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +129,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 10,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +144,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 78.780719493487,
+            "value": 83.452626665984,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,14 +154,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 29.626439648343332,
+            "value": 25.734596362945,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 210
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 460
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
                 },
                 "amount": "BKN"
             }
