@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPBF/observations/2025-05-26T12:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KPBF/observations/2025-05-26T14:10:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPBF/observations/2025-05-26T12:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPBF/observations/2025-05-26T14:10:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,16 +61,22 @@
         "station": "https://api.weather.gov/stations/KPBF",
         "stationId": "KPBF",
         "stationName": "Pine Bluff, Grider Field Airport",
-        "timestamp": "2025-05-26T12:53:00+00:00",
-        "rawMessage": "KPBF 261253Z AUTO 04007KT 8SM -RA OVC008 21/19 A3001 RMK AO2 RAE00B40 SLP160 P0000 T02060189",
-        "textDescription": "Light Rain",
+        "timestamp": "2025-05-26T14:10:00+00:00",
+        "rawMessage": "KPBF 261410Z AUTO 05004KT 4SM RA BR BKN008 OVC013 21/19 A3004 RMK AO2 CIG 005V012 PRESRR P0005 T02060189",
+        "textDescription": "Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -85,12 +91,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 40,
+            "value": 50,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 12.96,
+            "value": 7.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -100,17 +106,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101630,
+            "value": 101730,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101600,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 12870,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -156,6 +162,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 240
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
                 },
                 "amount": "OVC"
             }
