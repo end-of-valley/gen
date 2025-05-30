@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KBMG/observations/2025-05-30T02:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KBMG/observations/2025-05-30T03:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KBMG/observations/2025-05-30T02:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KBMG/observations/2025-05-30T03:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KBMG",
         "stationId": "KBMG",
         "stationName": "Bloomington, Monroe County Airport",
-        "timestamp": "2025-05-30T02:53:00+00:00",
-        "rawMessage": "KBMG 300253Z AUTO 00000KT 10SM OVC085 16/15 A2998 RMK AO2 SLP149 T01610150 55003",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-05-30T03:53:00+00:00",
+        "rawMessage": "KBMG 300353Z AUTO 00000KT 10SM -RA FEW075 BKN100 17/14 A2997 RMK AO2 RAB29 SLP143 P0000 T01670144",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 16.1,
+            "value": 16.7,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 15,
+            "value": 14.4,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,12 +100,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101520,
+            "value": 101490,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101490,
+            "value": 101430,
             "qualityControl": "V"
         },
         "visibility": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 93.195965844652,
+            "value": 86.300074459093,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2590
+                    "value": 2290
                 },
-                "amount": "OVC"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
+                },
+                "amount": "BKN"
             }
         ]
     }
