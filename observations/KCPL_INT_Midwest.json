@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIXD/observations/2025-06-03T12:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KIXD/observations/2025-06-03T13:24:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIXD/observations/2025-06-03T12:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIXD/observations/2025-06-03T13:24:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,16 +61,22 @@
         "station": "https://api.weather.gov/stations/KIXD",
         "stationId": "KIXD",
         "stationName": "Olathe, New Century Aircenter",
-        "timestamp": "2025-06-03T12:53:00+00:00",
-        "rawMessage": "KIXD 031253Z 19008KT 6SM -RA BR BKN110 20/19 A2986 RMK AO2 LTG DSNT S-W RAB38 PRESRR SLP098 P0002 T02000194",
-        "textDescription": "Light Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2025-06-03T13:24:00+00:00",
+        "rawMessage": "KIXD 031324Z 24010KT 1 3/4SM +TSRA BR SCT011 BKN018 OVC070 20/19 A2989 RMK AO2 LTG DSNT SE-SW TSB24 P0009 T02000194",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
@@ -91,12 +97,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 190,
+            "value": 240,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.76,
+            "value": 18.36,
             "qualityControl": "V"
         },
         "windGust": {
@@ -106,17 +112,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101120,
+            "value": 101220,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100980,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9660,
+            "value": 2820,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -161,9 +167,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 340
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 550
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "OVC"
             }
         ]
     }
