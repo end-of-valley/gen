@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KBMI/observations/2025-06-04T11:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KBMI/observations/2025-06-04T12:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KBMI/observations/2025-06-04T11:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KBMI/observations/2025-06-04T12:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KBMI",
         "stationId": "KBMI",
         "stationName": "Bloomington/Normal, Central Illinois Regional Airport at Bloomington-Normal",
-        "timestamp": "2025-06-04T11:56:00+00:00",
-        "rawMessage": "KBMI 041156Z 23011KT 10SM OVC004 20/20 A2997 RMK AO2 RAE37 SLP138 P0004 60009 70009 T02000200 10211 20194 51018",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-04T12:56:00+00:00",
+        "rawMessage": "KBMI 041256Z 23010KT 10SM -RA BKN008 BKN013 OVC019 20/20 A2999 RMK AO2 RAB54 SLP146 P0000 T02000200",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 20,
@@ -83,7 +90,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 20.52,
+            "value": 18.36,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,12 +100,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101490,
+            "value": 101560,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101380,
+            "value": 101460,
             "qualityControl": "V"
         },
         "visibility": {
@@ -126,8 +133,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -148,7 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 120
+                    "value": 240
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
                 },
                 "amount": "OVC"
             }
