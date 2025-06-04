@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMLC/observations/2025-06-04T08:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KMLC/observations/2025-06-04T09:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMLC/observations/2025-06-04T08:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMLC/observations/2025-06-04T09:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KMLC",
         "stationId": "KMLC",
         "stationName": "McAlester, McAlester Regional Airport",
-        "timestamp": "2025-06-04T08:53:00+00:00",
-        "rawMessage": "KMLC 040853Z AUTO 23003KT 10SM FEW006 OVC012 22/21 A2988 RMK AO2 SLP109 T02220211 53014",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-06-04T09:53:00+00:00",
+        "rawMessage": "KMLC 040953Z AUTO 00000KT 10SM -RA BKN010 OVC016 22/21 A2988 RMK AO2 RAB0859E11B49 CIG 008V013 SLP109 P0001 T02170211",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.2,
+            "value": 21.7,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,12 +85,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 230,
+            "value": 0,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 5.4,
+            "value": 0,
             "qualityControl": "V"
         },
         "windGust": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 93.495649669694,
+            "value": 96.391324649724,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,9 +148,24 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.916830852486665,
+            "value": 22.442440143631668,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 300
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 490
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
