@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSBM/observations/2025-06-04T09:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KSBM/observations/2025-06-04T10:40:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSBM/observations/2025-06-04T09:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSBM/observations/2025-06-04T10:40:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,17 @@
         "station": "https://api.weather.gov/stations/KSBM",
         "stationId": "KSBM",
         "stationName": "Sheboygan County Memorial Airport",
-        "timestamp": "2025-06-04T09:53:00+00:00",
-        "rawMessage": "KSBM 040953Z AUTO 34005KT 3SM BR BKN015 OVC075 15/14 A2991 RMK AO2 RAE41 SLP126 P0002 T01500144",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2025-06-04T10:40:00+00:00",
+        "rawMessage": "KSBM 041040Z AUTO 00000KT 3SM -RA BR SCT008 BKN014 OVC075 15/14 A2993 RMK AO2 RAB10 P0001 T01500144",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -85,12 +91,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 340,
+            "value": 0,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.36,
+            "value": 0,
             "qualityControl": "V"
         },
         "windGust": {
@@ -100,13 +106,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101290,
+            "value": 101360,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101260,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -155,7 +161,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 460
+                    "value": 240
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 430
                 },
                 "amount": "BKN"
             },
