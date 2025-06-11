@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KREG/observations/2025-06-10T22:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KREG/observations/2025-06-11T01:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KREG/observations/2025-06-10T22:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KREG/observations/2025-06-11T01:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,37 +61,48 @@
         "station": "https://api.weather.gov/stations/KREG",
         "stationId": "KREG",
         "stationName": "Louisiana Regional Airport",
-        "timestamp": "2025-06-10T22:35:00+00:00",
+        "timestamp": "2025-06-11T01:15:00+00:00",
         "rawMessage": "",
-        "textDescription": "Thunderstorms",
-        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "textDescription": "Heavy  and Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": null,
+                "rawString": "+VC"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "thunderstorms",
-                "rawString": "VCTS",
-                "inVicinity": true
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.2,
+            "value": 23.3,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 20.5,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 60,
+            "value": 150,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.416,
+            "value": 12.96,
             "qualityControl": "V"
         },
         "windGust": {
@@ -101,7 +112,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101490.06,
+            "value": 102065.75,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -111,7 +122,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 3218.69,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -124,8 +135,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -139,7 +150,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 75.216729968725,
+            "value": null,
             "qualityControl": "V"
         },
         "windChill": {
@@ -149,16 +160,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.739547949183333,
+            "value": null,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 152.4
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 548.64
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1249.68
+                },
+                "amount": "OVC"
             }
         ]
     }
