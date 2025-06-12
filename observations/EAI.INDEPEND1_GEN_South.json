@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KM19/observations/2025-06-12T10:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KM19/observations/2025-06-12T12:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KM19/observations/2025-06-12T10:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KM19/observations/2025-06-12T12:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KM19",
         "stationId": "KM19",
         "stationName": "Newport, Newport Municipal Airport",
-        "timestamp": "2025-06-12T10:56:00+00:00",
-        "rawMessage": "KM19 121056Z AUTO 08004KT 10SM BKN060 22/19 A3001 RMK AO2 SLP173 T02170189 $",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-12T12:56:00+00:00",
+        "rawMessage": "KM19 121256Z AUTO 14004KT 10SM -RA FEW070 SCT090 BKN120 23/19 A3003 RMK AO2 RAB53 SLP181 P0000 T02280189 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.7,
+            "value": 22.8,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,7 +85,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 80,
+            "value": 140,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,12 +100,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101630,
+            "value": 101690,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101730,
+            "value": 101810,
             "qualityControl": "V"
         },
         "visibility": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 84.117198153574,
+            "value": 78.669823181656,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,14 +148,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.12194906289889,
+            "value": 23.189712049743335,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1830
+                    "value": 2130
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3660
                 },
                 "amount": "BKN"
             }
