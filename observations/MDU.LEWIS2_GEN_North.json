@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSDY/observations/2025-06-16T07:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KSDY/observations/2025-06-16T08:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSDY/observations/2025-06-16T07:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSDY/observations/2025-06-16T08:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KSDY",
         "stationId": "KSDY",
         "stationName": "Sidney-Richland",
-        "timestamp": "2025-06-16T07:56:00+00:00",
-        "rawMessage": "KSDY 160756Z AUTO 00000KT 10SM CLR 16/15 A2996 RMK AO2 SLP141 T01560150",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-16T08:56:00+00:00",
+        "rawMessage": "KSDY 160856Z AUTO 27004KT 10SM -RA FEW095 SCT110 16/16 A2990 RMK AO2 RAB32 SLP121 P0000 60005 T01560156 58019",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 15.6,
@@ -73,17 +80,17 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 15,
+            "value": 15.6,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
+            "value": 270,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
+            "value": 7.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -98,7 +105,7 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101410,
+            "value": 101210,
             "qualityControl": "V"
         },
         "visibility": {
@@ -116,13 +123,13 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 96.222192128596,
+            "value": 100,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 2900
                 },
-                "amount": "CLR"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "SCT"
             }
         ]
     }
