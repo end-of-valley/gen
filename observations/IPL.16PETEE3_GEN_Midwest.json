@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHNB/observations/2025-06-17T05:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHNB/observations/2025-06-17T07:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHNB/observations/2025-06-17T05:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHNB/observations/2025-06-17T07:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,24 +61,31 @@
         "station": "https://api.weather.gov/stations/KHNB",
         "stationId": "KHNB",
         "stationName": "Huntingburg",
-        "timestamp": "2025-06-17T05:56:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-06-17T07:56:00+00:00",
+        "rawMessage": "KHNB 170756Z AUTO 20004KT 10SM -RA BKN005 OVC030 22/22 A2991 RMK AO2 RAB38 CIG 004V008 SLP125 P0000 T02220222",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.8,
+            "value": 22.2,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.8,
+            "value": 22.2,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 180,
+            "value": 200,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101320,
+            "value": 101290,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 14480,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -126,8 +133,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -141,9 +148,24 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.746666666666666,
+            "value": 23.086666666666666,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 150
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
