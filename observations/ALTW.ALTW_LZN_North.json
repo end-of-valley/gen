@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIFA/observations/2025-06-18T02:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KIFA/observations/2025-06-18T04:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIFA/observations/2025-06-18T02:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIFA/observations/2025-06-18T04:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,24 +61,31 @@
         "station": "https://api.weather.gov/stations/KIFA",
         "stationId": "KIFA",
         "stationName": "Iowa Falls Municipal Airport",
-        "timestamp": "2025-06-18T02:35:00+00:00",
-        "rawMessage": "KIFA 180235Z AUTO 13005KT 10SM OVC100 21/17 A2984 RMK AO2 T02050172",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-18T04:35:00+00:00",
+        "rawMessage": "KIFA 180435Z AUTO 12005KT 10SM -RA SCT090 BKN120 20/18 A2983 RMK AO2 P0001 T02000177",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 20.5,
+            "value": 20,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 17.2,
+            "value": 17.7,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 130,
+            "value": 120,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101050,
+            "value": 101020,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 81.374310892506,
+            "value": 86.619096758492,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 2740
                 },
-                "amount": "OVC"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3660
+                },
+                "amount": "BKN"
             }
         ]
     }
