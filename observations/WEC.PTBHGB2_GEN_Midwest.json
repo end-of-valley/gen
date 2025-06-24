@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMTW/observations/2025-06-24T04:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KMTW/observations/2025-06-24T06:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMTW/observations/2025-06-24T04:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMTW/observations/2025-06-24T06:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KMTW",
         "stationId": "KMTW",
         "stationName": "Manitowoc, Manitowoc County Airport",
-        "timestamp": "2025-06-24T04:56:00+00:00",
-        "rawMessage": "KMTW 240456Z AUTO 12003KT 10SM CLR 21/21 A3009 RMK AO2 RAE49 SLP183 P0000 T02110206 403280211",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-24T06:56:00+00:00",
+        "rawMessage": "KMTW 240656Z AUTO 34003KT 10SM -RA SCT021 SCT120 21/21 A3012 RMK AO2 RAB28 PRESFR SLP195 P0000 T02110206 TSNO",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 21.1,
@@ -78,7 +85,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 120,
+            "value": 340,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,12 +100,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101900,
+            "value": 102000,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101830,
+            "value": 101950,
             "qualityControl": "V"
         },
         "visibility": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 640
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3660
+                },
+                "amount": "SCT"
             }
         ]
     }
