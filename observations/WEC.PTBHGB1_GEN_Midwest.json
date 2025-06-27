@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMTW/observations/2025-06-27T01:19:00+00:00",
+    "id": "https://api.weather.gov/stations/KMTW/observations/2025-06-27T03:20:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMTW/observations/2025-06-27T01:19:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMTW/observations/2025-06-27T03:20:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,29 +61,36 @@
         "station": "https://api.weather.gov/stations/KMTW",
         "stationId": "KMTW",
         "stationName": "Manitowoc, Manitowoc County Airport",
-        "timestamp": "2025-06-27T01:19:00+00:00",
-        "rawMessage": "KMTW 270119Z AUTO 00000KT 10SM SCT017 SCT060 16/14 A2993 RMK AO2 LTG DSNT N AND W",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-27T03:20:00+00:00",
+        "rawMessage": "KMTW 270320Z AUTO 33003KT 10SM VCTS -RA FEW018 SCT050 BKN060 17/15 A2992 RMK AO2 LTG DSNT SW-N TSB14RAB20 P0000",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 16,
+            "value": 17,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 14,
+            "value": 15,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
+            "value": 330,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101360,
+            "value": 101320,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 87.926615024549,
+            "value": 88.013838936444,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 520
+                    "value": 550
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
                 },
                 "amount": "SCT"
             },
@@ -157,7 +171,7 @@
                     "unitCode": "wmoUnit:m",
                     "value": 1830
                 },
-                "amount": "SCT"
+                "amount": "BKN"
             }
         ]
     }
