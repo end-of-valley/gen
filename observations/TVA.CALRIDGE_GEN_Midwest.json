@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMKL/observations/2025-06-29T13:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KMKL/observations/2025-06-29T14:38:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMKL/observations/2025-06-29T13:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMKL/observations/2025-06-29T14:38:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,24 @@
         "station": "https://api.weather.gov/stations/KMKL",
         "stationId": "KMKL",
         "stationName": "Jackson, McKellar-Sipes Regional Airport",
-        "timestamp": "2025-06-29T13:53:00+00:00",
-        "rawMessage": "KMKL 291353Z 24006KT 10SM VCTS BKN044 BKN050 25/22 A3009 RMK AO1 LTG DSNT SE AND W AND NW RAB13E29 SLP185 P0000 T02500222",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-29T14:38:00+00:00",
+        "rawMessage": "KMKL 291438Z 09003KT 10SM -TSRA FEW015 BKN060 OVC070 25/22 A3008 RMK AO1 LTG DSNT N RAB38 TSB21 P0000 T02500222",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 25,
@@ -78,12 +91,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 240,
+            "value": 90,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 11.16,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,13 +106,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101900,
+            "value": 101860,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101850,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -148,16 +161,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1340
+                    "value": 460
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 2130
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
