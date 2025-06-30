@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDCY/observations/2025-06-30T06:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KDCY/observations/2025-06-30T07:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDCY/observations/2025-06-30T06:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDCY/observations/2025-06-30T07:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KDCY",
         "stationId": "KDCY",
         "stationName": "Daviess County Airport",
-        "timestamp": "2025-06-30T06:35:00+00:00",
-        "rawMessage": "KDCY 300635Z AUTO 00000KT 10SM BKN028 BKN032 BKN040 24/24 A2992 RMK AO2 P0012 T02400235",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-06-30T07:55:00+00:00",
+        "rawMessage": "KDCY 300755Z AUTO 00000KT 4SM +RA SCT005 BKN010 OVC025 23/23 A2992 RMK AO2 P0014 T02320230",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24,
+            "value": 23.2,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.5,
+            "value": 23,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 97.035712260181,
+            "value": 98.797755440538,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,30 +148,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.989265820127223,
+            "value": 24.155274725391667,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 150
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 300
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 980
+                    "value": 760
                 },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1220
-                },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
