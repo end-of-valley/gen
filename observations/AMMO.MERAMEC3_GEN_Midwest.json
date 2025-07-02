@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Error</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>An error occurred.</h1>
-<p>Sorry, the page you are looking for is currently unavailable.<br/>
-Please try again later.</p>
-<p>If you are the system administrator of this resource then you should check
-the error log for details.</p>
-<p><em>Faithfully yours, nginx.</em></p>
-</body>
-</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -63,7 +42,7 @@ the error log for details.</p>
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCPS/observations/2025-07-02T20:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KCPS/observations/2025-07-02T21:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -73,7 +52,7 @@ the error log for details.</p>
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCPS/observations/2025-07-02T20:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCPS/observations/2025-07-02T21:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -82,10 +61,10 @@ the error log for details.</p>
         "station": "https://api.weather.gov/stations/KCPS",
         "stationId": "KCPS",
         "stationName": "St. Louis Downtown Airport",
-        "timestamp": "2025-07-02T20:53:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
+        "timestamp": "2025-07-02T21:53:00+00:00",
+        "rawMessage": "KCPS 022153Z AUTO 22006KT 10SM FEW060 32/16 A2998 RMK AO2 SLP150 T03220161",
+        "textDescription": "Mostly Clear",
+        "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
@@ -94,17 +73,17 @@ the error log for details.</p>
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 16.7,
+            "value": 16.1,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 220,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.36,
+            "value": 11.16,
             "qualityControl": "V"
         },
         "windGust": {
@@ -114,12 +93,12 @@ the error log for details.</p>
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101590,
+            "value": 101520,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101540,
+            "value": 101500,
             "qualityControl": "V"
         },
         "visibility": {
@@ -152,7 +131,7 @@ the error log for details.</p>
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 39.5056192808,
+            "value": 38.025562134271,
             "qualityControl": "V"
         },
         "windChill": {
@@ -162,9 +141,17 @@ the error log for details.</p>
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 32.47684917953445,
+            "value": 32.21553919841889,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "FEW"
+            }
+        ]
     }
 }
