@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KGPZ/observations/2025-07-05T03:38:00+00:00",
+    "id": "https://api.weather.gov/stations/KGPZ/observations/2025-07-05T04:29:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KGPZ/observations/2025-07-05T03:38:00+00:00",
+        "@id": "https://api.weather.gov/stations/KGPZ/observations/2025-07-05T04:29:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KGPZ",
         "stationId": "KGPZ",
         "stationName": "Grand Rapids, Grand Rapids/Itasca County Airport-Gordon Newstrom Field",
-        "timestamp": "2025-07-05T03:38:00+00:00",
-        "rawMessage": "KGPZ 050338Z AUTO 00000KT 8SM VCTS -RA SCT007 SCT041 BKN060 20/19 A2988 RMK AO2 LTG DSNT SE TSE11B28 P0005",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-07-05T04:29:00+00:00",
+        "rawMessage": "KGPZ 050429Z AUTO 20004KT 10SM -RA BKN060 OVC080 20/19 A2988 RMK AO2 LTG DSNT SE AND SW P0003",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 20,
@@ -78,12 +85,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
+            "value": 200,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
+            "value": 7.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 12870,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -144,6 +151,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }

@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KVVV/observations/2025-07-05T03:22:00+00:00",
+    "id": "https://api.weather.gov/stations/KVVV/observations/2025-07-05T04:20:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KVVV/observations/2025-07-05T03:22:00+00:00",
+        "@id": "https://api.weather.gov/stations/KVVV/observations/2025-07-05T04:20:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KVVV",
         "stationId": "KVVV",
         "stationName": "Ortonville, Ortonville Muncipal-Martinson Field Airport",
-        "timestamp": "2025-07-05T03:22:00+00:00",
-        "rawMessage": "KVVV 050322Z 00000KT 7SM +RA SCT050 BKN060 OVC100 22/22 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-07-05T04:20:00+00:00",
+        "rawMessage": "KVVV 050420Z 00000KT 10SM +RA BKN800050 22/22 A2981 RMK AO2",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 22,
@@ -93,8 +100,8 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 100950,
+            "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -144,6 +151,14 @@
             "value": 22.866666666666667,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": null
+                },
+                "amount": "BKN"
+            }
+        ]
     }
 }
