@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIKK/observations/2025-07-06T21:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KIKK/observations/2025-07-07T00:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIKK/observations/2025-07-06T21:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIKK/observations/2025-07-07T00:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KIKK",
         "stationId": "KIKK",
         "stationName": "Greater Kankakee Airport",
-        "timestamp": "2025-07-06T21:55:00+00:00",
-        "rawMessage": "KIKK 062155Z AUTO 28013KT 10SM BKN070 31/21 A2987 RMK AO2 T03100212",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-07T00:55:00+00:00",
+        "rawMessage": "KIKK 070055Z AUTO 02011KT 10SM -RA SCT030 SCT046 SCT070 25/23 A2989 RMK AO2 LTG DSNT S P0003 T02540228",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 31,
+            "value": 25.4,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.2,
+            "value": 22.8,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101150,
+            "value": 101220,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 56.005354913738,
+            "value": 85.550138115854,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 33.89250774128889,
+            "value": 26.229364717469444,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1400
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 2130
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             }
         ]
     }
