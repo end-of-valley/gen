@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIER/observations/2025-07-08T15:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KIER/observations/2025-07-08T16:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIER/observations/2025-07-08T15:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIER/observations/2025-07-08T16:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KIER",
         "stationId": "KIER",
         "stationName": "Natchitoches, Natchitoches Regional Airport",
-        "timestamp": "2025-07-08T15:55:00+00:00",
-        "rawMessage": "KIER 081555Z AUTO 00000KT 5SM -VCTSRA SCT011 BKN050 OVC060 25/25 A3016 RMK AO2 LTG DSNT NE AND E P0041 T02500246",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-08T16:15:00+00:00",
+        "rawMessage": "KIER 081615Z AUTO 00000KT 10SM -RA SCT032 SCT043 BKN050 26/25 A3016 RMK AO2 LTG DSNT N THRU E T02550245",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -73,7 +80,7 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.6,
+            "value": 24.5,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 8050,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 10,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 340
+                    "value": 980
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1310
                 },
                 "amount": "SCT"
             },
@@ -158,13 +172,6 @@
                     "value": 1520
                 },
                 "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1830
-                },
-                "amount": "OVC"
             }
         ]
     }
