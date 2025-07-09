@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHEZ/observations/2025-07-09T17:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHEZ/observations/2025-07-09T21:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHEZ/observations/2025-07-09T17:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHEZ/observations/2025-07-09T21:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,24 +61,43 @@
         "station": "https://api.weather.gov/stations/KHEZ",
         "stationId": "KHEZ",
         "stationName": "Natchez, Hardy-Anders Field Natchez-Adams County Airport",
-        "timestamp": "2025-07-09T17:56:00+00:00",
-        "rawMessage": "KHEZ 091756Z AUTO 24009KT 10SM FEW037 31/23 A3014 RMK AO2 SLP204 T03110228 10311 20233 58006 $",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-09T21:56:00+00:00",
+        "rawMessage": "KHEZ 092156Z AUTO 28009KT 1 1/2SM +TSRA BR 24/22 A3010 RMK AO2 PK WND 28032/2142 WSHFT 2134 LTG DSNT ALQDS TSB19RAB41 SLP192 P0036 T02390222 $",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 31.1,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.8,
+            "value": 22.2,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 240,
+            "value": 280,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,17 +112,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102070,
+            "value": 101930,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102040,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 2410,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +135,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 10,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,27 +150,19 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 61.394086923494,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 35.41847280511278,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
-        "cloudLayers": [
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1130
-                },
-                "amount": "FEW"
-            }
-        ]
+        "cloudLayers": []
     }
 }
