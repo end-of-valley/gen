@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFLD/observations/2025-07-12T05:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KFLD/observations/2025-07-12T06:22:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFLD/observations/2025-07-12T05:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFLD/observations/2025-07-12T06:22:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KFLD",
         "stationId": "KFLD",
         "stationName": "Fond Du Lac County Airport",
-        "timestamp": "2025-07-12T05:53:00+00:00",
-        "rawMessage": "KFLD 120553Z AUTO 15005KT 10SM BKN009 OVC017 21/19 A2983 RMK AO2 SLP098 60022 T02060194 10228 20200 402560178 53002",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-12T06:22:00+00:00",
+        "rawMessage": "KFLD 120622Z AUTO 00000KT 8SM -RA SCT012 SCT080 OVC110 20/19 A2983 RMK AO2 RAB18 P0000 T02000194",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 20.6,
+            "value": 20,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,12 +85,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 150,
+            "value": 0,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.36,
+            "value": 0,
             "qualityControl": "V"
         },
         "windGust": {
@@ -98,12 +105,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100980,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -126,12 +133,12 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 10,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 92.839980753296,
+            "value": 96.345341919249,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,14 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 270
+                    "value": 370
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 520
+                    "value": 2440
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
                 },
                 "amount": "OVC"
             }
