@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEHR/observations/2025-07-13T20:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KEHR/observations/2025-07-13T21:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEHR/observations/2025-07-13T20:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEHR/observations/2025-07-13T21:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,15 +61,22 @@
         "station": "https://api.weather.gov/stations/KEHR",
         "stationId": "KEHR",
         "stationName": "Henderson City",
-        "timestamp": "2025-07-13T20:56:00+00:00",
-        "rawMessage": "KEHR 132056Z AUTO 19010KT 10SM SCT044 32/23 A2999 RMK AO2 SLP151 T03170228 56018",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-13T21:56:00+00:00",
+        "rawMessage": "KEHR 132156Z AUTO 19008G17KT 6SM VCTS +RA FEW031 SCT044 BKN080 27/23 A2999 RMK AO2 LTG DSNT SE AND S AND NW TSB38RAB51 SLP150 P0007 T02670228",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 31.7,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
@@ -83,7 +90,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 18.36,
+            "value": 14.76,
             "qualityControl": "V"
         },
         "windGust": {
@@ -98,12 +105,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101510,
+            "value": 101500,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 9660,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,26 +138,40 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 59.3343988816,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 36.19411203714889,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 940
+                },
+                "amount": "FEW"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 1340
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "BKN"
             }
         ]
     }
