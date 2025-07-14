@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KBPT/observations/2025-07-14T16:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KBPT/observations/2025-07-14T19:10:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KBPT/observations/2025-07-14T16:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KBPT/observations/2025-07-14T19:10:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KBPT",
         "stationId": "KBPT",
         "stationName": "Beaumont/Port Arthur Southeast Texas Regional Airport",
-        "timestamp": "2025-07-14T16:53:00+00:00",
-        "rawMessage": "KBPT 141653Z AUTO 18011G17KT CLR 31/24 A3008 RMK AO2 LTG DSNT ALQDS SLP184 T03110244 $",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-14T19:10:00+00:00",
+        "rawMessage": "KBPT 141910Z 7SM VCTS -RA SCT034 BKN046 OVC095 29/24 A3006 RMK AO2 LTG DSNT ALQDS TSE04 P0005 T02940244",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 31.1,
+            "value": 29.4,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -93,18 +100,18 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101860,
+            "value": 101800,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101840,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 11270,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 67.607182210287,
+            "value": 74.531063518049,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 37.14755306423667,
+            "value": 34.59901247784167,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1040
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1400
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2900
+                },
+                "amount": "OVC"
             }
         ]
     }
