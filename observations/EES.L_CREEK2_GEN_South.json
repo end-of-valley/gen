@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCXO/observations/2025-07-14T19:23:00+00:00",
+    "id": "https://api.weather.gov/stations/KCXO/observations/2025-07-14T19:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCXO/observations/2025-07-14T19:23:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCXO/observations/2025-07-14T19:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,9 +61,9 @@
         "station": "https://api.weather.gov/stations/KCXO",
         "stationId": "KCXO",
         "stationName": "Conroe, Montgomery County Airport",
-        "timestamp": "2025-07-14T19:23:00+00:00",
-        "rawMessage": "KCXO 141923Z 14011KT 10SM TS SCT046 BKN060 BKN070 31/24 A3006 RMK AO2 LTG DSNT NE-S TSB17 T03060244",
-        "textDescription": "Thunderstorms",
+        "timestamp": "2025-07-14T19:53:00+00:00",
+        "rawMessage": "KCXO 141953Z 31007KT 10SM -TSRA FEW044 BKN070 OVC120 26/23 A3007 RMK AO2 PK WND 16029/1927 LTG DSNT NE AND W RAB33 TSB17 SLP180 P0002 T02560233",
+        "textDescription": "Thunderstorms and Rain",
         "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
@@ -71,27 +71,33 @@
                 "modifier": null,
                 "weather": "thunderstorms",
                 "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 30.6,
-            "qualityControl": "S"
+            "value": 25.6,
+            "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.4,
-            "qualityControl": "S"
+            "value": 23.3,
+            "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 140,
-            "qualityControl": "S"
+            "value": 310,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 20.52,
-            "qualityControl": "S"
+            "value": 12.96,
+            "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -100,13 +106,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101800,
-            "qualityControl": "S"
+            "value": 101830,
+            "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101800,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -123,8 +129,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -138,33 +144,26 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 69.565270655215,
-            "qualityControl": "S"
+            "value": 87.136180006788,
+            "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "S"
+            "qualityControl": "V"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 36.42437553285111,
-            "qualityControl": "S"
+            "value": 26.490778033510555,
+            "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1400
+                    "value": 1340
                 },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1830
-                },
-                "amount": "BKN"
+                "amount": "FEW"
             },
             {
                 "base": {
@@ -172,6 +171,13 @@
                     "value": 2130
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3660
+                },
+                "amount": "OVC"
             }
         ]
     }
