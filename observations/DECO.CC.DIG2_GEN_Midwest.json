@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDTW/observations/2025-07-16T10:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KDTW/observations/2025-07-16T11:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDTW/observations/2025-07-16T10:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDTW/observations/2025-07-16T11:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KDTW",
         "stationId": "KDTW",
         "stationName": "Detroit, Detroit Metropolitan Wayne County Airport",
-        "timestamp": "2025-07-16T10:53:00+00:00",
-        "rawMessage": "KDTW 161053Z 16004KT 4SM HZ SCT060 BKN075 OVC200 24/22 A2994 RMK AO2 SLP134 CB DSNT SE MOV NE T02440217 $",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-07-16T11:53:00+00:00",
+        "rawMessage": "KDTW 161153Z 16004KT 5SM HZ SCT050 BKN095 OVC200 25/22 A2995 RMK AO2 SLP136 CB DSNT S MOV NE T02500217 10250 20233 55004 $",
+        "textDescription": "Haze",
+        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "haze",
+                "rawString": "HZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.4,
+            "value": 25,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -93,17 +100,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101390,
+            "value": 101420,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101340,
+            "value": 101360,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 6440,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 84.929210121545,
+            "value": 81.938137162883,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,9 +148,31 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.113151597618334,
+            "value": 25.695051359253334,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2900
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 6100
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
