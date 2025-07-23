@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMWA/observations/2025-07-23T18:45:00+00:00",
+    "id": "https://api.weather.gov/stations/KMWA/observations/2025-07-23T20:12:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMWA/observations/2025-07-23T18:45:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMWA/observations/2025-07-23T20:12:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,24 +61,31 @@
         "station": "https://api.weather.gov/stations/KMWA",
         "stationId": "KMWA",
         "stationName": "Marion - Williamson County Regional Airport",
-        "timestamp": "2025-07-23T18:45:00+00:00",
-        "rawMessage": "KMWA 231845Z 16008KT 10SM SCT035 33/26 A3005",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-23T20:12:00+00:00",
+        "rawMessage": "KMWA 232012Z 24008KT 7SM -RA SCT033 BKN047 OVC080 26/23 A3003",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
-            "unitCode": "wmoUnit:degC",
-            "value": 33,
-            "qualityControl": "V"
-        },
-        "dewpoint": {
             "unitCode": "wmoUnit:degC",
             "value": 26,
             "qualityControl": "V"
         },
+        "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 23,
+            "qualityControl": "V"
+        },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 160,
+            "value": 240,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101760,
+            "value": 101690,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 11270,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 66.780887163091,
+            "value": 83.565344534735,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 42.11873290975,
+            "value": 27.79749079685333,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 1010
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1430
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "OVC"
             }
         ]
     }
