@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIKK/observations/2025-07-26T03:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KIKK/observations/2025-07-26T05:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIKK/observations/2025-07-26T03:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIKK/observations/2025-07-26T05:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,24 +61,37 @@
         "station": "https://api.weather.gov/stations/KIKK",
         "stationId": "KIKK",
         "stationName": "Greater Kankakee Airport",
-        "timestamp": "2025-07-26T03:55:00+00:00",
-        "rawMessage": "KIKK 260355Z AUTO 06004KT 10SM BKN035 OVC043 24/23 A3004 RMK AO2 LTG DSNT W AND NW T02350226",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-26T05:35:00+00:00",
+        "rawMessage": "KIKK 260535Z AUTO 32004KT 10SM TSRA SCT050 SCT075 OVC100 22/21 A3007 RMK AO2 LTG DSNT E THRU SW P0006 T02200211",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.5,
+            "value": 22,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.6,
+            "value": 21.1,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 60,
+            "value": 320,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101730,
+            "value": 101830,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,8 +129,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +144,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 94.700637532802,
+            "value": 94.642025014659,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,21 +154,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.37829442446778,
+            "value": 22.72676398649389,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 1520
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1310
+                    "value": 2290
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
                 },
                 "amount": "OVC"
             }
