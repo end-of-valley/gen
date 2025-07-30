@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMSY/observations/2025-07-30T14:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KMSY/observations/2025-07-30T18:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMSY/observations/2025-07-30T14:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMSY/observations/2025-07-30T18:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KMSY",
         "stationId": "KMSY",
         "stationName": "New Orleans, New Orleans International Airport",
-        "timestamp": "2025-07-30T14:53:00+00:00",
-        "rawMessage": "KMSY 301453Z 00000KT 10SM CLR 31/27 A3002 RMK AO2 SLP167 T03060267 51010",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-07-30T18:53:00+00:00",
+        "rawMessage": "KMSY 301853Z 00000KT 10SM TS FEW038CB FEW080 SCT180 BKN250 34/26 A2998 RMK AO2 TSB41 SLP154 FRQ LTGIC VC SE TS VC SE MOV SW CB DSNT W AND NW TCU DSNT SW T03390261",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 30.6,
+            "value": 33.9,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 26.7,
+            "value": 26.1,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,12 +100,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101660,
+            "value": 101520,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101670,
+            "value": 101540,
             "qualityControl": "V"
         },
         "visibility": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 79.74530566981,
+            "value": 63.873360482874,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,37 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 39.47571420502222,
+            "value": 43.56216671617222,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1160
                 },
-                "amount": "CLR"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 5490
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 7620
+                },
+                "amount": "BKN"
             }
         ]
     }
