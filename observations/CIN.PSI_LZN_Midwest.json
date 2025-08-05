@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMQJ/observations/2025-08-05T08:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMQJ/observations/2025-08-05T09:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMQJ/observations/2025-08-05T08:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMQJ/observations/2025-08-05T09:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KMQJ",
         "stationId": "KMQJ",
         "stationName": "Indianapolis Regional Airport",
-        "timestamp": "2025-08-05T08:15:00+00:00",
-        "rawMessage": "KMQJ 050815Z AUTO 09003KT 10SM BKN110 18/18 A3016 RMK AO2 T01830183 $",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-08-05T09:15:00+00:00",
+        "rawMessage": "KMQJ 050915Z AUTO 14003KT 8SM -RA FEW055 SCT080 OVC110 18/18 A3016 RMK AO2 P0000 T01830183 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 18.3,
@@ -78,7 +85,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 90,
+            "value": 140,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -148,9 +155,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 3350
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
