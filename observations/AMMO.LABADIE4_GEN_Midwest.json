@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSUS/observations/2025-08-10T15:20:00+00:00",
+    "id": "https://api.weather.gov/stations/KSUS/observations/2025-08-10T15:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSUS/observations/2025-08-10T15:20:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSUS/observations/2025-08-10T15:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,29 +61,42 @@
         "station": "https://api.weather.gov/stations/KSUS",
         "stationId": "KSUS",
         "stationName": "St. Louis, Spirit Of St. Louis Airport",
-        "timestamp": "2025-08-10T15:20:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-08-10T15:54:00+00:00",
+        "rawMessage": "KSUS 101554Z 23010G25KT 2 1/2SM +TSRA SCT041 OVC070 24/21 A3010 RMK AO2 PK WND 22027/1542 LTG DSNT W-NE RAB44 TSB22 SLP183 P0010 T02440211",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 29,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21,
+            "value": 21.1,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 220,
+            "value": 230,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.832,
+            "value": 18.36,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,17 +106,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101828.7,
+            "value": 101930,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101830,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,40 +127,50 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 62.059071991511,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 31.35600861294111,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2133.6
+                    "value": 1250
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2743.2
+                    "value": 2130
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
