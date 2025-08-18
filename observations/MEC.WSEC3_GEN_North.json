@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCBF/observations/2025-08-18T10:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KCBF/observations/2025-08-18T10:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCBF/observations/2025-08-18T10:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCBF/observations/2025-08-18T10:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KCBF",
         "stationId": "KCBF",
         "stationName": "Council Bluffs",
-        "timestamp": "2025-08-18T10:15:00+00:00",
-        "rawMessage": "KCBF 181015Z AUTO 34010G16KT 10SM OVC039 24/21 A2996 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-08-18T10:55:00+00:00",
+        "rawMessage": "KCBF 181055Z AUTO 34010G16KT 10SM -RA SCT047 BKN055 OVC080 23/21 A2998 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24,
+            "value": 23,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101460,
+            "value": 101520,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 83.338787521304,
+            "value": 88.518307938961,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,14 +148,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.631623896389446,
+            "value": 23.666866929517223,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1190
+                    "value": 1430
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
                 },
                 "amount": "OVC"
             }
