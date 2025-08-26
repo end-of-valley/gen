@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCDH/observations/2025-08-26T17:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KCDH/observations/2025-08-26T18:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCDH/observations/2025-08-26T17:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCDH/observations/2025-08-26T18:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,24 +61,31 @@
         "station": "https://api.weather.gov/stations/KCDH",
         "stationId": "KCDH",
         "stationName": "Camden / Harrell Field",
-        "timestamp": "2025-08-26T17:55:00+00:00",
-        "rawMessage": "KCDH 261755Z AUTO 01006KT 8SM -DZ CLR 22/17 A3024 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-08-26T18:55:00+00:00",
+        "rawMessage": "KCDH 261855Z AUTO 04006KT 10SM -DZ SCT070 SCT080 SCT090 21/19 A3022 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 22,
+            "value": 21,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 17,
+            "value": 19,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 10,
+            "value": 40,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102410,
+            "value": 102340,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 12870,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 73.288964682767,
+            "value": 88.353665604321,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,9 +148,31 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.169211855605557,
+            "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "SCT"
+            }
+        ]
     }
 }
