@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/K24A/observations/2025-09-04T12:25:00+00:00",
+    "id": "https://api.weather.gov/stations/K24A/observations/2025-09-04T13:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/K24A/observations/2025-09-04T12:25:00+00:00",
+        "@id": "https://api.weather.gov/stations/K24A/observations/2025-09-04T13:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,16 +61,28 @@
         "station": "https://api.weather.gov/stations/K24A",
         "stationId": "K24A",
         "stationName": "Jackson County Airport",
-        "timestamp": "2025-09-04T12:25:00+00:00",
+        "timestamp": "2025-09-04T13:15:00+00:00",
         "rawMessage": "",
-        "textDescription": "Rain and Fog",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "textDescription": "Light  and Light Thunderstorms and Light Rain and Fog",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
+                "modifier": null,
+                "weather": null,
+                "rawString": "-VC"
+            },
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "-TS"
+            },
+            {
+                "intensity": "light",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "RA"
+                "rawString": "-RA"
             },
             {
                 "intensity": null,
@@ -91,12 +103,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
+            "value": 130,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
+            "value": 5.544,
             "qualityControl": "V"
         },
         "windGust": {
@@ -129,8 +141,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -168,7 +180,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1036.32
+                    "value": 609.6
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1005.84
                 },
                 "amount": "OVC"
             }
