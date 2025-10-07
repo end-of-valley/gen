@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMQJ/observations/2025-10-07T14:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMQJ/observations/2025-10-07T15:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMQJ/observations/2025-10-07T14:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMQJ/observations/2025-10-07T15:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,17 @@
         "station": "https://api.weather.gov/stations/KMQJ",
         "stationId": "KMQJ",
         "stationName": "Indianapolis Regional Airport",
-        "timestamp": "2025-10-07T14:15:00+00:00",
-        "rawMessage": "KMQJ 071415Z AUTO 25003KT 5SM BR SCT005 OVC013 20/20 A3002 RMK AO2 RAE1408 P0001 T02010201 $",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "timestamp": "2025-10-07T15:15:00+00:00",
+        "rawMessage": "KMQJ 071515Z AUTO 28003KT 3SM -RA BR FEW002 SCT016 OVC023 21/21 A3002 RMK AO2 FEW V SCT P0001 T02070207 $",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -75,17 +81,17 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 20.1,
+            "value": 20.7,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 20.1,
+            "value": 20.7,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 250,
+            "value": 280,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 8050,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -155,14 +161,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 150
+                    "value": 60
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 490
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": 700
                 },
                 "amount": "OVC"
             }
