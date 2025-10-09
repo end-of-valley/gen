@@ -1,31 +1,164 @@
-{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
-            "title":"Application Unavailable",
-            "status":502,
-            "detail":"The application is temporarily unavailable. Please try again later.",
-            "instance":"urn:noaa:nws:api:request:2e81c95",
-            "correlationId":"2e81c95"}{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
-            "title":"Application Unavailable",
-            "status":502,
-            "detail":"The application is temporarily unavailable. Please try again later.",
-            "instance":"urn:noaa:nws:api:request:2e82343",
-            "correlationId":"2e82343"}{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
-            "title":"Application Unavailable",
-            "status":502,
-            "detail":"The application is temporarily unavailable. Please try again later.",
-            "instance":"urn:noaa:nws:api:request:2e82e8d",
-            "correlationId":"2e82e8d"}{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
-            "title":"Application Unavailable",
-            "status":502,
-            "detail":"The application is temporarily unavailable. Please try again later.",
-            "instance":"urn:noaa:nws:api:request:33f6c2ee",
-            "correlationId":"33f6c2ee"}{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
-            "title":"Application Unavailable",
-            "status":502,
-            "detail":"The application is temporarily unavailable. Please try again later.",
-            "instance":"urn:noaa:nws:api:request:33f6e016",
-            "correlationId":"33f6e016"}{"type":"https://api.weather.gov/problems/ApplicationUnavailable",
-            "title":"Application Unavailable",
-            "status":502,
-            "detail":"The application is temporarily unavailable. Please try again later.",
-            "instance":"urn:noaa:nws:api:request:33f71c90",
-            "correlationId":"33f71c90"}
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/stations/KMHL/observations/2025-10-09T15:55:00+00:00",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -93.2,
+            39.1
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/stations/KMHL/observations/2025-10-09T15:55:00+00:00",
+        "@type": "wx:ObservationStation",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 237
+        },
+        "station": "https://api.weather.gov/stations/KMHL",
+        "stationId": "KMHL",
+        "stationName": "Marshall Memorial Municipal Airport",
+        "timestamp": "2025-10-09T15:55:00+00:00",
+        "rawMessage": "KMHL 091555Z AUTO 14004KT 10SM BKN080 BKN100 18/07 A3041 RMK AO2",
+        "textDescription": "Mostly Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+        "presentWeather": [],
+        "temperature": {
+            "unitCode": "wmoUnit:degC",
+            "value": 18,
+            "qualityControl": "V"
+        },
+        "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7,
+            "qualityControl": "V"
+        },
+        "windDirection": {
+            "unitCode": "wmoUnit:degree_(angle)",
+            "value": 140,
+            "qualityControl": "V"
+        },
+        "windSpeed": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 7.56,
+            "qualityControl": "V"
+        },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "barometricPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": 102980,
+            "qualityControl": "V"
+        },
+        "seaLevelPressure": {
+            "unitCode": "wmoUnit:Pa",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "visibility": {
+            "unitCode": "wmoUnit:m",
+            "value": 16090,
+            "qualityControl": "C"
+        },
+        "maxTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "minTemperatureLast24Hours": {
+            "unitCode": "wmoUnit:degC",
+            "value": null
+        },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 48.582347990729,
+            "qualityControl": "V"
+        },
+        "windChill": {
+            "unitCode": "wmoUnit:degC",
+            "value": null,
+            "qualityControl": "V"
+        },
+        "heatIndex": {
+            "unitCode": "wmoUnit:degC",
+            "value": null,
+            "qualityControl": "V"
+        },
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
+                },
+                "amount": "BKN"
+            }
+        ]
+    }
+}
