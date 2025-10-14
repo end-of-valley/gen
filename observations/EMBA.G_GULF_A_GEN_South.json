@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Error</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>An error occurred.</h1>
-<p>Sorry, the page you are looking for is currently unavailable.<br/>
-Please try again later.</p>
-<p>If you are the system administrator of this resource then you should check
-the error log for details.</p>
-<p><em>Faithfully yours, nginx.</em></p>
-</body>
-</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -63,7 +42,7 @@ the error log for details.</p>
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KVKS/observations/2025-10-14T06:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KVKS/observations/2025-10-14T08:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -73,7 +52,7 @@ the error log for details.</p>
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KVKS/observations/2025-10-14T06:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KVKS/observations/2025-10-14T08:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -82,30 +61,30 @@ the error log for details.</p>
         "station": "https://api.weather.gov/stations/KVKS",
         "stationId": "KVKS",
         "stationName": "Vicksburg Municipal",
-        "timestamp": "2025-10-14T06:55:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
+        "timestamp": "2025-10-14T08:15:00+00:00",
+        "rawMessage": "KVKS 140815Z AUTO 00000KT 10SM CLR 14/14 A3005 RMK A01",
+        "textDescription": "Clear",
+        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 14,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
             "value": 14,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
             "value": 0,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
             "value": 0,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -115,7 +94,7 @@ the error log for details.</p>
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
             "value": 101760,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -153,18 +132,26 @@ the error log for details.</p>
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
             "value": 100,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": null
+                },
+                "amount": "CLR"
+            }
+        ]
     }
 }
