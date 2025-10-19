@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KONZ/observations/2025-10-19T10:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KONZ/observations/2025-10-19T10:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KONZ/observations/2025-10-19T10:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KONZ/observations/2025-10-19T10:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KONZ",
         "stationId": "KONZ",
         "stationName": "Detroit/Grosse Ile, Grosse Ile Airport",
-        "timestamp": "2025-10-19T10:15:00+00:00",
-        "rawMessage": "KONZ 191015Z AUTO 19017G25KT 10SM -RA FEW018 FEW075 OVC110 18/17 A2944 RMK AO2 PK WND 20034/49",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-10-19T10:55:00+00:00",
+        "rawMessage": "KONZ 191055Z AUTO 19019G27KT 8SM -RA BKN014 BKN065 OVC110 17/17 A2944 RMK AO2 PK WND 20030/57",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 18,
+            "value": 17,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -88,8 +95,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 50.04,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 93.884545007364,
+            "value": 100,
             "qualityControl": "V"
         },
         "windChill": {
@@ -144,6 +151,28 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 430
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1980
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
