@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJAS/observations/2025-10-26T01:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KJAS/observations/2025-10-26T02:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJAS/observations/2025-10-26T01:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJAS/observations/2025-10-26T02:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,31 +61,43 @@
         "station": "https://api.weather.gov/stations/KJAS",
         "stationId": "KJAS",
         "stationName": "Jasper, Jasper County-Bell Field Airport",
-        "timestamp": "2025-10-26T01:55:00+00:00",
-        "rawMessage": "KJAS 260155Z AUTO 31007KT 10SM TS SCT021 BKN033 OVC110 21/21 A2992 RMK AO2 P0006",
-        "textDescription": "Thunderstorms",
+        "timestamp": "2025-10-26T02:55:00+00:00",
+        "rawMessage": "KJAS 260255Z AUTO 30007G14KT 1/4SM +TSRA FG OVC003 19/19 A2996 RMK AO2 P0155",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog",
         "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "thunderstorms",
-                "rawString": "TS"
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 21,
+            "value": 19,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21,
+            "value": 19,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 310,
+            "value": 300,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -95,12 +107,12 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 25.92,
+            "qualityControl": "C"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101320,
+            "value": 101460,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +122,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 400,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -123,7 +135,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 40,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -155,21 +167,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 640
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1010
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 90
                 },
                 "amount": "OVC"
             }
