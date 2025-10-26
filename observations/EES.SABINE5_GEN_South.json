@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KORG/observations/2025-10-26T05:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KORG/observations/2025-10-26T06:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KORG/observations/2025-10-26T05:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KORG/observations/2025-10-26T06:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KORG",
         "stationId": "KORG",
         "stationName": "Orange, Orange County Airport",
-        "timestamp": "2025-10-26T05:15:00+00:00",
-        "rawMessage": "KORG 260515Z AUTO 01009G19KT 10SM VCTS SCT040 OVC048 18/15 A2998 RMK AO2 LTG DSNT NE AND W T01750151",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-10-26T06:15:00+00:00",
+        "rawMessage": "KORG 260615Z AUTO 35003KT 10SM -RA OVC050 17/15 A2998 RMK AO2 LTG DSNT NW T01730151",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 17.5,
+            "value": 17.3,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,18 +85,18 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 10,
+            "value": 350,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 16.56,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 35.28,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 85.825151347114,
+            "value": 86.916043249349,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,14 +155,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1220
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1460
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
