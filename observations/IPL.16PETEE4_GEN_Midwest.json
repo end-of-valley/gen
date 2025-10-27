@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDCY/observations/2025-10-27T18:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KDCY/observations/2025-10-27T20:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDCY/observations/2025-10-27T18:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDCY/observations/2025-10-27T20:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KDCY",
         "stationId": "KDCY",
         "stationName": "Daviess County Airport",
-        "timestamp": "2025-10-27T18:55:00+00:00",
-        "rawMessage": "KDCY 271855Z AUTO 08007KT 10SM RA SCT048 OVC060 13/07 A3003 RMK AO2 T01310066",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-10-27T20:15:00+00:00",
+        "rawMessage": "KDCY 272015Z AUTO 08013KT 10SM -DZ OVC041 13/08 A3003 RMK AO2 P0001 T01310077",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 13.1,
@@ -73,18 +80,18 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 6.6,
+            "value": 7.7,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 80,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 12.96,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 64.697971374233,
+            "value": 69.756231320261,
             "qualityControl": "V"
         },
         "windChill": {
@@ -144,6 +151,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1250
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
