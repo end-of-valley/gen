@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -42,17 +63,17 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLIT/observations/2025-11-18T14:25:00+00:00",
+    "id": "https://api.weather.gov/stations/KLIT/observations/2025-11-18T15:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
         "coordinates": [
             -92.23,
-            34.7299999
+            34.73
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLIT/observations/2025-11-18T14:25:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLIT/observations/2025-11-18T15:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,10 +82,10 @@
         "station": "https://api.weather.gov/stations/KLIT",
         "stationId": "KLIT",
         "stationName": "Little Rock, Adams Field",
-        "timestamp": "2025-11-18T14:25:00+00:00",
+        "timestamp": "2025-11-18T15:30:00+00:00",
         "rawMessage": "",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
@@ -78,18 +99,18 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 230,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 29.628,
+            "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 42.588,
-            "qualityControl": "C"
+            "value": 40.752,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -138,16 +159,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 396.24
+                    "value": 579.12
                 },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1219.2
-                },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
