@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOLY/observations/2025-11-18T10:50:00+00:00",
+    "id": "https://api.weather.gov/stations/KOLY/observations/2025-11-18T12:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOLY/observations/2025-11-18T10:50:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOLY/observations/2025-11-18T12:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KOLY",
         "stationId": "KOLY",
         "stationName": "Olney-Noble Airport",
-        "timestamp": "2025-11-18T10:50:00+00:00",
-        "rawMessage": "KOLY 181050Z AUTO 13011G18KT 10SM OVC032 09/04 A2993 RMK AO2 LTG DSNT NE T00860042",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-11-18T12:30:00+00:00",
+        "rawMessage": "KOLY 181230Z AUTO 14009KT 10SM TS BKN029 OVC038 09/05 A2991 RMK AO2 LTG DSNT NW THRU E T00860047",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 8.6,
@@ -73,27 +80,27 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 4.2,
+            "value": 4.7,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 130,
+            "value": 140,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 20.52,
+            "value": 16.56,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 33.48,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101360,
+            "value": 101290,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 73.864108159351,
+            "value": 76.492624332806,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": 5.57110711212,
+            "value": 6.006159818310556,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 980
+                    "value": 880
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1160
                 },
                 "amount": "OVC"
             }
