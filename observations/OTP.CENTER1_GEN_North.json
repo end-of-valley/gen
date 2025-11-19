@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHZE/observations/2025-11-19T11:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KHZE/observations/2025-11-19T12:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHZE/observations/2025-11-19T11:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHZE/observations/2025-11-19T12:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KHZE",
         "stationId": "KHZE",
         "stationName": "HAZEN",
-        "timestamp": "2025-11-19T11:15:00+00:00",
-        "rawMessage": "KHZE 191115Z AUTO 00000KT 10SM OVC060 05/05 A2993 RMK AO2",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-11-19T12:55:00+00:00",
+        "rawMessage": "KHZE 191255Z AUTO 00000KT 7SM -DZ BKN048 OVC055 05/05 A2993 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 5,
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 11270,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -144,6 +151,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
