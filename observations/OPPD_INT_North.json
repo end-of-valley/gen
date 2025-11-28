@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOMA/observations/2025-11-28T20:50:00+00:00",
+    "id": "https://api.weather.gov/stations/KOMA/observations/2025-11-28T21:36:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOMA/observations/2025-11-28T20:50:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOMA/observations/2025-11-28T21:36:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KOMA",
         "stationId": "KOMA",
         "stationName": "Omaha - Eppley Airfield",
-        "timestamp": "2025-11-28T20:50:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-11-28T21:36:00+00:00",
+        "rawMessage": "KOMA 282136Z 12013KT 10SM -SN FEW043 OVC050 M02/M10 A3021 RMK AO2 SNB34 P0000 T10221100",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -2,
+            "value": -2.2,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -83,7 +90,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 29.628,
+            "value": 24.12,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102336.66,
+            "value": 102300,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,19 +121,29 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 54.331466017503,
+            "value": 55.139219990177,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -9.019574886467222,
+            "value": -8.599025792042777,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -138,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1676.4
+                    "value": 1310
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
