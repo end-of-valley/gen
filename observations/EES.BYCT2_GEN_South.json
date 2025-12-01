@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KACP/observations/2025-12-01T15:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KACP/observations/2025-12-01T16:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,28 +52,35 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KACP/observations/2025-12-01T15:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KACP/observations/2025-12-01T16:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
-            "value": 31
+            "value": 33
         },
         "station": "https://api.weather.gov/stations/KACP",
         "stationId": "KACP",
         "stationName": "Oakdale, Allen Parish Airport",
-        "timestamp": "2025-12-01T15:15:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2025-12-01T16:35:00+00:00",
+        "rawMessage": "KACP 011635Z AUTO 00000KT 10SM -DZ SCT015 BKN043 OVC049 08/06 A3014 RMK AO2 P0003",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 9,
+            "value": 8,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 4,
+            "value": 6,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102065.75,
+            "value": 102070,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -116,8 +123,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 70.893920717172,
+            "value": 87.19415400995,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,14 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1524
+                    "value": 460
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2286
+                    "value": 1310
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1490
                 },
                 "amount": "OVC"
             }
