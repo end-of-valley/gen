@@ -42,17 +42,17 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCXO/observations/2025-12-04T04:40:00+00:00",
+    "id": "https://api.weather.gov/stations/KCXO/observations/2025-12-04T05:31:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
         "coordinates": [
-            -95.4,
-            30.36
+            -95.41,
+            30.35
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCXO/observations/2025-12-04T04:40:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCXO/observations/2025-12-04T05:31:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,16 +61,22 @@
         "station": "https://api.weather.gov/stations/KCXO",
         "stationId": "KCXO",
         "stationName": "Conroe, Montgomery County Airport",
-        "timestamp": "2025-12-04T04:40:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Light Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2025-12-04T05:31:00+00:00",
+        "rawMessage": "KCXO 040531Z AUTO VRB04KT 1 3/4SM +TSRA BR BKN006 OVC026 11/09 A3001 RMK AO2 LTG DSNT ALQDS TSB19 P0018 T01060094",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
@@ -81,22 +87,22 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 11,
+            "value": 10.6,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 9,
+            "value": 9.4,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 10,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.416,
+            "value": 7.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -106,7 +112,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101625.52,
+            "value": 101630,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,7 +122,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 5632.7,
+            "value": 2820,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -127,14 +133,24 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 87.476252351683,
+            "value": 92.285708289197,
             "qualityControl": "V"
         },
         "windChill": {
@@ -151,14 +167,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 182.88
+                    "value": 180
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 304.8
+                    "value": 790
                 },
                 "amount": "OVC"
             }
