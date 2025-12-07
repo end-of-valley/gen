@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KGYY/observations/2025-12-07T13:50:00+00:00",
+    "id": "https://api.weather.gov/stations/KGYY/observations/2025-12-07T14:50:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KGYY/observations/2025-12-07T13:50:00+00:00",
+        "@id": "https://api.weather.gov/stations/KGYY/observations/2025-12-07T14:50:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,24 @@
         "station": "https://api.weather.gov/stations/KGYY",
         "stationId": "KGYY",
         "stationName": "Gary Regional Airport",
-        "timestamp": "2025-12-07T13:50:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-12-07T14:50:00+00:00",
+        "rawMessage": "KGYY 071450Z 00000KT 2SM -SN BR OVC010 M00/M00 A3005",
+        "textDescription": "Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 0,
@@ -93,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101690,
+            "value": 101760,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -144,6 +157,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 300
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
