@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPHN/observations/2025-12-13T13:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KPHN/observations/2025-12-13T14:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPHN/observations/2025-12-13T13:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPHN/observations/2025-12-13T14:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KPHN",
         "stationId": "KPHN",
         "stationName": "St Clair County International Airport",
-        "timestamp": "2025-12-13T13:15:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-12-13T14:15:00+00:00",
+        "rawMessage": "KPHN 131415Z AUTO 27003KT 10SM -SN SCT023 BKN029 OVC035 M03/M09 A2996 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -3,
@@ -78,12 +85,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 280,
+            "value": 270,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.56,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101390,
+            "value": 101460,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -136,7 +143,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -6.085223268108889,
+            "value": -5.176010428332778,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -144,6 +151,28 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 700
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 880
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1070
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
