@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSGS/observations/2025-12-31T15:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KSGS/observations/2025-12-31T16:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSGS/observations/2025-12-31T15:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSGS/observations/2025-12-31T16:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KSGS",
         "stationId": "KSGS",
         "stationName": "South St. Paul Municipal-Richard E. Flemi",
-        "timestamp": "2025-12-31T15:15:00+00:00",
-        "rawMessage": "KSGS 311515Z AUTO 33009G18KT 00/00 A2988 RMK AO2 T00000000 PWINO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2025-12-31T16:35:00+00:00",
+        "rawMessage": "KSGS 311635Z AUTO 33010KT 4SM -SN BKN013 OVC020 M02/M02 A2989 RMK AO2 T10201020",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 0,
+            "value": -2,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 0,
+            "value": -2,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -83,17 +90,17 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 16.56,
+            "value": 18.36,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 33.48,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101190,
+            "value": 101220,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,8 +110,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 6440,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -136,7 +143,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -4.677254377011111,
+            "value": -7.478809390532223,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -144,6 +151,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
