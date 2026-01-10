@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KREG/observations/2026-01-10T11:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KREG/observations/2026-01-10T12:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KREG/observations/2026-01-10T11:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KREG/observations/2026-01-10T12:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,21 +61,33 @@
         "station": "https://api.weather.gov/stations/KREG",
         "stationId": "KREG",
         "stationName": "Louisiana Regional Airport",
-        "timestamp": "2026-01-10T11:15:00+00:00",
+        "timestamp": "2026-01-10T12:35:00+00:00",
         "rawMessage": "",
-        "textDescription": "Thunderstorms",
+        "textDescription": "Heavy  and Heavy Thunderstorms and Heavy Rain",
         "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": null,
+                "rawString": "+VC"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "thunderstorms",
-                "rawString": "TS"
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.2,
+            "value": 23.8,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -85,22 +97,22 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 200,
+            "value": 240,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.832,
+            "value": 24.084,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 27.792,
+            "value": 37.044,
             "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101490.06,
+            "value": 101659.39,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +122,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 4023.36,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -123,8 +135,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 6.9,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -155,7 +167,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 365.76
+                    "value": 182.88
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 487.68
                 },
                 "amount": "OVC"
             }
