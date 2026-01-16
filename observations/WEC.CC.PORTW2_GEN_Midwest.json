@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KETB/observations/2026-01-16T16:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KETB/observations/2026-01-16T17:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KETB/observations/2026-01-16T16:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KETB/observations/2026-01-16T17:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KETB",
         "stationId": "KETB",
         "stationName": "West Bend Municipal Airport",
-        "timestamp": "2026-01-16T16:15:00+00:00",
-        "rawMessage": "KETB 161615Z AUTO 27009KT 7SM OVC006 00/M01 A2942 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-16T17:15:00+00:00",
+        "rawMessage": "KETB 161715Z AUTO 27009KT 10SM -SN SCT008 OVC020 00/00 A2942 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 0,
@@ -73,7 +80,7 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -1,
+            "value": 0,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 92.97695284763,
+            "value": 100,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 180
+                    "value": 240
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
                 },
                 "amount": "OVC"
             }
