@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDLL/observations/2026-01-18T02:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KDLL/observations/2026-01-18T03:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDLL/observations/2026-01-18T02:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDLL/observations/2026-01-18T03:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KDLL",
         "stationId": "KDLL",
         "stationName": "Baraboo Wisconsin Dells Airport",
-        "timestamp": "2026-01-18T02:15:00+00:00",
-        "rawMessage": "KDLL 180215Z AUTO 28012KT 10SM OVC019 M09/M12 A3001 RMK AO2 T10951125",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-18T03:55:00+00:00",
+        "rawMessage": "KDLL 180355Z AUTO 28009KT 10SM -SN SCT018 OVC023 M10/M13 A3002 RMK AO2 T11001130",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -9.5,
+            "value": -10,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -12.5,
+            "value": -13,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -83,7 +90,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 22.32,
+            "value": 16.56,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101630,
+            "value": 101660,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 78.766492882797,
+            "value": 78.685247466507,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -17.638104605990673,
+            "value": -17.099829022733665,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 580
+                    "value": 550
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 700
                 },
                 "amount": "OVC"
             }
