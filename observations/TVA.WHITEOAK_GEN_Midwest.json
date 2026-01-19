@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KBMI/observations/2026-01-19T07:25:00+00:00",
+    "id": "https://api.weather.gov/stations/KBMI/observations/2026-01-19T08:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KBMI/observations/2026-01-19T07:25:00+00:00",
+        "@id": "https://api.weather.gov/stations/KBMI/observations/2026-01-19T08:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KBMI",
         "stationId": "KBMI",
         "stationName": "Bloomington/Normal, Central Illinois Regional Airport at Bloomington-Normal",
-        "timestamp": "2026-01-19T07:25:00+00:00",
+        "timestamp": "2026-01-19T08:35:00+00:00",
         "rawMessage": "",
-        "textDescription": "Mostly Clear and Windy",
-        "icon": "https://api.weather.gov/icons/land/night/wind_few?size=medium",
-        "presentWeather": [],
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -11,
+            "value": -12,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,22 +85,22 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 280,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 35.172,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 44.46,
+            "qualityControl": "S"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101523.93,
+            "value": 101659.39,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 14484.1,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,12 +128,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 66.594524001042,
+            "value": 72.133906532621,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -21.497111999315724,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -138,9 +145,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 731.52
+                    "value": 579.12
                 },
-                "amount": "FEW"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 701.04
+                },
+                "amount": "BKN"
             }
         ]
     }
