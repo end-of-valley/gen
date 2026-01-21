@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOFF/observations/2026-01-21T20:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KOFF/observations/2026-01-21T21:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,58 +52,65 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOFF/observations/2026-01-21T20:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOFF/observations/2026-01-21T21:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
-            "value": 319
+            "value": 308
         },
         "station": "https://api.weather.gov/stations/KOFF",
         "stationId": "KOFF",
         "stationName": "Omaha / Offutt Air Force Base",
-        "timestamp": "2026-01-21T20:55:00+00:00",
+        "timestamp": "2026-01-21T21:55:00+00:00",
         "rawMessage": "",
-        "textDescription": "Breezy",
-        "icon": "https://api.weather.gov/icons/land/day/wind_?size=medium",
-        "presentWeather": [],
+        "textDescription": "Blowing Dust",
+        "icon": "https://api.weather.gov/icons/land/day/dust?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": "blowing",
+                "weather": "dust",
+                "rawString": "BLDU"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 6.2,
+            "value": 3.4,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -16.4,
+            "value": -12.6,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 310,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 50.04,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 53.712,
+            "qualityControl": "C"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101730,
+            "value": 101964.16,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101860,
+            "value": 102120,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9660,
+            "value": 9656.06,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 18.017918200248,
+            "value": 29.91343383271,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.32368905642944445,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -144,6 +151,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1676.4
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 7620
+                },
+                "amount": "BKN"
+            }
+        ]
     }
 }
