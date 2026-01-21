@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRGK/observations/2026-01-20T23:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KRGK/observations/2026-01-21T02:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRGK/observations/2026-01-20T23:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRGK/observations/2026-01-21T02:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,29 +61,36 @@
         "station": "https://api.weather.gov/stations/KRGK",
         "stationId": "KRGK",
         "stationName": "Red Wing - Red Wing Regional Airport",
-        "timestamp": "2026-01-20T23:15:00+00:00",
-        "rawMessage": "KRGK 202315Z AUTO 16003KT 10SM BKN095 M10/M17 A3011 RMK AO2",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-21T02:15:00+00:00",
+        "rawMessage": "KRGK 210215Z AUTO 00000KT 5SM -SN BKN025 OVC042 M11/M13 A3009 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -10,
+            "value": -11,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -17,
+            "value": -13,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 160,
+            "value": 0,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 5.4,
+            "value": 0,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101970,
+            "value": 101900,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 56.596004365908,
+            "value": 85.171920054222,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -13.158573144341334,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2900
+                    "value": 760
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
+                },
+                "amount": "OVC"
             }
         ]
     }
