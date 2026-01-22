@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T16:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T17:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T16:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T17:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KONA",
         "stationId": "KONA",
         "stationName": "Winona, Winona Municipal Airport-Max Conrad Field",
-        "timestamp": "2026-01-22T16:15:00+00:00",
-        "rawMessage": "KONA 221615Z AUTO 29010G15KT 10SM SCT022 OVC035 M11/M18 A3017 RMK AO2 TSNO",
-        "textDescription": "Cloudy",
+        "timestamp": "2026-01-22T17:35:00+00:00",
+        "rawMessage": "KONA 221735Z AUTO 29013G22KT 5SM HZ SCT018 BKN028 OVC040 M11/M18 A3018 RMK AO2 TSNO",
+        "textDescription": "Haze",
         "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "haze",
+                "rawString": "HZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -11,
@@ -83,17 +90,17 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 18.36,
+            "value": 24.12,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 27.72,
+            "value": 40.68,
             "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102170,
+            "value": 102200,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -136,7 +143,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -18.752127592664056,
+            "value": -19.869659555320833,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,14 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 670
+                    "value": 550
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 850
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1220
                 },
                 "amount": "OVC"
             }
