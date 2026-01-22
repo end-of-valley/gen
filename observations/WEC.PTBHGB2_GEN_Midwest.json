@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMTW/observations/2026-01-22T18:40:00+00:00",
+    "id": "https://api.weather.gov/stations/KMTW/observations/2026-01-22T19:26:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMTW/observations/2026-01-22T18:40:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMTW/observations/2026-01-22T19:26:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KMTW",
         "stationId": "KMTW",
         "stationName": "Manitowoc, Manitowoc County Airport",
-        "timestamp": "2026-01-22T18:40:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Mostly Cloudy and Windy",
-        "icon": "https://api.weather.gov/icons/land/day/wind_bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-22T19:26:00+00:00",
+        "rawMessage": "KMTW 221926Z AUTO 28017KT 5SM -SN FEW012 SCT022 BKN028 M11/M16 A3006 RMK AO2 PK WND 26030/1907 P0000 FZRANO $",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -11,
@@ -73,17 +80,17 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -17,
+            "value": -16,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 260,
+            "value": 280,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 31.5,
+            "value": 31.68,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101760.98,
+            "value": 101800,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 12874.75,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,19 +121,29 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 61.261678833676,
+            "value": 66.594524001042,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -21.011186609343667,
+            "value": -21.036088148766666,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -138,14 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 853.44
+                    "value": 370
                 },
-                "amount": "BKN"
+                "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1158.24
+                    "value": 670
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 850
                 },
                 "amount": "BKN"
             }
