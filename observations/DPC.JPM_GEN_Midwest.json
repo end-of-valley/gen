@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T04:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T05:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T04:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KONA/observations/2026-01-22T05:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KONA",
         "stationId": "KONA",
         "stationName": "Winona, Winona Municipal Airport-Max Conrad Field",
-        "timestamp": "2026-01-22T04:15:00+00:00",
-        "rawMessage": "KONA 220415Z AUTO 27007G19KT 10SM CLR M09/M17 A3004 RMK AO2 TSNO",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-22T05:15:00+00:00",
+        "rawMessage": "KONA 220515Z AUTO 27007KT 231V291 10SM -SN SCT037 BKN048 M09/M16 A3005 RMK AO2 TSNO",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -9,
@@ -73,7 +80,7 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -17,
+            "value": -16,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -88,12 +95,12 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 35.28,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101730,
+            "value": 101760,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 52.321073033232,
+            "value": 56.875636126975,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1130
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
+                },
+                "amount": "BKN"
             }
         ]
     }
