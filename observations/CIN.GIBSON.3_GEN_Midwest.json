@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KAJG/observations/2026-01-25T17:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KAJG/observations/2026-01-25T18:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KAJG/observations/2026-01-25T17:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KAJG/observations/2026-01-25T18:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KAJG",
         "stationId": "KAJG",
         "stationName": "Mount Carmel, Mount Carmel Municipal Airport",
-        "timestamp": "2026-01-25T17:15:00+00:00",
-        "rawMessage": "KAJG 251715Z AUTO 34011G19KT SCT029 OVC035 M09/M14 A2996 RMK AO2 T10951137 PWINO",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-25T18:15:00+00:00",
+        "rawMessage": "KAJG 251815Z AUTO 32015G19KT 3SM -SN SCT023 BKN041 OVC055 M09/M13 A2996 RMK AO2 T10951135",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -9.5,
@@ -73,18 +80,18 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -13.7,
+            "value": -13.5,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 340,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 20.52,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -103,8 +110,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 4830,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 71.469176101141,
+            "value": 72.641793004729,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -17.305888299420655,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,14 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 880
+                    "value": 700
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 1250
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
                 },
                 "amount": "OVC"
             }
