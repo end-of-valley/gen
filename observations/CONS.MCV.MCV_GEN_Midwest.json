@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIKW/observations/2026-01-26T15:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KIKW/observations/2026-01-26T16:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIKW/observations/2026-01-26T15:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIKW/observations/2026-01-26T16:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KIKW",
         "stationId": "KIKW",
         "stationName": "Jack Barstow Airport",
-        "timestamp": "2026-01-26T15:15:00+00:00",
-        "rawMessage": "KIKW 261515Z AUTO 28008KT 10SM BKN055 M11/M16 A3009 RMK AO2",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-26T16:35:00+00:00",
+        "rawMessage": "KIKW 261635Z AUTO 27009G15KT 8SM -SN FEW034 OVC048 M10/M16 A3010 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -11,
+            "value": -10,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,22 +85,22 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 280,
+            "value": 270,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.76,
+            "value": 16.56,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 27.72,
+            "qualityControl": "C"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101900,
+            "value": 101930,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 66.594524001042,
+            "value": 61.522701350402,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -17.892729063163454,
+            "value": -17.099829022733665,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1680
+                    "value": 1040
                 },
-                "amount": "BKN"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
+                },
+                "amount": "OVC"
             }
         ]
     }
