@@ -42,58 +42,65 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KAIG/observations/2026-01-27T08:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KAIG/observations/2026-01-27T09:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
         "coordinates": [
             -89.11,
-            45.16
+            45.15
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KAIG/observations/2026-01-27T08:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KAIG/observations/2026-01-27T09:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
-            "value": 462
+            "value": 464
         },
         "station": "https://api.weather.gov/stations/KAIG",
         "stationId": "KAIG",
         "stationName": "Langlade County Airport",
-        "timestamp": "2026-01-27T08:35:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Cloudy",
+        "timestamp": "2026-01-27T09:35:00+00:00",
+        "rawMessage": "KAIG 270935Z AUTO 29016G24KT 4SM HZ SCT021 BKN026 OVC046 M17/M21 A2973 RMK AO2 T11681206",
+        "textDescription": "Haze",
         "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "haze",
+                "rawString": "HZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -16.3,
+            "value": -16.8,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -19.6,
+            "value": -20.6,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 280,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 16.668,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 44.64,
+            "qualityControl": "C"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100609.6,
+            "value": 100680,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11265.41,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 75.652651128866,
+            "value": 72.364757632661,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -24.955107838586667,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1341.12
+                    "value": 640
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 790
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1400
                 },
                 "amount": "OVC"
             }
