@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KONZ/observations/2026-01-31T11:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KONZ/observations/2026-01-31T12:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KONZ/observations/2026-01-31T11:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KONZ/observations/2026-01-31T12:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KONZ",
         "stationId": "KONZ",
         "stationName": "Detroit/Grosse Ile, Grosse Ile Airport",
-        "timestamp": "2026-01-31T11:15:00+00:00",
-        "rawMessage": "KONZ 311115Z AUTO 32004KT 10SM OVC033 M12/M14 A3027 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-01-31T12:35:00+00:00",
+        "rawMessage": "KONZ 311235Z AUTO 01008KT 10SM -SN SCT020 OVC031 M10/M14 A3028 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -12,
+            "value": -10,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,12 +85,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 320,
+            "value": 10,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.56,
+            "value": 14.76,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102510,
+            "value": 102540,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 85.052894218834,
+            "value": 72.541250869953,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -16.60680945033011,
+            "value": -16.661795856000943,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1010
+                    "value": 610
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 940
                 },
                 "amount": "OVC"
             }
