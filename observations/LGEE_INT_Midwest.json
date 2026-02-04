@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSDF/observations/2026-02-04T02:50:00+00:00",
+    "id": "https://api.weather.gov/stations/KSDF/observations/2026-02-04T04:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSDF/observations/2026-02-04T02:50:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSDF/observations/2026-02-04T04:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,26 +61,32 @@
         "station": "https://api.weather.gov/stations/KSDF",
         "stationId": "KSDF",
         "stationName": "Louisville Muhammad Ali International Airport",
-        "timestamp": "2026-02-04T02:50:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2026-02-04T04:35:00+00:00",
+        "rawMessage": "KSDF 040435Z 01010KT 5SM -RASN BKN013 OVC019 01/M01 A3019 RMK AO2 P0000 T00061011",
+        "textDescription": "Light Rain and Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/rain_snow?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
-                "weather": "fog_mist",
-                "rawString": "BR"
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 1,
+            "value": 0.6,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -1,
+            "value": -1.1,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -90,7 +96,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.832,
+            "value": 18.36,
             "qualityControl": "V"
         },
         "windGust": {
@@ -100,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102201.21,
+            "value": 102240,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 6437.38,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,19 +127,29 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 86.498742535901,
+            "value": 88.378831552409,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -3.134670275153889,
+            "value": -4.222073021027223,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -145,7 +161,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 213.36
+                    "value": 400
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
                 },
                 "amount": "OVC"
             }
