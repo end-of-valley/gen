@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCDH/observations/2026-02-14T06:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KCDH/observations/2026-02-14T07:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCDH/observations/2026-02-14T06:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCDH/observations/2026-02-14T07:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KCDH",
         "stationId": "KCDH",
         "stationName": "Camden / Harrell Field",
-        "timestamp": "2026-02-14T06:35:00+00:00",
-        "rawMessage": "KCDH 140635Z AUTO 00000KT 10SM CLR 14/08 A3004 RMK AO2",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-02-14T07:35:00+00:00",
+        "rawMessage": "KCDH 140735Z AUTO 00000KT 10SM -DZ FEW031 SCT055 BKN075 14/08 A3003 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 14,
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101730,
+            "value": 101690,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -148,9 +155,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 940
                 },
-                "amount": "CLR"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
+                },
+                "amount": "BKN"
             }
         ]
     }
