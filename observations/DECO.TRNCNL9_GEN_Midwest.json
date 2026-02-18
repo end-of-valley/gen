@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KONZ/observations/2026-02-18T13:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KONZ/observations/2026-02-18T14:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KONZ/observations/2026-02-18T13:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KONZ/observations/2026-02-18T14:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,17 @@
         "station": "https://api.weather.gov/stations/KONZ",
         "stationId": "KONZ",
         "stationName": "Detroit/Grosse Ile, Grosse Ile Airport",
-        "timestamp": "2026-02-18T13:15:00+00:00",
-        "rawMessage": "KONZ 181315Z AUTO VRB02KT 4SM BR SCT026 OVC037 04/04 A2964 RMK AO2 PRESRR",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "timestamp": "2026-02-18T14:55:00+00:00",
+        "rawMessage": "KONZ 181455Z AUTO 15008KT 1 1/2SM -RA BR OVC005 05/05 A2960 RMK AO2 P0007",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -75,22 +81,22 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 4,
+            "value": 5,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 4,
+            "value": 5,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 150,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 3.6,
+            "value": 14.76,
             "qualityControl": "V"
         },
         "windGust": {
@@ -100,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100370,
+            "value": 100240,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 6440,
+            "value": 2410,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -123,8 +129,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 1.8,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -143,7 +149,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": null,
+            "value": 1.8022022514372222,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -155,14 +161,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 790
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1130
+                    "value": 150
                 },
                 "amount": "OVC"
             }
