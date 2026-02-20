@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/K2D5/observations/2026-02-20T11:35:00+00:00",
+    "id": "https://api.weather.gov/stations/K2D5/observations/2026-02-20T13:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/K2D5/observations/2026-02-20T11:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/K2D5/observations/2026-02-20T13:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/K2D5",
         "stationId": "K2D5",
         "stationName": "Oakes Municipal Airport",
-        "timestamp": "2026-02-20T11:35:00+00:00",
-        "rawMessage": "K2D5 201135Z AUTO 32021KT OVC008 M16/ A2986 RMK AO2",
-        "textDescription": "Cloudy and Windy",
-        "icon": "https://api.weather.gov/icons/land/night/wind_ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-02-20T13:15:00+00:00",
+        "rawMessage": "K2D5 201315Z AUTO 32016KT -SN BKN007 OVC031 M16/ A2988 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -16,
@@ -83,7 +90,7 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 38.88,
+            "value": 29.52,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101120,
+            "value": 101190,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -136,7 +143,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -28.611760898915556,
+            "value": -27.241131112998332,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 240
+                    "value": 210
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 940
                 },
                 "amount": "OVC"
             }
