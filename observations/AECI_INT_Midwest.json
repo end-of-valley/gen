@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMHL/observations/2026-03-07T08:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KMHL/observations/2026-03-07T09:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMHL/observations/2026-03-07T08:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMHL/observations/2026-03-07T09:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,16 +61,22 @@
         "station": "https://api.weather.gov/stations/KMHL",
         "stationId": "KMHL",
         "stationName": "Marshall Memorial Municipal Airport",
-        "timestamp": "2026-03-07T08:35:00+00:00",
-        "rawMessage": "KMHL 070835Z AUTO 15005KT 10SM -RA SCT026 BKN043 OVC100 14/14 A2981 RMK AO2 P0002 LTG DSNT E",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2026-03-07T09:15:00+00:00",
+        "rawMessage": "KMHL 070915Z AUTO 19006KT 5SM +TSRA OVC022 14/14 A2983 RMK AO2 P0005 LTG DSNT ALQS",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             }
         ],
         "temperature": {
@@ -85,12 +91,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 150,
+            "value": 190,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.36,
+            "value": 11.16,
             "qualityControl": "V"
         },
         "windGust": {
@@ -100,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100950,
+            "value": 101020,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -123,7 +129,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0.5,
+            "value": 1.3,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -155,21 +161,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 790
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1310
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 670
                 },
                 "amount": "OVC"
             }
