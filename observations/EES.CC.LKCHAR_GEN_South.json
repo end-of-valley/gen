@@ -42,30 +42,36 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLCH/observations/2026-03-08T03:05:00+00:00",
+    "id": "https://api.weather.gov/stations/KLCH/observations/2026-03-08T04:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
         "coordinates": [
             -93.22,
-            30.12
+            30.13
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLCH/observations/2026-03-08T03:05:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLCH/observations/2026-03-08T04:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
-            "value": 10
+            "value": 5
         },
         "station": "https://api.weather.gov/stations/KLCH",
         "stationId": "KLCH",
         "stationName": "Lake Charles Regional Airport",
-        "timestamp": "2026-03-08T03:05:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2026-03-08T04:35:00+00:00",
+        "rawMessage": "KLCH 080435Z AUTO 03016G24KT 3SM RA BR BKN028 BKN037 OVC075 19/19 A3002 RMK AO2 PK WND 36030/0404 LTG DSNT NE AND SW RAB05 P0049 T01940189",
+        "textDescription": "Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -75,32 +81,32 @@
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 23,
+            "value": 19.4,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 22,
+            "value": 18.9,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 210,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 11.124,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 44.64,
+            "qualityControl": "C"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101591.66,
+            "value": 101660,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9656.06,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,14 +127,24 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 12.4,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 94.105818040075,
+            "value": 96.932411448598,
             "qualityControl": "V"
         },
         "windChill": {
@@ -138,14 +154,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.812763026602223,
+            "value": null,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 213.36
+                    "value": 850
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1130
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
                 },
                 "amount": "OVC"
             }
