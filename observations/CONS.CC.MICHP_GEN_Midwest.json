@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLDM/observations/2026-03-13T06:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KLDM/observations/2026-03-13T07:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLDM/observations/2026-03-13T06:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLDM/observations/2026-03-13T07:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KLDM",
         "stationId": "KLDM",
         "stationName": "Ludington, Mason County Airport",
-        "timestamp": "2026-03-13T06:55:00+00:00",
-        "rawMessage": "KLDM 130655Z AUTO 14012G16KT 10SM SCT050 01/M03 A2967 RMK AO2 PRESFR",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-03-13T07:35:00+00:00",
+        "rawMessage": "KLDM 130735Z AUTO 14014G20KT 10SM -SN FEW030 SCT035 SCT048 01/M02 A2960 RMK AO2 PK WND 12028/19 PRESFR",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 1,
@@ -73,7 +80,7 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -3,
+            "value": -2,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -83,18 +90,18 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 22.32,
+            "value": 25.92,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 29.52,
-            "qualityControl": "C"
+            "value": 37.08,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100480,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 74.639707050277,
+            "value": 80.375317381712,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -4.275557888714444,
+            "value": -4.711976754635556,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 910
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1070
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
                 },
                 "amount": "SCT"
             }
