@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDCY/observations/2026-03-16T15:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KDCY/observations/2026-03-16T20:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDCY/observations/2026-03-16T15:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDCY/observations/2026-03-16T20:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KDCY",
         "stationId": "KDCY",
         "stationName": "Daviess County Airport",
-        "timestamp": "2026-03-16T15:55:00+00:00",
-        "rawMessage": "KDCY 161555Z AUTO 29020G25KT 10SM BKN024 OVC030 M03/M07 A2981 RMK AO2 T10261071",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2026-03-16T20:55:00+00:00",
+        "rawMessage": "KDCY 162055Z AUTO 30019G23KT 10SM -SN SCT024 OVC033 M03/M08 A2990 RMK AO2 T10281077",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -2.6,
+            "value": -2.8,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -7.1,
+            "value": -7.7,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -88,12 +95,12 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 42.48,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100950,
+            "value": 101250,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 71.191952720139,
+            "value": 68.987414624484,
             "qualityControl": "V"
         },
         "windChill": {
@@ -144,6 +151,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1010
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
