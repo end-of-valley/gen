@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMGC/observations/2026-04-01T13:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMGC/observations/2026-04-01T15:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMGC/observations/2026-04-01T13:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMGC/observations/2026-04-01T15:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KMGC",
         "stationId": "KMGC",
         "stationName": "Michigan City Municipal Airport",
-        "timestamp": "2026-04-01T13:15:00+00:00",
-        "rawMessage": "KMGC 011315Z AUTO 01010G15KT 10SM OVC009 03/02 A3019 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-04-01T15:15:00+00:00",
+        "rawMessage": "KMGC 011515Z AUTO 01006KT 10SM -DZ SCT008 OVC015 04/03 A3021 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 3,
+            "value": 4,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 2,
+            "value": 3,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -83,17 +90,17 @@
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 18.36,
+            "value": 11.16,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 27.72,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102240,
+            "value": 102300,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,12 +138,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 93.14153052995,
+            "value": 93.195121939331,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.2158548337922221,
+            "value": 1.2292968800433333,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,7 +155,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 270
+                    "value": 240
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 460
                 },
                 "amount": "OVC"
             }
