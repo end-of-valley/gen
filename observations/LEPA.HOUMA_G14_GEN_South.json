@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHUM/observations/2026-04-10T16:47:00+00:00",
+    "id": "https://api.weather.gov/stations/KHUM/observations/2026-04-10T18:47:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHUM/observations/2026-04-10T16:47:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHUM/observations/2026-04-10T18:47:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KHUM",
         "stationId": "KHUM",
         "stationName": "Houma-Terrebonne Airport",
-        "timestamp": "2026-04-10T16:47:00+00:00",
-        "rawMessage": "KHUM 101647Z 09012KT 7SM BKN028 25/19 A3027",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-04-10T18:47:00+00:00",
+        "rawMessage": "KHUM 101847Z 11012KT 7SM -RA SCT023 BKN040 24/19 A3025",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 25,
+            "value": 24,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,7 +85,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 90,
+            "value": 110,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102510,
+            "value": 102440,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 69.355548728971,
+            "value": 73.632873645268,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,14 +148,21 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.36650599459,
+            "value": 24.378191700737776,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 700
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1220
                 },
                 "amount": "BKN"
             }
