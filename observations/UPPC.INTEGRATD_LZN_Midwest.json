@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSAW/observations/2026-04-10T03:38:00+00:00",
+    "id": "https://api.weather.gov/stations/KSAW/observations/2026-04-10T05:58:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSAW/observations/2026-04-10T03:38:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSAW/observations/2026-04-10T05:58:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KSAW",
         "stationId": "KSAW",
         "stationName": "Marquette Sawyer Regional Airport",
-        "timestamp": "2026-04-10T03:38:00+00:00",
-        "rawMessage": "KSAW 100338Z AUTO 08004KT 10SM SCT120 01/M03 A3015 RMK AO2",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-04-10T05:58:00+00:00",
+        "rawMessage": "KSAW 100558Z AUTO 34004KT 10SM -RA FEW043 BKN055 01/M03 A3016 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 1,
@@ -78,7 +85,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 80,
+            "value": 340,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102100,
+            "value": 102130,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -148,9 +155,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3660
+                    "value": 1310
                 },
-                "amount": "SCT"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "BKN"
             }
         ]
     }
