@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJEF/observations/2026-04-12T14:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KJEF/observations/2026-04-12T18:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJEF/observations/2026-04-12T14:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJEF/observations/2026-04-12T18:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,39 +61,46 @@
         "station": "https://api.weather.gov/stations/KJEF",
         "stationId": "KJEF",
         "stationName": "Jefferson City, Jefferson City Memorial Airport",
-        "timestamp": "2026-04-12T14:53:00+00:00",
-        "rawMessage": "KJEF 121453Z 18011KT 10 SM OVC100 23/14 A3000",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2026-04-12T18:53:00+00:00",
+        "rawMessage": "KJEF 121853Z 18020G30KT 10 SM -RA FEW045 SCT075 OVC085 22/12 A2993",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 23,
+            "value": 22,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 14,
+            "value": 12,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 180,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 20.52,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 55.44,
+            "qualityControl": "C"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101590,
+            "value": 101360,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 56.905982387402,
+            "value": 53.062217933001,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,9 +148,31 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 22.84143398456,
+            "value": 21.64106902380611,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1370
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2590
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
