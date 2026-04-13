@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIER/observations/2026-04-12T23:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KIER/observations/2026-04-13T03:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIER/observations/2026-04-12T23:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIER/observations/2026-04-13T03:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KIER",
         "stationId": "KIER",
         "stationName": "Natchitoches, Natchitoches Regional Airport",
-        "timestamp": "2026-04-12T23:35:00+00:00",
-        "rawMessage": "KIER 122335Z AUTO 16008KT 10SM SCT038 BKN075 25/18 A3008 RMK AO2 T02540184 PNO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2026-04-13T03:35:00+00:00",
+        "rawMessage": "KIER 130335Z AUTO 16008KT 10SM RA SCT060 SCT075 OVC090 22/19 A3015 RMK AO2 T02190191 PNO",
+        "textDescription": "Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.4,
+            "value": 21.9,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 18.4,
+            "value": 19.1,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101860,
+            "value": 102100,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 65.229815563879,
+            "value": 84.139275465421,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,9 +148,31 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 25.69877851750111,
+            "value": 22.342525526041666,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
