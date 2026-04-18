@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFYV/observations/2026-04-17T22:50:00+00:00",
+    "id": "https://api.weather.gov/stations/KFYV/observations/2026-04-17T23:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFYV/observations/2026-04-17T22:50:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFYV/observations/2026-04-17T23:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KFYV",
         "stationId": "KFYV",
         "stationName": "Fayetteville, Drake Field",
-        "timestamp": "2026-04-17T22:50:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Mostly Cloudy and Windy",
-        "icon": "https://api.weather.gov/icons/land/day/wind_bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-04-17T23:53:00+00:00",
+        "rawMessage": "KFYV 172353Z 16016G23KT 10SM -RA FEW045 SCT060 BKN110 23/17 A2974 RMK AO2 PK WND 19026/2254 RAB00 SLP056 P0000 60000 T02280167 10278 20228 58019",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24,
+            "value": 22.8,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -78,22 +85,22 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 190,
+            "value": 160,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 31.5,
+            "value": 29.52,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 42.48,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100880.52,
+            "value": 100710,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,10 +121,20 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -138,14 +155,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1249.68
+                    "value": 1370
                 },
                 "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1676.4
+                    "value": 1830
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
                 },
                 "amount": "BKN"
             }
