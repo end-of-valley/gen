@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KVVV/observations/2026-04-27T19:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KVVV/observations/2026-04-27T21:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KVVV/observations/2026-04-27T19:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KVVV/observations/2026-04-27T21:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KVVV",
         "stationId": "KVVV",
         "stationName": "Ortonville, Ortonville Muncipal-Martinson Field Airport",
-        "timestamp": "2026-04-27T19:55:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Breezy",
-        "icon": "https://api.weather.gov/icons/land/day/wind_?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-04-27T21:35:00+00:00",
+        "rawMessage": "KVVV 272135Z AUTO 35023G30KT 10SM -RA BKN012 OVC018 06/06 A2969 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 6,
@@ -78,22 +85,22 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 340,
+            "value": 350,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 46.44,
+            "value": 42.48,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 55.44,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100370,
+            "value": 100540,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -136,7 +143,7 @@
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": 0.25075706077166665,
+            "value": 0.48587006495833335,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -144,6 +151,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 370
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 550
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
