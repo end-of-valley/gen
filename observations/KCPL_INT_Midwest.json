@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIXD/observations/2026-04-27T09:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KIXD/observations/2026-04-27T11:50:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIXD/observations/2026-04-27T09:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIXD/observations/2026-04-27T11:50:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,39 +61,52 @@
         "station": "https://api.weather.gov/stations/KIXD",
         "stationId": "KIXD",
         "stationName": "Olathe, New Century Aircenter",
-        "timestamp": "2026-04-27T09:15:00+00:00",
+        "timestamp": "2026-04-27T11:50:00+00:00",
         "rawMessage": "",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "textDescription": "Heavy Rain and Heavy Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "+BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 18,
+            "value": 14,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 16,
+            "value": 14,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 30,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 22.212,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 81.504,
+            "qualityControl": "S"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100067.78,
+            "value": 100169.38,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 4023.36,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,7 +134,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 88.10014352739,
+            "value": 100,
             "qualityControl": "V"
         },
         "windChill": {
@@ -138,16 +151,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 335.28
+                    "value": 182.88
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3657.6
+                    "value": 1432.56
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2590.8
+                },
+                "amount": "OVC"
             }
         ]
     }
