@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/K5A6/observations/2026-04-28T18:15:00+00:00",
+    "id": "https://api.weather.gov/stations/K5A6/observations/2026-04-28T20:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/K5A6/observations/2026-04-28T18:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/K5A6/observations/2026-04-28T20:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,29 +61,42 @@
         "station": "https://api.weather.gov/stations/K5A6",
         "stationId": "K5A6",
         "stationName": "Winona-Montgomery County Airport",
-        "timestamp": "2026-04-28T18:15:00+00:00",
-        "rawMessage": "K5A6 281815Z AUTO 13003KT 10SM OVC018 24/22 A3000 RMK AO2 LTG DSNT E THRU S T02390216",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-04-28T20:15:00+00:00",
+        "rawMessage": "K5A6 282015Z AUTO 00000KT 10SM TSRA SCT018 BKN024 OVC046 24/22 A2995 RMK AO2 LTG DSNT ALQDS P0001 T02400217",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.9,
+            "value": 24,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.6,
+            "value": 21.7,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 130,
+            "value": 0,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 5.4,
+            "value": 0,
             "qualityControl": "V"
         },
         "windGust": {
@@ -93,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101590,
+            "value": 101420,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,8 +129,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0.3,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -131,7 +144,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 86.98233706754,
+            "value": 86.991460827747,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,7 +154,7 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.61676102343,
+            "value": 24.726999254946666,
             "qualityControl": "V"
         },
         "cloudLayers": [
@@ -149,6 +162,20 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 550
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1400
                 },
                 "amount": "OVC"
             }
