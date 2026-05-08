@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Error</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
-</head>
-<body>
-<h1>An error occurred.</h1>
-<p>Sorry, the page you are looking for is currently unavailable.<br/>
-Please try again later.</p>
-<p>If you are the system administrator of this resource then you should check
-the error log for details.</p>
-<p><em>Faithfully yours, nginx.</em></p>
-</body>
-</html>
 {
     "@context": [
         "https://geojson.org/geojson-ld/geojson-context.jsonld",
@@ -61,7 +42,7 @@ the error log for details.</p>
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KORG/observations/2026-05-08T15:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KORG/observations/2026-05-08T17:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -71,7 +52,7 @@ the error log for details.</p>
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KORG/observations/2026-05-08T15:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KORG/observations/2026-05-08T17:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -80,11 +61,18 @@ the error log for details.</p>
         "station": "https://api.weather.gov/stations/KORG",
         "stationId": "KORG",
         "stationName": "Orange, Orange County Airport",
-        "timestamp": "2026-05-08T15:55:00+00:00",
-        "rawMessage": "KORG 081555Z AUTO 35004KT 4SM VCTS BKN004 OVC011 19/18 A2996 RMK AO2 LTG DSNT W THRU NE P0001 T01860180",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-05-08T17:15:00+00:00",
+        "rawMessage": "KORG 081715Z AUTO 10003KT 4SM TS BKN004 BKN009 BKN023 19/18 A2993 RMK AO2 LTG DSNT NE THRU SE P0003 T01860179",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 18.6,
@@ -92,17 +80,17 @@ the error log for details.</p>
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 18,
+            "value": 17.9,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 350,
+            "value": 100,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 7.56,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
@@ -112,7 +100,7 @@ the error log for details.</p>
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101460,
+            "value": 101360,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -135,7 +123,7 @@ the error log for details.</p>
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0.3,
+            "value": 0.8,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -150,7 +138,7 @@ the error log for details.</p>
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 96.30681497161,
+            "value": 95.703073052689,
             "qualityControl": "V"
         },
         "windChill": {
@@ -174,9 +162,16 @@ the error log for details.</p>
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 340
+                    "value": 270
                 },
-                "amount": "OVC"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 700
+                },
+                "amount": "BKN"
             }
         ]
     }
