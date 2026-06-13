@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KAPN/observations/2026-06-13T16:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KAPN/observations/2026-06-13T18:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,44 +52,51 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KAPN/observations/2026-06-13T16:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KAPN/observations/2026-06-13T18:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
-            "value": 210
+            "value": 211
         },
         "station": "https://api.weather.gov/stations/KAPN",
         "stationId": "KAPN",
         "stationName": "Alpena, Alpena County Regional Airport",
-        "timestamp": "2026-06-13T16:15:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-06-13T18:30:00+00:00",
+        "rawMessage": "KAPN 131830Z AUTO 00000KT 10SM VCTS -RA FEW033 BKN065 OVC090 18/16 A2975 RMK AO2 PK WND 35033/1756 LTG DSNT E AND SE TSE24 P0039 T01830161 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24,
-            "qualityControl": "V"
+            "value": 18.3,
+            "qualityControl": "S"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 12,
-            "qualityControl": "V"
+            "value": 16.1,
+            "qualityControl": "S"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 250,
-            "qualityControl": "V"
+            "value": 0,
+            "qualityControl": "S"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 18.504,
-            "qualityControl": "V"
+            "value": 0,
+            "qualityControl": "S"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 27.792,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16093.44,
+            "value": 16090,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,33 +121,57 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 9.9,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 47.012781548979,
-            "qualityControl": "V"
+            "value": 87.00958282282,
+            "qualityControl": "S"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.683111518223335,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "S"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1981.2
+                    "value": 1010
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1980
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "OVC"
             }
         ]
     }

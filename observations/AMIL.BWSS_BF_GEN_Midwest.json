@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSLO/observations/2026-06-13T16:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KSLO/observations/2026-06-13T18:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSLO/observations/2026-06-13T16:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSLO/observations/2026-06-13T18:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KSLO",
         "stationId": "KSLO",
         "stationName": "Salem, Salem-Leckrone Airport",
-        "timestamp": "2026-06-13T16:15:00+00:00",
-        "rawMessage": "KSLO 131615Z 10SM CLR 26/21 A3000 RMK AO2 LTG DSNT SW T02620211",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-06-13T18:15:00+00:00",
+        "rawMessage": "KSLO 131815Z 10SM -RA SCT024 SCT032 OVC041 26/23 A3000 RMK AO2 LTG DSNT SW T02600226",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 26.2,
+            "value": 26,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.1,
+            "value": 22.6,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 73.551280245175,
+            "value": 81.563646691148,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 27.751001964505,
+            "value": 27.722917678311667,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 730
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 980
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1250
+                },
+                "amount": "OVC"
             }
         ]
     }
