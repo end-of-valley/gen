@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KTTF/observations/2026-07-28T03:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KTTF/observations/2026-07-28T06:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KTTF/observations/2026-07-28T03:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KTTF/observations/2026-07-28T06:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,30 +61,37 @@
         "station": "https://api.weather.gov/stations/KTTF",
         "stationId": "KTTF",
         "stationName": "Monroe, Custer Airport",
-        "timestamp": "2026-07-28T03:15:00+00:00",
-        "rawMessage": "KTTF 280315Z AUTO 16005KT 10SM CLR 20/19 A2970 RMK AO2",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-07-28T06:15:00+00:00",
+        "rawMessage": "KTTF 280615Z AUTO 27005KT 9SM RA SCT045 BKN070 BKN110 21/20 A2971 RMK AO2 PRESRR",
+        "textDescription": "Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 20,
-            "qualityControl": "V"
+            "value": 21,
+            "qualityControl": "S"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 19,
-            "qualityControl": "V"
+            "value": 20,
+            "qualityControl": "S"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 160,
-            "qualityControl": "V"
+            "value": 270,
+            "qualityControl": "S"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
             "value": 9.36,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -93,8 +100,8 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100580,
-            "qualityControl": "V"
+            "value": 100610,
+            "qualityControl": "S"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 14480,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,26 +138,40 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 93.974509366621,
-            "qualityControl": "V"
+            "value": 94.018757001038,
+            "qualityControl": "S"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1370
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "BKN"
             }
         ]
     }
