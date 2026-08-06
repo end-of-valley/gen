@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSLO/observations/2026-08-06T09:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KSLO/observations/2026-08-06T11:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSLO/observations/2026-08-06T09:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSLO/observations/2026-08-06T11:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,32 @@
         "station": "https://api.weather.gov/stations/KSLO",
         "stationId": "KSLO",
         "stationName": "Salem, Salem-Leckrone Airport",
-        "timestamp": "2026-08-06T09:15:00+00:00",
-        "rawMessage": "KSLO 060915Z 10SM SCT060 SCT080 23/19 A3005 RMK AO2 T02320191",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-08-06T11:55:00+00:00",
+        "rawMessage": "KSLO 061155Z 10SM +TSRA 23/20 A3012 RMK AO2 LTG DSNT ALQDS P0004 60004 70004 T02250204 10238 20222",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.2,
+            "value": 22.5,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 19.1,
+            "value": 20.4,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,7 +106,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101760,
+            "value": 102000,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -116,8 +129,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 1,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -126,12 +139,12 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 1,
+            "qualityControl": "C"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 77.752258603072,
+            "value": 87.933251498835,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,24 +154,9 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.60575341908,
+            "value": 23.10159045580278,
             "qualityControl": "V"
         },
-        "cloudLayers": [
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1830
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2440
-                },
-                "amount": "SCT"
-            }
-        ]
+        "cloudLayers": []
     }
 }
