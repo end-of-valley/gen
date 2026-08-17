@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFYG/observations/2026-08-17T01:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KFYG/observations/2026-08-17T02:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFYG/observations/2026-08-17T01:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFYG/observations/2026-08-17T02:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,11 +61,18 @@
         "station": "https://api.weather.gov/stations/KFYG",
         "stationId": "KFYG",
         "stationName": "Washington Regional Airport",
-        "timestamp": "2026-08-17T01:35:00+00:00",
-        "rawMessage": "KFYG 170135Z AUTO 00000KT 10SM VCTS FEW110 28/27 A2995 RMK AO2 LTG DSNT ALQDS",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-08-17T02:15:00+00:00",
+        "rawMessage": "KFYG 170215Z AUTO 25011G17KT 8SM TS FEW040 BKN048 BKN070 28/26 A3002 RMK AO2",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 28,
@@ -73,27 +80,27 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 27,
+            "value": 26,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 0,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 0,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 31.68,
+            "qualityControl": "C"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101420,
+            "value": 101660,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 94.315415642101,
+            "value": 88.915283542252,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,30 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 34.52577634122834,
+            "value": 33.558378962911114,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 1220
                 },
                 "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "BKN"
             }
         ]
     }
