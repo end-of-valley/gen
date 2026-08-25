@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/K2D5/observations/2026-08-25T02:55:00+00:00",
+    "id": "https://api.weather.gov/stations/K2D5/observations/2026-08-25T03:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/K2D5/observations/2026-08-25T02:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/K2D5/observations/2026-08-25T03:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,39 +61,52 @@
         "station": "https://api.weather.gov/stations/K2D5",
         "stationId": "K2D5",
         "stationName": "Oakes Municipal Airport",
-        "timestamp": "2026-08-25T02:55:00+00:00",
-        "rawMessage": "K2D5 250255Z AUTO 12006KT VCTS BKN036 OVC070 23/23 A2996 RMK AO2 LTG DSNT SW-NW",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-08-25T03:35:00+00:00",
+        "rawMessage": "K2D5 250335Z AUTO 23012G26KT TSRA 20/20 A2998 RMK AO2",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 23,
+            "value": 20,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 23,
+            "value": 20,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 120,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
-            "unitCode": "wmoUnit:km_h-1",
-            "value": 11.16,
-            "qualityControl": "V"
-        },
-        "windGust": {
             "unitCode": "wmoUnit:km_h-1",
             "value": null,
             "qualityControl": "Z"
         },
+        "windGust": {
+            "unitCode": "wmoUnit:km_h-1",
+            "value": 48.24,
+            "qualityControl": "C"
+        },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101460,
+            "value": 101520,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -141,24 +154,9 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 23.966666666666665,
+            "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": [
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1100
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2130
-                },
-                "amount": "OVC"
-            }
-        ]
+        "cloudLayers": []
     }
 }
