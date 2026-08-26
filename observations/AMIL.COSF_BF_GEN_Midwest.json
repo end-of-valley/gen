@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KENL/observations/2026-08-26T08:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KENL/observations/2026-08-26T10:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KENL/observations/2026-08-26T08:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KENL/observations/2026-08-26T10:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,19 +61,26 @@
         "station": "https://api.weather.gov/stations/KENL",
         "stationId": "KENL",
         "stationName": "Centralia Municipal Airport",
-        "timestamp": "2026-08-26T08:35:00+00:00",
-        "rawMessage": "KENL 260835Z 10SM OVC080 21/18 A3002 RMK AO2 T02120175",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-08-26T10:15:00+00:00",
+        "rawMessage": "KENL 261015Z 10SM -RA SCT065 BKN090 21/17 A3000 RMK AO2 T02110172",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.2,
+            "value": 21.1,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 17.5,
+            "value": 17.2,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -93,7 +100,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101660,
+            "value": 101590,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 79.436194578698,
+            "value": 78.424650325911,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,16 +148,23 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.449722858443888,
+            "value": null,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 1980
                 },
-                "amount": "OVC"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "BKN"
             }
         ]
     }
