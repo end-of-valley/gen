@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPHN/observations/2026-09-03T14:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KPHN/observations/2026-09-03T18:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPHN/observations/2026-09-03T14:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPHN/observations/2026-09-03T18:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,14 +61,21 @@
         "station": "https://api.weather.gov/stations/KPHN",
         "stationId": "KPHN",
         "stationName": "St Clair County International Airport",
-        "timestamp": "2026-09-03T14:15:00+00:00",
-        "rawMessage": "KPHN 031415Z AUTO 00000KT 10SM OVC009 24/21 A2995 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-09-03T18:15:00+00:00",
+        "rawMessage": "KPHN 031815Z AUTO 00000KT 5SM -RA SCT049 BKN090 OVC110 23/21 A2995 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 24,
+            "value": 23,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -103,7 +110,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,7 +138,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 83.338787521304,
+            "value": 88.518307938961,
             "qualityControl": "V"
         },
         "windChill": {
@@ -141,14 +148,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.631623896389446,
+            "value": 23.666866929517223,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 270
+                    "value": 1490
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
                 },
                 "amount": "OVC"
             }
