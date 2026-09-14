@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/K2D5/observations/2026-09-14T05:55:00+00:00",
+    "id": "https://api.weather.gov/stations/K2D5/observations/2026-09-14T13:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/K2D5/observations/2026-09-14T05:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/K2D5/observations/2026-09-14T13:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,39 +61,52 @@
         "station": "https://api.weather.gov/stations/K2D5",
         "stationId": "K2D5",
         "stationName": "Oakes Municipal Airport",
-        "timestamp": "2026-09-14T05:55:00+00:00",
-        "rawMessage": "K2D5 140555Z AUTO 13008KT SCT075 BKN100 BKN120 10/02 A3010 RMK AO2",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2026-09-14T13:55:00+00:00",
+        "rawMessage": "K2D5 141355Z AUTO 24003G16KT +TSRA FEW028 OVC036 12/08 A2992 RMK AO2 LTG DSNT ALQDS",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 10,
+            "value": 12,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 2,
+            "value": 8,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 130,
+            "value": 240,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 14.76,
+            "value": 5.4,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 29.52,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101930,
+            "value": 101320,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -131,7 +144,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 57.540788283394,
+            "value": 76.519987759453,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,23 +161,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2290
+                    "value": 850
                 },
-                "amount": "SCT"
+                "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 1100
                 },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 3660
-                },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
