@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSAW/observations/2026-11-12T03:18:00+00:00",
+    "id": "https://api.weather.gov/stations/KSAW/observations/2026-11-12T11:45:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,7 +52,7 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSAW/observations/2026-11-12T03:18:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSAW/observations/2026-11-12T11:45:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
@@ -61,26 +61,32 @@
         "station": "https://api.weather.gov/stations/KSAW",
         "stationId": "KSAW",
         "stationName": "Marquette Sawyer Regional Airport",
-        "timestamp": "2026-11-12T03:18:00+00:00",
-        "rawMessage": "KSAW 120318Z AUTO 36015G20KT 9SM -RA BKN015 OVC020 02/00 A2992 RMK AO2",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2026-11-12T11:45:00+00:00",
+        "rawMessage": "KSAW 121145Z 01015G21KT 3SM -SN BR SCT006 BKN009 OVC019 00/M01 A2998 RMK VIS 1 1/2V4",
+        "textDescription": "Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
         "presentWeather": [
             {
                 "intensity": "light",
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "-RA"
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 2,
+            "value": 0,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 0,
+            "value": -1,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -95,12 +101,12 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 37.08,
+            "value": 38.88,
             "qualityControl": "C"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101320,
+            "value": 101520,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -110,7 +116,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 14480,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -138,7 +144,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 86.601412091818,
+            "value": 92.97695284763,
             "qualityControl": "V"
         },
         "windChill": {
@@ -155,14 +161,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 460
+                    "value": 180
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 270
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 580
                 },
                 "amount": "OVC"
             }
